@@ -102,7 +102,7 @@
                 </div>
             </div>
 
-            <hr class="mb-12 mt-12 border-[#A2A2A2]/50" />
+            <hr class="flex lg:hidden mb-12 mt-12 border-[#A2A2A2]/50" />
 
             <div class="flex max-sm:flex-col max-sm:gap-4 justify-between items-center">
                 <div class="flex gap-4">

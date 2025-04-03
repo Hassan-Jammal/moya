@@ -17,7 +17,7 @@
             <NuxtImg class="w-full" src="/images/antenna.gif" alt="" width="1444" height="309" />
         </div> -->
         <div class="container">
-            <div class="relative flex flex-col gap-8 max-lg:items-center text-white max-lg:text-center z-[3] max-lg:-mt-48">
+            <div class="relative flex flex-col gap-8 max-lg:items-center text-white max-lg:text-center z-[3] max-lg:-mt-80">
                 <h1 class="text-3xl lg:text-6xl font-bold lg:w-2/5">Connecting Your World<span class="text-primary"> Everywhere</span></h1>
                 <p class="text-sm text-[#ACA8A8] lg:w-1/3">Stay connected effortlessly with our reliable telecom solutions, ensuring seamless communication anytime, anywhere. Experience high-speed networks, crystal-clear calls, and innovative services.</p>
                 
