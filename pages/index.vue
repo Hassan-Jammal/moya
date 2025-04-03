@@ -218,15 +218,15 @@ import categories from '~/data/products';
     import slugify from '~/utils/slugify';
     
     useSeoMeta({
-        title: 'Hompepage',
-        description: '',
+        title: 'Moya',
+        description: 'Stay connected effortlessly with our reliable telecom solutions, ensuring seamless communication anytime, anywhere. Experience high-speed networks, crystal-clear calls, and innovative services.',
 
-        ogTitle: 'Hompepage',
-        ogDescription: '',
+        ogTitle: 'Moya',
+        ogDescription: 'Stay connected effortlessly with our reliable telecom solutions, ensuring seamless communication anytime, anywhere. Experience high-speed networks, crystal-clear calls, and innovative services.',
         ogImage: '',
 
-        twitterTitle: 'Hompepage',
-        twitterDescription: '',
+        twitterTitle: 'Moya',
+        twitterDescription: 'Stay connected effortlessly with our reliable telecom solutions, ensuring seamless communication anytime, anywhere. Experience high-speed networks, crystal-clear calls, and innovative services.',
         twitterCard: 'summary_large_image',
     })
     
