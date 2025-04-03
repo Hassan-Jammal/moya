@@ -170,7 +170,7 @@
                         <template v-if="category.sub_categories.length">
                             <div v-for="(product, productIndex) in getThreeProducts(category.sub_categories)" :key="productIndex" class="flex flex-col justify-between items-center gap-12 py-12 px-4 lg:px-8 text-center bg-[#F8F8F9] rounded-3xl">
                                 <div class="flex flex-col justify-center items-center gap-4">
-                                    <NuxtImg class="w-full" :src="`/images/${product.image}.png`" :alt="product.title" width="" height="" />
+                                    <NuxtImg class="w-full" :src="`/images/${product.image_outer}.png`" :alt="product.title" width="" height="" />
                                     <h3 class="text-sm">{{ product.sub_title }}</h3>
                                     <NuxtLink :to="`/products/${slugify(category.title)}/${slugify(product.title)}`">
                                         <h2 class="text-3xl font-BankGothic font-bold">{{ product.title }}</h2>

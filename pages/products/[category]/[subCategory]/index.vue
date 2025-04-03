@@ -48,7 +48,7 @@
 				<div class="grid lg:grid-cols-3 gap-12">
 					<div v-for="(product, productIndex) in subCategoryData.products" :key="productIndex" class="flex flex-col justify-between items-center gap-12 py-12 px-4 lg:px-8 text-center bg-[#F8F8F9] rounded-3xl">
 						<div class="flex flex-col justify-center items-center gap-4 w-full">
-							<NuxtImg class="w-full" :src="`/images/${product.image}.png`" :alt="product.title" width="" height="" />
+							<NuxtImg class="w-full" :src="`/images/${product.image_outer}.png`" :alt="product.title" width="" height="" />
 							<h3 class="text-sm mt-6">{{ product.sub_title }}</h3>
 							<NuxtLink :to="`/products/${slugify(categoryData.title)}/${slugify(subCategoryData.title)}/${slugify(product.title)}`">
 								<h2 class="text-2xl font-BankGothic font-bold">{{ product.title }}</h2>

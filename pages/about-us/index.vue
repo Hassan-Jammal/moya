@@ -3,7 +3,7 @@
         <div class="absolute bottom-0 left-0 w-full h-full">
             <NuxtImg class="w-full h-full object-cover" src="images/about-us-bg.webp" alt="About Us" width="" height="" />
         </div>
-		<div class="container relative z-10 text-center text-white py-24">
+		<div class="container relative z-10 text-center text-white py-12">
             <div class="flex flex-col items-center gap-12">
                 <ul class="flex items-center flex-wrap gap-2 text-xs">
                     <li><NuxtLink to="/">Home</NuxtLink></li>

@@ -58,7 +58,8 @@ const categories = [
                         acronym: "EPC",
                         sub_title: "EPC",
                         description: "It can be flexibly deployed based on network conditions, fully compliant with 3GPP standards, and supports integration with third-party devices. It offers full-featured capabilities, including VoLTE, allowing voice and data services to share the same network, while ensuring easy maintenance.",
-                        image: "evolved-packet-core",
+                        image_outer: "evolved-packet-core-outer",
+                        image_inner: "evolved-packet-core-inner",
                         advantages: {
                             title: "Key Benefits of EPC",
                             items: [
@@ -124,7 +125,8 @@ const categories = [
                         acronym: "IMS",
                         sub_title: "IMS",
                         description: "Compliant with 3GPP standards, it offers full-featured capabilities and seamless integration with third-party devices. Designed for scalability, it supports up to a million users, with a capacity reaching 600K. Additionally, it ensures easy maintenance for efficient operation.",
-                        image: "ip-multimedia-subsytem",
+                        image_outer: "ip-multimedia-subsystem-outer",
+                        image_inner: "ip-multimedia-subsystem-inner",
                         advantages: {
                             title: "Key Benefits of IMS",
                             items: [
@@ -192,7 +194,8 @@ const categories = [
                         acronym: "BBU",
                         sub_title: "Distributed Site - Micro BBU",
                         description: "Advanced SOC-based platform delivering high performance with up to 600 online or 400 active users per cell. Supports FDD peak rates of 300Mbps DL and 75Mbps UL at 20MHz. Features plug-and-play with SON capabilities, optional embedded core network, and reduced OPEX through lower power consumption.",
-                        image: "4g-lte-micro-bbu",
+                        image_outer: "4g-lte-micro-bbu-outer",
+                        image_inner: "4g-lte-micro-bbu-inner",
                         advantages: {
                             title: "Highlights of 4G LTE Micro BBU",
                             items:[
@@ -290,7 +293,8 @@ const categories = [
                         acronym: "BBU",
                         sub_title: "Distributed Site - Macro BBU",
                         description: "The advanced SOC platform supports 14,400 online users, with peak FDD rates of 400 Mbps downlink and 75 Mbps uplink at 20 MHz. It features plug-and-play SON capabilities, optional embedded core network, and reduced OPEX through lower power consumption.",
-                        image: "4g-lte-macro-bbu",
+                        image_outer: "4g-lte-macro-bbu-outer",
+                        image_inner: "4g-lte-macro-bbu-inner",
                         advantages: {
                             title: "Highlights of 4G LTE Macro BBU",
                             items:[
@@ -392,7 +396,8 @@ const categories = [
                         acronym: "pHUB",
                         sub_title: "Distributed Site - pHUB",
                         description: "The advanced SOC platform supports 14,400 online users, with peak FDD rates of 400 Mbps downlink and 75 Mbps uplink at 20 MHz. It features plug-and-play SON capabilities, optional embedded core network, and reduced OPEX through lower power consumption.",
-                        image: "4g-lte-phub",
+                        image_outer: "4g-lte-phub-outer",
+                        image_inner: "4g-lte-phub-inner",
                         advantages: {
                             title: "Highlights of 4G LTE pHUB",
                             items:[
@@ -492,7 +497,8 @@ const categories = [
                         acronym: "RRU",
                         sub_title: "Distributed Site - pRRU",
                         description: "A simplified and lightweight topology with flexible deployment, supporting LTE FDD/TDD and plug-and-play functionality with SON capabilities for easy installation. <br /> It features an internal antenna, PoE+ power supply, and reduces OPEX through lower power consumption.",
-                        image: "4g-lte-prru",
+                        image_outer: "4g-lte-prru-outer",
+                        image_inner: "4g-lte-prru-inner",
                         advantages: {
                             title: "Highlights of 4G LTE pRRU",
                             items:[
@@ -590,7 +596,8 @@ const categories = [
                         acronym: "RRU",
                         sub_title: "Distributed Site - Outdoor RRU",
                         description: "A zero-footprint, lightweight, and flexible solution supporting LTE FDD/TDD with customized frequency bands, ideal for town and village broadband coverage. It features an external high-gain antenna and reduces OPEX through lower power consumption.",
-                        image: "4g-lte-2t2r-rru",
+                        image_outer: "4g-lte-2t2r-rru-outer",
+                        image_inner: "4g-lte-2t2r-rru-inner",
                         advantages: {
                             title: "Highlights of 4G LTE Outdoor RRU",
                             items:[
@@ -692,7 +699,8 @@ const categories = [
                         acronym: "RRU",
                         sub_title: "Distributed Site - Outdoor RRU",
                         description: "A zero-footprint, lightweight, and flexible solution supporting LTE FDD/TDD with customized frequency bands, ideal for town and village broadband coverage. It features an external high-gain antenna and reduces OPEX through lower power consumption.",
-                        image: "4g-lte-4t4r-rru",
+                        image_outer: "4g-lte-4t4r-rru-outer",
+                        image_inner: "4g-lte-4t4r-rru-inner",
                         advantages: {
                             title: "Highlights of 4G LTE Outdoor RRU",
                             items:[
@@ -800,7 +808,8 @@ const categories = [
                         acronym: "eNB",
                         sub_title: "Integrated eNB (outdoor)",
                         description: "A high-integrated, all-in-one, and portable solution with zero footprint, designed for long-distance rural broadband coverage. It supports flexible backhaul options, including xPON, Internet, IPRAN, and PTN, with plug-and-play SON capabilities for easy deployment. Supporting up to 600 online or 400 active users, it delivers peak speeds of up to 300Mbps DL and 75Mbps UL, with an optional embedded core network.",
-                        image: "4g-lte-macro-enb-2x20w",
+                        image_outer: "4g-lte-macro-enb-2x20w-outer",
+                        image_inner: "4g-lte-macro-enb-2x20w-inner",
                         advantages: {
                             title: "Highlights of 4G LTE Macro eNB",
                             items:[
@@ -902,7 +911,8 @@ const categories = [
                         acronym: "eNB",
                         sub_title: "Integrated eNB (outdoor)",
                         description: "A high-integrated, all-in-one, and portable solution with zero footprint, designed for long-distance rural broadband coverage. It supports flexible backhaul options, including xPON, Internet, IPRAN, and PTN, with plug-and-play SON capabilities for easy deployment. Supporting up to 600 online or 400 active users, it delivers peak speeds of up to 300Mbps DL and 75Mbps UL, with an optional embedded core network.",
-                        image: "4g-lte-macro-enb-2x40w",
+                        image_outer: "4g-lte-macro-enb-2x40w-outer",
+                        image_inner: "4g-lte-macro-enb-2x40w-inner",
                         advantages: {
                             title: "Highlights of 4G LTE Macro eNB",
                             items:[
@@ -1004,7 +1014,8 @@ const categories = [
                         acronym: "eNB",
                         sub_title: "Integrated eNB (outdoor)",
                         description: "A high-integrated, all-in-one, and portable solution with zero footprint, designed for long-distance rural broadband coverage. It supports flexible backhaul options, including xPON, Internet, IPRAN, and PTN, with plug-and-play SON capabilities for easy deployment. Supporting up to 600 online or 400 active users, it delivers peak speeds of up to 300Mbps DL and 75Mbps UL, with an optional embedded core network.",
-                        image: "4g-lte-macro-enb-4x40w-2x60w",
+                        image_outer: "4g-lte-macro-enb-4x40w-2x60w-outer",
+                        image_inner: "4g-lte-macro-enb-4x40w-2x60w-inner",
                         advantages: {
                             title: "Highlights of 4G LTE Macro eNB",
                             items:[
@@ -1112,7 +1123,8 @@ const categories = [
                         acronym: "eNB",
                         sub_title: "Distributed Site - Indoor",
                         description: "A high-integrated, all-in-one solution with an ultra-simplified design, ideal for offices, internet cafes, and small shops. It features plug-and-play SON capabilities for easy deployment and supports flexible backhaul options, including xPON, Internet, IPRAN, and PTN. With support for up to 64 active users, it delivers peak speeds of 140Mbps DL and 41Mbps UL, covering areas between 200m² and 500m².",
-                        image: "femtocell-2x50mw",
+                        image_outer: "femtocell-2x50mw-outer",
+                        image_inner: "femtocell-2x50mw-inner",
                         advantages: {
                             title: "Highlights of 4G LTE Femto eNB",
                             items:[
@@ -1218,7 +1230,8 @@ const categories = [
                         acronym: "eNB",
                         sub_title: "Distributed Site - Indoor",
                         description: "A high-integrated, all-in-one solution with an ultra-simplified design, ideal for offices, internet cafes, and small shops. It features plug-and-play SON capabilities for easy deployment and supports flexible backhaul options, including xPON, Internet, IPRAN, and PTN. With support for up to 64 active users, it delivers peak speeds of 140Mbps DL and 41Mbps UL, covering areas between 200m² and 500m².",
-                        image: "femtocell-2x250mw",
+                        image_outer: "femtocell-2x250mw-outer",
+                        image_inner: "femtocell-2x250mw-inner",
                         advantages: {
                             title: "Highlights of 4G LTE Femto eNB",
                             items:[
@@ -1340,7 +1353,8 @@ const categories = [
                         acronym: "Fiber",
                         sub_title: "10W/20W/40W",
                         description: "Designed for weak and blind signal areas, this solution supports digital bandwidth adjustment and multi-system, multi-band fusion coverage. It offers optional support for GSM, DCS, WCDMA, LTE, and NR-FDD (B1/2/3/4/5/7/8) as well as LTE-TDD/NR-TDD (B34/38/39/40/41; N41/N78). With long-distance coverage of up to 10 kilometers, it requires low isolation in its direct-coupled version.",
-                        image: "fiber-repeater",
+                        image_outer: "fiber-repeater-outer",
+                        image_inner: "fiber-repeater-inner",
                         advantages: {
                             title: "Highlights of Fiber Repeater",
                             items:[
@@ -1452,7 +1466,8 @@ const categories = [
                         acronym: "Wireless",
                         sub_title: "10W/20W/40W",
                         description: "It supports GSM/DCS/WCDMA/LTE/NR-FDD B1/2/3/4/5/7/8 and LTE-TDD/NR-TDD B34/38/39/40/41, N41/N78, offering multi-system standard one-network coverage. It is designed for easy debugging and provides low latency for optimal performance.",
-                        image: "wireless-repeater",
+                        image_outer: "wireless-repeater-outer",
+                        image_inner: "wireless-repeater-inner",
                         advantages: {
                             title: "Highlights of Wireless Repeater",
                             items:[
@@ -1568,7 +1583,8 @@ const categories = [
                         acronym: "ICS Wireless",
                         sub_title: "10W/20W/40W",
                         description: "Supports triple-band with 30dB isolation cancellation, reduced isolation needs for outdoor use, adjustable LTE bandwidth (5, 10, 20MHz), UL interference prevention, donor signal monitoring, and remote management.",
-                        image: "ics-wireless-repeater",
+                        image_outer: "ics-wireless-repeater-outer",
+                        image_inner: "ics-wireless-repeater-inner",
                         advantages: {
                             title: "Highlights of ICS Wireless Repeater",
                             items:[
@@ -1690,7 +1706,8 @@ const categories = [
                         acronym: "Omni Fiberglass Antenna",
                         sub_title: "Easy Installation",
                         description: "This fiberglass omnidirectional antenna covers 660-960 MHz and 1710-2700 MHz with vertical polarization, offering 6±1 dBi and 8±1 dBi gain. It provides 360° horizontal coverage, a 25±10° vertical beamwidth, and a VSWR of ≤2.8. The antenna features 50Ω impedance and grounding protection, ideal for communication applications.",
-                        image: "omni-fiberglass-antenna",
+                        image_outer: "omni-fiberglass-antenna-outer",
+                        image_inner: "omni-fiberglass-antenna-inner",
                         advantages: null,
                         specs: {
                             title: "Product Specifications",
@@ -1814,7 +1831,8 @@ const categories = [
                         acronym: "Omni Cluster Antenna",
                         sub_title: "Easy Installation",
                         description: "Cluster antenna combines multiple antennas to enhance signal strength, improve coverage, and reduce interference. It's commonly used in communication systems for better performance and directional coverage.",
-                        image: "omni-cluster-antenna",
+                        image_outer: "omni-cluster-antenna-outer",
+                        image_inner: "omni-cluster-antenna-inner",
                         advantages: null,
                         specs: {
                             title: "Product Specifications",
@@ -1995,7 +2013,8 @@ const categories = [
                         acronym: "Panel Antenna",
                         sub_title: "Easy Installation",
                         description: "A panel antenna is a flat, directional antenna designed for focused signal transmission and reception. It offers high gain, reduced interference, and is commonly used in cellular, Wi-Fi, and point-to-point communication systems.",
-                        image: "panel-antenna",
+                        image_outer: "panel-antenna-outer",
+                        image_inner: "panel-antenna-inner",
                         advantages: null,
                         specs: {
                             title: "Product Specifications",

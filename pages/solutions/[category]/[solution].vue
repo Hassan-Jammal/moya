@@ -122,21 +122,21 @@
         solutionData.value = categoryData.value.solutions.find(s => slugify(s.title) === solutionSlug.value) || null;
     });
 
-    // // Update SEO metadata dynamically when categoryData is available
-    // watchEffect(() => {
-    //     if (categoryData.value && subCategoryData.value && productData.value) {
-    //         useSeoMeta({
-    //             title: `${productData.value.title} - ${subCategoryData.value.title} - ${categoryData.value.title}`,
-    //             description: `Discover ${productData.value.title} solutions and services.`,
+    // Update SEO metadata dynamically when categoryData is available
+    watchEffect(() => {
+        if (categoryData.value && solutionData.value) {
+            useSeoMeta({
+                title: `${solutionData.value.title} - ${categoryData.value.title}`,
+                description: `Discover ${solutionData.value.title} solutions and services.`,
                 
-    //             ogTitle: `${productData.value.title} - ${subCategoryData.value.title} - ${categoryData.value.title}`,
-    //             ogDescription: `Explore top solutions in ${productData.value.title}.`,
-    //             ogImage: productData.value.image || '',
+                ogTitle: `${solutionData.value.title} - ${categoryData.value.title}`,
+                ogDescription: `Explore top solutions in ${solutionData.value.title}.`,
+                ogImage: solutionData.value.image || '',
 
-    //             twitterTitle: `${productData.value.title} - ${subCategoryData.value.title} - ${categoryData.value.title}`,
-    //             twitterDescription: `Explore ${productData.value.title} for innovative solutions.`,
-    //             twitterCard: 'summary_large_image',
-    //         });
-    //     }
-    // });
+                twitterTitle: `${solutionData.value.title} - ${categoryData.value.title}`,
+                twitterDescription: `Explore ${solutionData.value.title} for innovative solutions.`,
+                twitterCard: 'summary_large_image',
+            });
+        }
+    });
 </script>

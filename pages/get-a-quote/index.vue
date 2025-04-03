@@ -21,31 +21,31 @@
                     <div class="flex max-lg:flex-col gap-4 lg:gap-8 justify-between items-start">
                         <div class="flex flex-col gap-1 w-full">
                             <label for="full-name" class="text-base">Full Name</label>
-                            <input v-model="form.full_name" type="text" placeholder="Full Name" id="full-name" class="w-full h-full min-h-14 py-3 px-3 bg-transparent border border-[#D4D4D4] rounded-lg outline-none" />
+                            <input v-model="form.full_name" type="text" placeholder="Full Name" id="full-name" class="w-full h-full min-h-14 py-3 px-3 text-base bg-transparent border border-[#D4D4D4] rounded-lg outline-none" />
                             <div v-if="errors.full_name" class="text-xs text-red-500">{{ errors.full_name }}</div>
                         </div>
                         <div class="flex flex-col gap-1 w-full">
                             <label for="email-address" class="text-base">Email Address</label>
-                            <input v-model="form.email" type="text" placeholder="Email Address" id="email-address" class="w-full h-full min-h-14 py-3 px-3 bg-transparent border border-[#D4D4D4] rounded-lg outline-none" />
+                            <input v-model="form.email" type="text" placeholder="Email Address" id="email-address" class="w-full h-full min-h-14 py-3 px-3 text-base bg-transparent border border-[#D4D4D4] rounded-lg outline-none" />
                             <div v-if="errors.email" class="text-xs text-red-500">{{ errors.email }}</div>
                         </div>
                     </div>
                     <div class="flex max-lg:flex-col gap-4 lg:gap-8 justify-between items-start">
                         <div class="flex flex-col gap-1 w-full">
                             <label for="full-name" class="text-base">Company Name</label>
-                            <input v-model="form.company_name" type="text" placeholder="Company Name" id="company-name" class="w-full h-full min-h-14 py-3 px-3 bg-transparent border border-[#D4D4D4] rounded-lg outline-none" />
+                            <input v-model="form.company_name" type="text" placeholder="Company Name" id="company-name" class="w-full h-full min-h-14 py-3 px-3 text-base bg-transparent border border-[#D4D4D4] rounded-lg outline-none" />
                             <div v-if="errors.company_name" class="text-xs text-red-500">{{ errors.company_name }}</div>
                         </div>
                         <div class="flex flex-col gap-1 w-full">
                             <label for="position" class="text-base">Position</label>
-                            <input v-model="form.position" type="text" placeholder="Position" id="position" class="w-full h-full min-h-14 py-3 px-3 bg-transparent border border-[#D4D4D4] rounded-lg outline-none" />
+                            <input v-model="form.position" type="text" placeholder="Position" id="position" class="w-full h-full min-h-14 py-3 px-3 text-base bg-transparent border border-[#D4D4D4] rounded-lg outline-none" />
                             <div v-if="errors.position" class="text-xs text-red-500">{{ errors.position }}</div>
                         </div>
                     </div>
                     <div class="flex max-lg:flex-col gap-4 lg:gap-8 justify-between items-start">
                         <div class="flex flex-col gap-1 w-full">
                             <label for="country" class="text-base">Country</label>
-                            <select v-model="form.country" name="country" id="country" class="w-full h-full min-h-14 py-3 px-3 bg-transparent border border-[#D4D4D4] rounded-lg outline-none">
+                            <select v-model="form.country" name="country" id="country" class="w-full h-full min-h-14 py-3 px-3 text-base bg-transparent border border-[#D4D4D4] rounded-lg outline-none">
                                 <option value="" disabled>Select</option>
                                 <option v-for="country in countriesData" :key="country.code" :value="country.name">
                                     {{ country.name }}
@@ -59,7 +59,7 @@
                             <label for="mobile-number" class="text-base">Mobile Number</label>
                             <div class="relative flex flex-row items-start gap-4">
                                 <div class="flex flex-col gap-1 w-[160px]">
-                                    <div @click="toggleDropdown" class="custom-dropdown w-full h-full min-h-14 py-3 px-3 bg-transparent border border-[#D4D4D4] rounded-lg outline-none cursor-pointer">
+                                    <div @click="toggleDropdown" class="custom-dropdown w-full h-full min-h-14 py-3 px-3 text-base bg-transparent border border-[#D4D4D4] rounded-lg outline-none cursor-pointer">
                                         <div id="selected-country" class="flex justify-start items-center gap-2 select-none">
                                             <NuxtImg loading="lazy" :src="`/images/flags/${selectedCountry.iso2 || 'LB' }.svg`" :alt="selectedCountry.name || 'Lebanon'" width="20" height="20" />
                                             <span>+{{ selectedCountry.code || '961' }}</span>
@@ -81,51 +81,51 @@
                                 </ul>
 
                                 <div class="flex flex-col gap-1 w-full">
-                                    <input v-model="form.mobile" type="text" id="mobile" placeholder="Mobile Number" class="w-full h-full min-h-14 py-3 px-3 bg-transparent border border-[#D4D4D4] rounded-lg outline-none">
+                                    <input v-model="form.mobile" type="text" id="mobile" placeholder="Mobile Number" class="w-full h-full min-h-14 py-3 px-3 text-base bg-transparent border border-[#D4D4D4] rounded-lg outline-none">
                                     <div v-if="errors.mobile" class="text-xs text-red-500">{{ errors.mobile }}</div>
                                 </div>
                             </div>
                         </div>
                         <div class="flex flex-col gap-1 w-full">
                             <label for="website" class="text-base">Website</label>
-                            <input v-model="form.website" type="text" placeholder="https://example.com" id="website" class="w-full h-full min-h-14 py-3 px-3 bg-transparent border border-[#D4D4D4] rounded-lg outline-none" />
+                            <input v-model="form.website" type="text" placeholder="https://example.com" id="website" class="w-full h-full min-h-14 py-3 px-3 text-base bg-transparent border border-[#D4D4D4] rounded-lg outline-none" />
                             <div v-if="errors.website" class="text-xs text-red-500">{{ errors.website }}</div>
                         </div>
                     </div>
                     <div class="flex max-lg:flex-col gap-4 lg:gap-8 justify-between items-start">
                         <div class="flex flex-col gap-1 w-full">
                             <label for="business_type" class="text-base">Type of Business</label>
-                            <input v-model="form.business_type" type="text" placeholder="Type of Business" id="business_type" class="w-full h-full min-h-14 py-3 px-3 bg-transparent border border-[#D4D4D4] rounded-lg outline-none" />
+                            <input v-model="form.business_type" type="text" placeholder="Type of Business" id="business_type" class="w-full h-full min-h-14 py-3 px-3 text-base bg-transparent border border-[#D4D4D4] rounded-lg outline-none" />
                             <div v-if="errors.business_type" class="text-xs text-red-500">{{ errors.business_type }}</div>
                         </div>
                         <div class="flex flex-col gap-1 w-full">
                             <label for="area_density" class="text-base">Density of area you want to cover</label>
-                            <input v-model="form.area_density" type="text" placeholder="Density of area you want to cover" id="area_density" class="w-full h-full min-h-14 py-3 px-3 bg-transparent border border-[#D4D4D4] rounded-lg outline-none" />
+                            <input v-model="form.area_density" type="text" placeholder="Density of area you want to cover" id="area_density" class="w-full h-full min-h-14 py-3 px-3 text-base bg-transparent border border-[#D4D4D4] rounded-lg outline-none" />
                             <div v-if="errors.area_density" class="text-xs text-red-500">{{ errors.area_density }}</div>
                         </div>
                     </div>
                     <div class="flex max-lg:flex-col gap-4 lg:gap-8 justify-between items-start">
                         <div class="flex flex-col gap-1 w-full">
                             <label for="project_stage" class="text-base">At what stage is your project?</label>
-                            <input v-model="form.project_stage" type="text" placeholder="At what stage is your project?" id="project_stage" class="w-full h-full min-h-14 py-3 px-3 bg-transparent border border-[#D4D4D4] rounded-lg outline-none" />
+                            <input v-model="form.project_stage" type="text" placeholder="At what stage is your project?" id="project_stage" class="w-full h-full min-h-14 py-3 px-3 text-base bg-transparent border border-[#D4D4D4] rounded-lg outline-none" />
                             <div v-if="errors.project_stage" class="text-xs text-red-500">{{ errors.project_stage }}</div>
                         </div>
                         <div class="flex flex-col gap-1 w-full">
                             <label for="required_number" class="text-base">Specify approximate number of required items</label>
-                            <input v-model="form.required_number" type="text" placeholder="Specify approximate number of required items" id="required_number" class="w-full h-full min-h-14 py-3 px-3 bg-transparent border border-[#D4D4D4] rounded-lg outline-none" />
+                            <input v-model="form.required_number" type="text" placeholder="Specify approximate number of required items" id="required_number" class="w-full h-full min-h-14 py-3 px-3 text-base bg-transparent border border-[#D4D4D4] rounded-lg outline-none" />
                             <div v-if="errors.required_number" class="text-xs text-red-500">{{ errors.required_number }}</div>
                         </div>
                     </div>
                     <div class="flex max-lg:flex-col gap-4 lg:gap-8 justify-between items-start">
                         <div class="flex flex-col gap-1 w-full">
                             <label for="message" class="text-base">Message</label>
-                            <textarea v-model="form.message" rows="8" placeholder="Message" id="message" class="w-full h-full min-h-14 py-3 px-3 bg-transparent border border-[#D4D4D4] rounded-lg outline-none resize-none"></textarea>
+                            <textarea v-model="form.message" rows="8" placeholder="Message" id="message" class="w-full h-full min-h-14 py-3 px-3 text-base bg-transparent border border-[#D4D4D4] rounded-lg outline-none resize-none"></textarea>
                             <div v-if="errors.message" class="text-xs text-red-500">{{ errors.message }}</div>
                         </div>
                     </div>
                     <div class="flex justify-between items-baseline gap-2">
                         <input v-model="isAcknowledged" type="checkbox" class="inline cursor-pointer">
-                        <p class="inline">Yes, I agree to receive communications about Moya products and solutions and to the processing of my personal data under the <NuxtLink :to="'/privacy-policy'" class="text-primary">Privacy Policy</NuxtLink>, and <NuxtLink :to="'terms-and-conditions'" class="text-primary">Terms & Conditions</NuxtLink>.</p>
+                        <p class="inline text-sm text-[#ACA8A8]">Yes, I agree to receive communications about Moya products and solutions and to the processing of my personal data under the <NuxtLink :to="'/privacy-policy'" class="text-primary">Privacy Policy</NuxtLink>, and <NuxtLink :to="'terms-and-conditions'" class="text-primary">Terms & Conditions</NuxtLink>.</p>
                     </div>
                     <div class="flex flex-col gap-1 w-full">
                         <button :disabled="!isAcknowledged || isSubmitting" @click.prevent="handleSubmit" class="min-w-[120px] mx-auto p-2 text-white bg-primary hover:text-black hover:bg-white rounded-full select-none transition-all duration-300 ease-in-out disabled:bg-[#D4D4D4] mt-14">Submit</button>
