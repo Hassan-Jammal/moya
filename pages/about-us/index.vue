@@ -4,14 +4,14 @@
             <NuxtImg class="w-full h-full object-cover" src="images/about-us-bg.webp" alt="About Us" width="" height="" />
         </div>
 		<div class="container relative z-10 text-center text-white py-12">
-            <div class="flex flex-col items-center gap-12">
+            <div class="flex flex-col items-center gap-6">
                 <ul class="flex items-center flex-wrap gap-2 text-xs">
                     <li><NuxtLink to="/">Home</NuxtLink></li>
                     <li class="flex"><Icon name="fa6-solid:angle-right" /></li>
                     <li>About Us</li>
                 </ul>
                 <h1 class="text-3xl lg:text-4xl font-bold">The Heart of Moya <br /> Our Core Identity & Vision</h1>
-                <p class="text-sm">Connecting the Future, Empowering Today.</p>
+                <p class="text-base">Connecting the Future, Empowering Today.</p>
             </div>
         </div>
 	</section>

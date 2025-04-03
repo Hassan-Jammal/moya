@@ -4,14 +4,14 @@
             <NuxtImg class="w-full h-full object-cover" src="images/contact-us-bg.webp" alt="About Us" width="" height="" />
         </div>
 		<div class="container relative z-10 text-center text-white py-12">
-            <div class="flex flex-col items-center gap-12">
+            <div class="flex flex-col items-center gap-6">
                 <ul class="flex items-center flex-wrap gap-2 text-xs">
                     <li><NuxtLink to="/">Home</NuxtLink></li>
                     <li class="flex"><Icon name="fa6-solid:angle-right" /></li>
                     <li>Contact Us</li>
                 </ul>
                 <h1 class="text-3xl lg:text-4xl font-bold">Connect With Moya’s Team</h1>
-                <p class="text-sm">If you are interested in our products or need customized solutions, please feel free to contact us</p>
+                <p class="text-base">If you are interested in our products or need customized solutions, please feel free to contact us</p>
             </div>
         </div>
 	</section>

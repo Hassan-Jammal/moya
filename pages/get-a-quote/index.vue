@@ -4,20 +4,18 @@
     </svg>
     <section class="mt-12 py-24 relative">
         <div class="container">
-            
-
-            <div class="w-full 2xl:w-2/3 mx-auto">
-                <div class="flex flex-col gap-4 text-white">
+            <div class="w-full 2xl:w-4/5 mx-auto">
+                <div class="flex flex-col gap-6 text-white">
                     <ul class="flex items-center flex-wrap gap-2 text-xs">
                         <li><NuxtLink to="/">Home</NuxtLink></li>
                         <li class="flex"><Icon name="fa6-solid:angle-right" /></li>
                         <li>Get a Quote</li>
                     </ul>
-                    <h1 class="text-3xl lg:text-4 xl font-bold">Get a Quote</h1>
-                    <p class="text-sm">Complete the form below and get in touch with us</p>
+                    <h1 class="text-3xl lg:text-4xl font-bold">Get a Quote</h1>
+                    <p class="text-base">Complete the form below and get in touch with us</p>
                 </div>
                 
-                <div class="flex flex-col gap-4 lg:gap-8 py-16 px-24 bg-[#F8F8F9] rounded-2xl mt-24">
+                <div class="flex flex-col gap-4 lg:gap-8 py-16 px-24 bg-[#F8F8F9] rounded-2xl mt-12">
                     <div class="flex max-lg:flex-col gap-4 lg:gap-8 justify-between items-start">
                         <div class="flex flex-col gap-1 w-full">
                             <label for="full-name" class="text-base">Full Name</label>
@@ -128,7 +126,7 @@
                         <p class="inline text-sm text-[#ACA8A8]">Yes, I agree to receive communications about Moya products and solutions and to the processing of my personal data under the <NuxtLink :to="'/privacy-policy'" class="text-primary">Privacy Policy</NuxtLink>, and <NuxtLink :to="'terms-and-conditions'" class="text-primary">Terms & Conditions</NuxtLink>.</p>
                     </div>
                     <div class="flex flex-col gap-1 w-full">
-                        <button :disabled="!isAcknowledged || isSubmitting" @click.prevent="handleSubmit" class="min-w-[120px] mx-auto p-2 text-white bg-primary hover:text-black hover:bg-white rounded-full select-none transition-all duration-300 ease-in-out disabled:bg-[#D4D4D4] mt-14">Submit</button>
+                        <button :disabled="!isAcknowledged || isSubmitting" @click.prevent="handleSubmit" class="min-w-[120px] mx-auto p-2 text-white bg-primary rounded-full select-none transition-all duration-300 ease-in-out disabled:bg-[#D4D4D4] mt-14">Submit</button>
                         <div v-if="submissionMessage" :class="{'text-red-500': isError, 'text-gray-500': !isError}">{{ submissionMessage }}</div>
                     </div>
                 </div>

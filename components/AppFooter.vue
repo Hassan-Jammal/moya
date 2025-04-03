@@ -54,9 +54,9 @@
                         <h4 class="text-white font-bold">Solutions</h4>
                         
                         <div class="flex flex-col gap-4">
-                            <NuxtLink to="/solutions/core-network/mno-solutions">MNO Solution</NuxtLink>
+                            <NuxtLink to="/solutions/core-network/mno-solution">MNO Solution</NuxtLink>
                             <NuxtLink to="/solutions/core-network/fwa-solution">FWA Solution</NuxtLink>
-                            <NuxtLink to="/solutions/core-network/enterprise-solution">Enterprise Solution</NuxtLink>
+                            <NuxtLink to="/solutions/core-network/enterprise-private-network-solution">Enterprise Solution</NuxtLink>
                             <NuxtLink to="/solutions/4g5g-ran/dense-area-solution">Dense Area Solution</NuxtLink>
                             <NuxtLink to="/solutions/4g5g-ran/rural-area-solution">Rural Area Solution</NuxtLink>
                             <NuxtLink to="/solutions/4g5g-ran/indoor-solution">Indoor Solution</NuxtLink>
