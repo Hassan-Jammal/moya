@@ -32,7 +32,7 @@
 
 	<section v-if="categoryData" class="my-12 py-12">
 		<div class="container">
-			<div class="flex max-lg:flex-col flex-row justify-between lg:items-center gap-4 mt-12 overflow-scroll">
+			<div class="flex max-lg:flex-col flex-row justify-between lg:items-center gap-4 overflow-scroll">
                 <h2 class="text-xl lg:text-3xl font-semibold">Get to Know {{ subCategoryData.acronym }}</h2>
 
 				<button class="flex lg:justify-between items-center gap-2 text-base text-primary" @click="onToggle">

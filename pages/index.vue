@@ -87,7 +87,7 @@
         </div>
     </section>
 
-    <section class="mt-12 py-24 bg-[#F8F8F9]">
+    <section class="mt-12 py-12 bg-[#F8F8F9]">
         <div class="container">
             <div class="flex flex-col gap-4">
                 <h2 class="text-2xl lg:text-5xl font-semibold">Why Choose Moya</h2>
@@ -148,7 +148,7 @@
         </div>
     </section>
 
-    <section class="mt-12 py-24">
+    <section class="mt-12 py-12">
         <div class="container">
             <div class="flex flex-col gap-4">
                 <h2 class="text-2xl lg:text-5xl font-semibold">Moya's Products</h2>
@@ -198,7 +198,7 @@
         </div>
     </section>
 
-    <section class="mt-12 pt-24 pb-56 bg-[#F8F8F9] text-center">
+    <section class="mt-12 pt-24 pb-24 bg-[#F8F8F9] text-center">
 		<div class="container">
 			<h2 class="text-2xl lg:text-5xl font-semibold">The Heart of Moya: <br /> Our Core Identity and Vision</h2>
 			<div class="grid lg:grid-cols-3 gap-8 w-4/5 mx-auto mt-12 lg:mt-24">
@@ -406,7 +406,7 @@ import categories from '~/data/products';
         {
             title: "Seamless Connectivity",
             description: "Stay Connected Anytime, Anywhere. <br /> Experience uninterrupted communication with our reliable network.",
-            icon: "seamless-connectivity",
+            icon: "seamless-connectivity-homepage",
         },
         {
             title: "Advanced Technology",

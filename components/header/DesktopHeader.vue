@@ -82,7 +82,6 @@
         menuItems: Array,
     });
 
-    
     const navMenu = ref(null);
 
     const hideNav = () => {

@@ -538,8 +538,8 @@ const categories = [
                         image: "fiber-solution-metro-scenario"
                     },
                     {
-                        title: "Merto",
-                        image: "fiber-solution-community-scenario"
+                        title: "Residence Building",
+                        image: "fiber-solution-residence-building-scenario"
                     },
                 ],
                 products: [
@@ -567,12 +567,16 @@ const categories = [
                 description: "Wireless repeaters enhance network coverage by amplifying and retransmitting signals, ensuring reliable and high-quality connectivity in areas  with weak reception. Designed for rural deployments. these solutions support multiple frequency bands and network systems, optimizing signal strength while reducing infrastructure costs.",
                 features: [
                     {
-                        title: "Fiber-to-the-Antenna (FTTA)",
-                        icon: "fiber-to-the-antenna", 
+                        title: "Signal Amplification",
+                        icon: "signal-amplification", 
                     },
                     {
-                        title: "Cloud-RAN (C-RAN) with Fiber Backhaul",
-                        icon: "cloud-ran-with-fiber-backhaul",
+                        title: "Seamless Connectivity",
+                        icon: "seamless-connectivity",
+                    },
+                    {
+                        title: "Optimized for low power consumption",
+                        icon: "operated-in-low-power-consumption",
                     }
                 ],
                 image: "wireless-solution-partner",

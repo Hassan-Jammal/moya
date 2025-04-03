@@ -49,51 +49,98 @@
                     </div>
                 </div>
 
-                <div class="col-span-2 grid sm:grid-cols-3 gap-12 place-items-end items-start">
-                    <div class="flex flex-col gap-4 lg:gap-8">
+                <ul class="col-span-2 grid sm:grid-cols-3 gap-12 lg:place-items-end items-start">
+                    <li v-for="(item, index) in menuItems" :key="index" :class="{ 'active': activeIndices.includes(index) }" @click="toggleActive(index)" class="flex flex-col sm:gap-10 group">
+                        <template v-if="item.clickable">
+                            <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 font-AeonikBold text-white hover:text-primary text-xl transition-all duration-300 ease-in-out">
+                                <NuxtLink :to="`/${item.path}`">{{ t(`General.Links.${item.title}`) }}</NuxtLink>
+                                <NuxtImg loading="lazy" v-if="item.links && item.links.length > 0" class="block sm:hidden transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-white.svg" :alt="t(`General.Alts.Chevron Down White`)" width="14" height="8" />
+                            </div>
+                        </template>
+
+                        <!-- Render as text if not clickable -->
+                        <template v-else>
+                            <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 font-AeonikBold text-white text-xl">
+                                <span>{{ t(`General.Links.${item.title}`) }}</span>
+                                <NuxtImg loading="lazy" v-if="item.links && item.links.length > 0" class="block sm:hidden transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-white.svg" :alt="t(`General.Alts.Chevron Down White`)" width="14" height="8" />
+                            </div>
+                        </template>
+
+                        <ul v-if="item.links && item.links.length > 0" class="children-menu flex flex-col gap-2 max-sm:max-h-0 max-sm:ml-4 text-base text-[#D4D4D4] overflow-hidden transition-all duration-300 ease-in-out">
+                            <li v-for="(subItem, linkIndex) in item.links" :key="linkIndex">
+                                <NuxtLink :to="`/${subItem.path}`" class="hover:text-primary transition-all duration-300 ease-in-out">{{ t(`General.Links.${subItem.name}`) }}</NuxtLink>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- <ul class="col-span-2 grid sm:grid-cols-3 gap-12 lg:place-items-end items-start">
+                    <li class="flex flex-col gap-4 lg:gap-8">
                         <h4 class="text-white font-bold">Solutions</h4>
                         
-                        <div class="flex flex-col gap-4">
-                            <NuxtLink to="/solutions/core-network/mno-solution">MNO Solution</NuxtLink>
-                            <NuxtLink to="/solutions/core-network/fwa-solution">FWA Solution</NuxtLink>
-                            <NuxtLink to="/solutions/core-network/enterprise-private-network-solution">Enterprise Solution</NuxtLink>
-                            <NuxtLink to="/solutions/4g5g-ran/dense-area-solution">Dense Area Solution</NuxtLink>
-                            <NuxtLink to="/solutions/4g5g-ran/rural-area-solution">Rural Area Solution</NuxtLink>
-                            <NuxtLink to="/solutions/4g5g-ran/indoor-solution">Indoor Solution</NuxtLink>
-                            <NuxtLink to="/solutions/repeater/fiber-solution">Fiber Solution</NuxtLink>
-                            <NuxtLink to="/solutions/repeater/wireless-solution">Wireless Solution</NuxtLink>
-                            <NuxtLink to="/solutions/repeater/ics-wireless-solution">ICS Wireless Solution</NuxtLink>
-                        </div>
-                    </div>
+                        <ul :class="{ 'active': activeIndices.includes(index) }" @click="toggleActive(index)" class="flex flex-col gap-4 group">
+                            <li 
+                                v-for="(solution, idx) in solutions" 
+                                :key="idx" 
+                                class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out"
+                            >
+                            <NuxtLink :to="solution.link">{{ solution.name }}</NuxtLink>
+                            </li>
+                        </ul>
+                    </li>
 
-                    <div class="flex flex-col gap-4 lg:gap-8">
+                    <li class="flex flex-col gap-4 lg:gap-8">
                         <h4 class="text-white font-bold">Prodcuts</h4>
 
-                        <div class="flex flex-col gap-4">
-                            <NuxtLink to="/products/core-network/evolved-packet-core">Eveloved Packet Core (EPC)</NuxtLink>
-                            <NuxtLink to="/products/core-network/ip-multimedia-subsystem">IP Multimeda Subsystem (IMS)</NuxtLink>
-                            <NuxtLink to="/products/4g5g-ran/baseband-unit">Baseband Unit (BBU)</NuxtLink>
-                            <NuxtLink to="/products/4g5g-ran/remote-radio-unit">Remote Radio Unit (RRU)</NuxtLink>
-                            <NuxtLink to="/products/4g5g-ran/integrated-enb">Integrated eNB (Outdoor)</NuxtLink>
-                            <NuxtLink to="/products/4g5g-ran/femtocell">Femtocell (Indoor)</NuxtLink>
-                            <NuxtLink to="/products/repeater/fiber-repeater">Fiber Repeater</NuxtLink>
-                            <NuxtLink to="/products/repeater/wireless-repeater">Wireless Repeater</NuxtLink>
-                            <NuxtLink to="/products/repeater/ics-wireless-repeater">ICS Repeater</NuxtLink>
-                            <NuxtLink to="/products/antenna/omni-fiberglass-antenna">Omni Antenna</NuxtLink>
-                            <NuxtLink to="/products/antenna/omni-cluster-antenna">Cluster Antenna</NuxtLink>
-                            <NuxtLink to="/products/antenna/panel-antenna">Panel Antenna</NuxtLink>
-                        </div>  
-                    </div>
+                        <ul class="flex flex-col gap-4">
+                            <li class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
+                                <NuxtLink to="/products/core-network/evolved-packet-core">Eveloved Packet Core (EPC)</NuxtLink>
+                            </li>
+                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
+                                <NuxtLink to="/products/core-network/ip-multimedia-subsystem">IP Multimeda Subsystem (IMS)</NuxtLink>
+                            </div>
+                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
+                                <NuxtLink to="/products/4g5g-ran/baseband-unit">Baseband Unit (BBU)</NuxtLink>
+                            </div>
+                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
+                                <NuxtLink to="/products/4g5g-ran/remote-radio-unit">Remote Radio Unit (RRU)</NuxtLink>
+                            </div>
+                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
+                                <NuxtLink to="/products/4g5g-ran/integrated-enb">Integrated eNB (Outdoor)</NuxtLink>
+                            </div>
+                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
+                                <NuxtLink to="/products/4g5g-ran/femtocell">Femtocell (Indoor)</NuxtLink>
+                            </div>
+                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
+                                <NuxtLink to="/products/repeater/fiber-repeater">Fiber Repeater</NuxtLink>
+                            </div>
+                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
+                                <NuxtLink to="/products/repeater/wireless-repeater">Wireless Repeater</NuxtLink>
+                            </div>
+                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
+                                <NuxtLink to="/products/repeater/ics-wireless-repeater">ICS Repeater</NuxtLink>
+                            </div>
+                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
+                                <NuxtLink to="/products/antenna/omni-fiberglass-antenna">Omni Antenna</NuxtLink>
+                            </div>
+                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
+                                <NuxtLink to="/products/antenna/omni-cluster-antenna">Cluster Antenna</NuxtLink>
+                            </div>
+                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
+                                <NuxtLink to="/products/antenna/panel-antenna">Panel Antenna</NuxtLink>
+                            </div>
+                        </ul>  
+                    </li>
 
-                    <div class="flex flex-col gap-4 lg:gap-8">
+                    <li class="flex flex-col gap-4 lg:gap-8">
                         <h4 class="text-white font-bold">Company</h4>
 
-                        <div class="flex flex-col gap-4">
+                        <ul class="flex flex-col gap-4">
                             <NuxtLink to="/about-us">About Us</NuxtLink>
                             <NuxtLink to="/contact-us">Contact Us</NuxtLink>
-                        </div>  
-                    </div>
-                </div>
+                        </ul>  
+                    </li>
+                </ul> -->
             </div>
 
             <!-- <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8">
@@ -243,4 +290,79 @@
             newsletter_email: '',
         };
     };
+
+
+    const menuItems = ref([
+        {
+            title: "Solutions",
+            clickable: false,
+            links: [
+                { name: "MNO Solution", link: "/solutions/core-network/mno-solution" },
+                { name: "FWA Solution", link: "/solutions/core-network/fwa-solution" },
+                { name: "Enterprise Solution", link: "/solutions/core-network/enterprise-private-network-solution" },
+                { name: "Dense Area Solution", link: "/solutions/4g5g-ran/dense-area-solution" },
+                { name: "Rural Area Solution", link: "/solutions/4g5g-ran/rural-area-solution" },
+                { name: "Indoor Solution", link: "/solutions/4g5g-ran/indoor-solution" },
+                { name: "Fiber Solution", link: "/solutions/repeater/fiber-solution" },
+                { name: "Wireless Solution", link: "/solutions/repeater/wireless-solution" },
+                { name: "ICS Wireless Solution", link: "/solutions/repeater/ics-wireless-solution" },
+            ]
+        },
+        {
+            title: "Products",
+            clickable: false,
+            links: [
+                { name: "Evolved Packet Core (EPC)", link: "/products/core-network/evolved-packet-core" },
+                { name: "IP Multimedia Subsystem (IMS)", link: "/products/core-network/ip-multimedia-subsystem" },
+                { name: "Baseband Unit (BBU)", link: "/products/4g5g-ran/baseband-unit" },
+                { name: "Remote Radio Unit (RRU)", link: "/products/4g5g-ran/remote-radio-unit" },
+                { name: "Integrated eNB (Outdoor)", link: "/products/4g5g-ran/integrated-enb" },
+                { name: "Femtocell (Indoor)", link: "/products/4g5g-ran/femtocell" },
+                { name: "Fiber Repeater", link: "/products/repeater/fiber-repeater" },
+                { name: "Wireless Repeater", link: "/products/repeater/wireless-repeater" },
+                { name: "ICS Repeater", link: "/products/repeater/ics-wireless-repeater" },
+                { name: "Omni Antenna", link: "/products/antenna/omni-fiberglass-antenna" },
+                { name: "Cluster Antenna", link: "/products/antenna/omni-cluster-antenna" },
+                { name: "Panel Antenna", link: "/products/antenna/panel-antenna" },
+            ]
+        },
+        {
+            title: "About Us",
+            clickable: true,
+            path: "about-us"
+        },
+        {
+            title: "Contact Us",
+            clickable: true,
+            path: "contact-us"
+        }
+    ]);
+
+    const { width } = useWindowSize() // Optional: width tracking
+
+    // Function to toggle active index
+    const toggleActive = (index) => {
+        if (width.value <= 640) {
+            const indexInArray = activeIndices.value.indexOf(index);
+            if (indexInArray === -1) {
+                activeIndices.value.push(index); // Add index if not present
+            } else {
+                activeIndices.value.splice(indexInArray, 1); // Remove index if already present
+            }
+        }
+    };
+
+    const clearActiveOnResize = () => {
+        if (width.value > 640) {
+            activeIndices.value = []; // Clear active indices if the screen is wider than 640
+        }
+    };
+
+    onMounted(() => {
+        window.addEventListener('resize', clearActiveOnResize);
+    });
+
+    onBeforeUnmount(() => {
+        window.removeEventListener('resize', clearActiveOnResize); // Clean up the listener
+    });
 </script>

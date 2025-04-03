@@ -47,9 +47,9 @@
 		</div>
     </section>
  
-    <section v-if="solutionData" class="py-12 bg-[#F8F8F9]">
+    <section v-if="solutionData" class="my-12 py-24 bg-[#F8F8F9]">
         <div class="container">
-            <div class="py-24 px-4 lg:px-14 text-white rounded-3xl mt-12 bg-[url('/images/solutions-category-bg.png')] bg-cover bg-center">
+            <div class="py-24 px-4 lg:px-14 text-white rounded-3xl bg-[url('/images/solutions-category-bg.png')] bg-cover bg-center">
                 <div class="flex flex-col items-center text-center gap-8 lg:w-1/2 mx-auto">
                     <h3 class="text-sm uppercase">Key Benefits</h3>
                     <h2 class="text-xl lg:text-3xl font-semibold">{{ solutionData.benefits.title }}</h2>
@@ -59,7 +59,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-col justify-between gap-8 my-12 py-12">
+            <div class="flex flex-col justify-between gap-8 mt-12 pt-12">
                 <div>
                     <h4 class="text-sm">Application Scenario</h4>
                     <h2 class="text-xl lg:text-3xl font-semibold mt-4">Tailored Scenario for Every Challenge</h2>

@@ -50,10 +50,10 @@
         </div>
 	</section>
 
-    <section v-if="productData" class="py-12 bg-[#F8F8F9]">
+    <section v-if="productData" class="py-24 bg-[#F8F8F9]">
         <div class="container">
             <AdvantagesLayout :productData="productData" />
-            <SpecsLayout :productData="productData" :class="{'mt-24 lg:mt-48': productData.advantages}" />
+            <SpecsLayout :productData="productData" :class="{'mt-24': productData.advantages}" />
         </div>
 	</section>
 
