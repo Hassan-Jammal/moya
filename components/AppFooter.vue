@@ -24,32 +24,34 @@
                             <a href="mailto:evan.wu@montymobile.com">evan.wu@montymobile.com</a>
                         </div>
 
-                        <div class="flex flex-col gap-2 mt-8">
-                            <div class="relative">
-                                <input v-model="form.newsletter_email" type="text" placeholder="Enter your email to receive latest updates" class="w-full py-4 px-6 border border-[#3F3F3F] rounded-lg bg-transparent text-xs" />
-                                <Icon :disabled="isSubmitting" @click.prevent="handleSubmit" name="fa6-solid:arrow-right" class="absolute top-1/2 right-6 -translate-y-1/2 bg-primary text-xl cursor-pointer transition duration-300 ease-in-out group-hover:translate-x-1" />
+                        <div class="hidden lg:flex flex-col gap-4 lg:gap-8">
+                            <div class="flex flex-col gap-2 mt-8">
+                                <div class="relative">
+                                    <input v-model="form.newsletter_email" type="text" placeholder="Enter your email to receive latest updates" class="w-full py-4 px-6 border border-[#3F3F3F] rounded-lg bg-transparent text-xs" />
+                                    <Icon :disabled="isSubmitting" @click.prevent="handleSubmit" name="fa6-solid:arrow-right" class="absolute top-1/2 right-6 -translate-y-1/2 bg-primary text-xl cursor-pointer transition duration-300 ease-in-out group-hover:translate-x-1" />
+                                </div>
+                                <div v-if="errors.newsletter_email" class="text-xs text-red-500">{{ errors.newsletter_email }}</div>
+                                <div v-if="submissionMessage" :class="{'text-red-500': isError, 'text-gray-500': !isError}">{{ submissionMessage }}</div>
                             </div>
-                            <div v-if="errors.newsletter_email" class="text-xs text-red-500">{{ errors.newsletter_email }}</div>
-                            <div v-if="submissionMessage" :class="{'text-red-500': isError, 'text-gray-500': !isError}">{{ submissionMessage }}</div>
-                        </div>
 
-                        <hr class="border-[#A2A2A2]/50" />
+                            <hr class="border-[#A2A2A2]/50" />
 
-                        <div class="flex gap-8">
-                            <NuxtLink to="/" class="flex flex-shrink-0 justify-center items-center text-2xl">
-                                <Icon name="fa6-brands:facebook-f" />
-                            </NuxtLink>
-                            <NuxtLink to="/" class="flex flex-shrink-0 justify-center items-center text-2xl">
-                                <Icon name="fa6-brands:linkedin-in" />
-                            </NuxtLink>
-                            <NuxtLink to="/" class="flex flex-shrink-0 justify-center items-center text-2xl">
-                                <Icon name="fa6-brands:youtube" />
-                            </NuxtLink>
+                            <div class="flex gap-8">
+                                <NuxtLink to="/" class="flex flex-shrink-0 justify-center items-center text-2xl">
+                                    <Icon name="fa6-brands:facebook-f" />
+                                </NuxtLink>
+                                <NuxtLink to="/" class="flex flex-shrink-0 justify-center items-center text-2xl">
+                                    <Icon name="fa6-brands:linkedin-in" />
+                                </NuxtLink>
+                                <NuxtLink to="/" class="flex flex-shrink-0 justify-center items-center text-2xl">
+                                    <Icon name="fa6-brands:youtube" />
+                                </NuxtLink>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <ul class="col-span-2 grid sm:grid-cols-3 gap-6 lg:gap-12 lg:justify-items-end !items-start">
+                <ul class="lg:col-span-2 grid sm:grid-cols-3 gap-6 lg:gap-12 lg:justify-items-end !items-start">
                     <li v-for="(item, index) in menuItems" :key="index" :class="{ 'active': activeIndices.includes(index) }" @click="toggleActive(index)" class="flex flex-col sm:gap-10 group">
                         <template v-if="item.clickable">
                             <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 text-white hover:text-primary transition-all duration-300 ease-in-out">
@@ -73,74 +75,31 @@
                         </ul>
                     </li>
                 </ul>
+            </div>
 
-                <!-- <ul class="col-span-2 grid sm:grid-cols-3 gap-12 lg:place-items-end items-start">
-                    <li class="flex flex-col gap-4 lg:gap-8">
-                        <h4 class="text-white font-bold">Solutions</h4>
-                        
-                        <ul :class="{ 'active': activeIndices.includes(index) }" @click="toggleActive(index)" class="flex flex-col gap-4 group">
-                            <li 
-                                v-for="(solution, idx) in solutions" 
-                                :key="idx" 
-                                class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out"
-                            >
-                            <NuxtLink :to="solution.link">{{ solution.name }}</NuxtLink>
-                            </li>
-                        </ul>
-                    </li>
+            <hr class="mb-12 mt-12 border-[#A2A2A2]/50" />
 
-                    <li class="flex flex-col gap-4 lg:gap-8">
-                        <h4 class="text-white font-bold">Prodcuts</h4>
+            <div class="flex lg:hidden flex-col gap-4 lg:gap-8">
+                <div class="flex flex-col gap-2">
+                    <div class="relative">
+                        <input v-model="form.newsletter_email" type="text" placeholder="Enter your email to receive latest updates" class="w-full py-4 px-6 border border-[#3F3F3F] rounded-lg bg-transparent text-xs" />
+                        <Icon :disabled="isSubmitting" @click.prevent="handleSubmit" name="fa6-solid:arrow-right" class="absolute top-1/2 right-6 -translate-y-1/2 bg-primary text-xl cursor-pointer transition duration-300 ease-in-out group-hover:translate-x-1" />
+                    </div>
+                    <div v-if="errors.newsletter_email" class="text-xs text-red-500">{{ errors.newsletter_email }}</div>
+                    <div v-if="submissionMessage" :class="{'text-red-500': isError, 'text-gray-500': !isError}">{{ submissionMessage }}</div>
+                </div>
 
-                        <ul class="flex flex-col gap-4">
-                            <li class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
-                                <NuxtLink to="/products/core-network/evolved-packet-core">Eveloved Packet Core (EPC)</NuxtLink>
-                            </li>
-                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
-                                <NuxtLink to="/products/core-network/ip-multimedia-subsystem">IP Multimeda Subsystem (IMS)</NuxtLink>
-                            </div>
-                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
-                                <NuxtLink to="/products/4g5g-ran/baseband-unit">Baseband Unit (BBU)</NuxtLink>
-                            </div>
-                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
-                                <NuxtLink to="/products/4g5g-ran/remote-radio-unit">Remote Radio Unit (RRU)</NuxtLink>
-                            </div>
-                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
-                                <NuxtLink to="/products/4g5g-ran/integrated-enb">Integrated eNB (Outdoor)</NuxtLink>
-                            </div>
-                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
-                                <NuxtLink to="/products/4g5g-ran/femtocell">Femtocell (Indoor)</NuxtLink>
-                            </div>
-                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
-                                <NuxtLink to="/products/repeater/fiber-repeater">Fiber Repeater</NuxtLink>
-                            </div>
-                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
-                                <NuxtLink to="/products/repeater/wireless-repeater">Wireless Repeater</NuxtLink>
-                            </div>
-                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
-                                <NuxtLink to="/products/repeater/ics-wireless-repeater">ICS Repeater</NuxtLink>
-                            </div>
-                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
-                                <NuxtLink to="/products/antenna/omni-fiberglass-antenna">Omni Antenna</NuxtLink>
-                            </div>
-                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
-                                <NuxtLink to="/products/antenna/omni-cluster-antenna">Cluster Antenna</NuxtLink>
-                            </div>
-                                <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 transition-all duration-300 ease-in-out">
-                                <NuxtLink to="/products/antenna/panel-antenna">Panel Antenna</NuxtLink>
-                            </div>
-                        </ul>  
-                    </li>
-
-                    <li class="flex flex-col gap-4 lg:gap-8">
-                        <h4 class="text-white font-bold">Company</h4>
-
-                        <ul class="flex flex-col gap-4">
-                            <NuxtLink to="/about-us">About Us</NuxtLink>
-                            <NuxtLink to="/contact-us">Contact Us</NuxtLink>
-                        </ul>  
-                    </li>
-                </ul> -->
+                <div class="flex justify-center gap-8">
+                    <NuxtLink to="/" class="flex flex-shrink-0 justify-center items-center text-2xl">
+                        <Icon name="fa6-brands:facebook-f" />
+                    </NuxtLink>
+                    <NuxtLink to="/" class="flex flex-shrink-0 justify-center items-center text-2xl">
+                        <Icon name="fa6-brands:linkedin-in" />
+                    </NuxtLink>
+                    <NuxtLink to="/" class="flex flex-shrink-0 justify-center items-center text-2xl">
+                        <Icon name="fa6-brands:youtube" />
+                    </NuxtLink>
+                </div>
             </div>
 
             <hr class="mb-12 mt-12 border-[#A2A2A2]/50" />

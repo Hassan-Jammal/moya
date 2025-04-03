@@ -4,12 +4,12 @@
             <!-- <NuxtImg class="mix-blend-color-dodge w-full" src="/images/main-banner.png" alt="" width="1444" height="309" /> -->
             <video width="100%" autoplay loop muted playsinline class="hidden lg:block w-full h-full object-cover opacity-full">
                 <!-- <source src="/images/products-bg.mp4" type="video/mp4"> -->
-                <source src="/images/background-desktop.webm" type="video/webm">
+                <source src="/images/background-desktop.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <video width="100%" autoplay loop muted playsinline class="block lg:hidden w-full h-full object-cover opacity-full">
                 <!-- <source src="/images/products-bg.mp4" type="video/mp4"> -->
-                <source src="/images/background-mobile.webm" type="video/webm">
+                <source src="/images/background-mobile.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
