@@ -115,11 +115,11 @@
 
 				ogTitle: subCategoryData.value.title,
 				ogDescription: `Discover ${subCategoryData.value.title}, part of Moya's Core Network solutions.`,
-				ogImage: "",
+                ogImage: 'https://moya.com/images/og-image-1200x630.png',
 
 				twitterTitle: subCategoryData.value.title,
 				twitterDescription: `Learn more about ${subCategoryData.value.title}.`,
-				twitterCard: "summary_large_image",
+				twitterCard: 'summary_large_image',
 			});
 		}
 	});

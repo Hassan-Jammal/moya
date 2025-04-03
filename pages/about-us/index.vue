@@ -88,7 +88,7 @@
 
         ogTitle: 'About Us',
         ogDescription: '',
-        ogImage: '',
+        ogImage: 'https://moya.com/images/og-image-1200x630.png',
 
         twitterTitle: 'About Us',
         twitterDescription: '',

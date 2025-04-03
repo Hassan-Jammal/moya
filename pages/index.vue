@@ -2,9 +2,14 @@
     <section class="h-[calc(100vh-var(--header-height))] flex items-center relative bg-black">
         <div class="absolute bottom-0 left-0 w-full z-[1]">
             <!-- <NuxtImg class="mix-blend-color-dodge w-full" src="/images/main-banner.png" alt="" width="1444" height="309" /> -->
-            <video width="100%" autoplay loop muted playsinline class="w-full h-full object-cover opacity-full">
+            <video width="100%" autoplay loop muted playsinline class="hidden lg:block w-full h-full object-cover opacity-full">
                 <!-- <source src="/images/products-bg.mp4" type="video/mp4"> -->
-                <source src="/images/background.webm" type="video/webm">
+                <source src="/images/background-desktop.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+            <video width="100%" autoplay loop muted playsinline class="block lg:hidden w-full h-full object-cover opacity-full">
+                <!-- <source src="/images/products-bg.mp4" type="video/mp4"> -->
+                <source src="/images/background-mobile.webm" type="video/webm">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -13,7 +18,7 @@
         </div> -->
         <div class="container">
             <div class="relative flex flex-col gap-8 max-lg:items-center text-white max-lg:text-center z-[3] max-lg:-mt-48">
-                <h1 class="text-2xl lg:text-6xl font-bold lg:w-2/5">Connecting Your World<span class="text-primary"> Everywhere</span></h1>
+                <h1 class="text-3xl lg:text-6xl font-bold lg:w-2/5">Connecting Your World<span class="text-primary"> Everywhere</span></h1>
                 <p class="text-sm text-[#ACA8A8] lg:w-1/3">Stay connected effortlessly with our reliable telecom solutions, ensuring seamless communication anytime, anywhere. Experience high-speed networks, crystal-clear calls, and innovative services.</p>
                 
                 <div class="flex gap-4">
@@ -213,19 +218,18 @@
 </template>
 
 <script setup>
-	import { ClientOnly } from '#components';
-import categories from '~/data/products';
+    import categories from '~/data/products';
     import slugify from '~/utils/slugify';
     
     useSeoMeta({
-        title: 'Moya',
+        title: 'Connecting Your World Everywhere',
         description: 'Stay connected effortlessly with our reliable telecom solutions, ensuring seamless communication anytime, anywhere. Experience high-speed networks, crystal-clear calls, and innovative services.',
 
-        ogTitle: 'Moya',
+        ogTitle: 'Connecting Your World Everywhere',
         ogDescription: 'Stay connected effortlessly with our reliable telecom solutions, ensuring seamless communication anytime, anywhere. Experience high-speed networks, crystal-clear calls, and innovative services.',
-        ogImage: '',
+        ogImage: 'https://moya.com/images/og-image-1200x630.png',
 
-        twitterTitle: 'Moya',
+        twitterTitle: 'Connecting Your World Everywhere',
         twitterDescription: 'Stay connected effortlessly with our reliable telecom solutions, ensuring seamless communication anytime, anywhere. Experience high-speed networks, crystal-clear calls, and innovative services.',
         twitterCard: 'summary_large_image',
     })
@@ -248,7 +252,7 @@ import categories from '~/data/products';
         activeCategory.value = index;
         const subCategories = categories[index]?.sub_categories || [];
         // showExplore.value = subCategories.length > 1;
-        exploreLink.value = `products/${slugify(categories[index].title)}`;
+        // exploreLink.value = `products/${slugify(categories[index].title)}`;
     }
     
     // // Set the initial explore link when the component is mounted

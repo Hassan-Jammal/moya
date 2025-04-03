@@ -49,26 +49,26 @@
                     </div>
                 </div>
 
-                <ul class="col-span-2 grid sm:grid-cols-3 gap-12 lg:place-items-end items-start">
+                <ul class="col-span-2 grid sm:grid-cols-3 gap-6 lg:gap-12 lg:justify-items-end !items-start">
                     <li v-for="(item, index) in menuItems" :key="index" :class="{ 'active': activeIndices.includes(index) }" @click="toggleActive(index)" class="flex flex-col sm:gap-10 group">
                         <template v-if="item.clickable">
-                            <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 font-AeonikBold text-white hover:text-primary text-xl transition-all duration-300 ease-in-out">
-                                <NuxtLink :to="`/${item.path}`">{{ t(`General.Links.${item.title}`) }}</NuxtLink>
-                                <NuxtImg loading="lazy" v-if="item.links && item.links.length > 0" class="block sm:hidden transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-white.svg" :alt="t(`General.Alts.Chevron Down White`)" width="14" height="8" />
+                            <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 text-white hover:text-primary transition-all duration-300 ease-in-out">
+                                <NuxtLink :to="`/${item.path}`">{{ item.title }}</NuxtLink>
+                                <NuxtImg loading="lazy" v-if="item.links && item.links.length > 0" class="block sm:hidden transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-white.svg" alt="Chevron Down White" width="14" height="8" />
                             </div>
                         </template>
 
                         <!-- Render as text if not clickable -->
                         <template v-else>
-                            <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 font-AeonikBold text-white text-xl">
-                                <span>{{ t(`General.Links.${item.title}`) }}</span>
-                                <NuxtImg loading="lazy" v-if="item.links && item.links.length > 0" class="block sm:hidden transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-white.svg" :alt="t(`General.Alts.Chevron Down White`)" width="14" height="8" />
+                            <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 text-white">
+                                <span class="text-white font-bold text-base">{{ item.title }}</span>
+                                <NuxtImg loading="lazy" v-if="item.links && item.links.length > 0" class="block sm:hidden transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-white.svg" alt="Chevron Down White" width="14" height="8" />
                             </div>
                         </template>
 
-                        <ul v-if="item.links && item.links.length > 0" class="children-menu flex flex-col gap-2 max-sm:max-h-0 max-sm:ml-4 text-base text-[#D4D4D4] overflow-hidden transition-all duration-300 ease-in-out">
+                        <ul v-if="item.links && item.links.length > 0" class="children-menu flex flex-col gap-4 max-sm:max-h-0 max-sm:ml-4 text-[#D4D4D4] overflow-hidden transition-all duration-300 ease-in-out">
                             <li v-for="(subItem, linkIndex) in item.links" :key="linkIndex">
-                                <NuxtLink :to="`/${subItem.path}`" class="hover:text-primary transition-all duration-300 ease-in-out">{{ t(`General.Links.${subItem.name}`) }}</NuxtLink>
+                                <NuxtLink :to="`${subItem.link}`" class="hover:text-primary transition-all duration-300 ease-in-out">{{ subItem.name }}</NuxtLink>
                             </li>
                         </ul>
                     </li>
@@ -143,27 +143,9 @@
                 </ul> -->
             </div>
 
-            <!-- <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8">
-                <div class="">
-                    <hr class="my-8 border-[#A2A2A2]/50" />
+            <hr class="mb-12 mt-12 border-[#A2A2A2]/50" />
 
-                    <div class="flex gap-4">
-                        <NuxtLink to="/" class="flex flex-shrink-0 justify-center items-center size-10 bg-[#3F3F3F]/25 rounded-md">
-                            <Icon name="fa6-brands:facebook-f" />
-                        </NuxtLink>
-                        <NuxtLink to="/" class="flex flex-shrink-0 justify-center items-center size-10 bg-[#3F3F3F]/25 rounded-md">
-                            <Icon name="fa6-brands:linkedin-in" />
-                        </NuxtLink>
-                        <NuxtLink to="/" class="flex flex-shrink-0 justify-center items-center size-10 bg-[#3F3F3F]/25 rounded-md">
-                            <Icon name="fa6-brands:youtube" />
-                        </NuxtLink>
-                    </div>
-                </div>
-            </div> -->
-
-            <hr class="mb-12 mt-24 border-[#A2A2A2]/50" />
-
-            <div class="flex justify-between items-center">
+            <div class="flex max-sm:flex-col max-sm:gap-4 justify-between items-center">
                 <div class="flex gap-4">
                     <NuxtLink to="/privacy-policy" class="underline">Privacy Policy</NuxtLink>
                     <NuxtLink to="/terms-and-conditions" class="underline">Terms & conditions</NuxtLink>
@@ -177,6 +159,8 @@
 </template>
 
 <script setup>
+    import { useWindowSize } from '@vueuse/core'
+
     const route = useRoute();
     const isIncluded = computed(() => route.path === '/' || route.path === '/contact-us' || route.path === '/get-a-quote')
 
@@ -292,6 +276,8 @@
     };
 
 
+    const activeIndices = ref([]); // Track the active indices
+
     const menuItems = ref([
         {
             title: "Solutions",
@@ -327,14 +313,12 @@
             ]
         },
         {
-            title: "About Us",
-            clickable: true,
-            path: "about-us"
-        },
-        {
-            title: "Contact Us",
-            clickable: true,
-            path: "contact-us"
+            title: "Company",
+            clickable: false,
+            links: [
+                { name: "About Us", link: "/about-us" },
+                { name: "Contact Us", link: "/contact-us" },
+            ]
         }
     ]);
 

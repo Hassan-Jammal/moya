@@ -139,7 +139,7 @@
                 
                 ogTitle: `${productData.value.title} - ${subCategoryData.value.title} - ${categoryData.value.title}`,
                 ogDescription: `Explore top solutions in ${productData.value.title}.`,
-                ogImage: productData.value.image || '',
+                ogImage: 'https://moya.com/images/og-image-1200x630.png',
 
                 twitterTitle: `${productData.value.title} - ${subCategoryData.value.title} - ${categoryData.value.title}`,
                 twitterDescription: `Explore ${productData.value.title} for innovative solutions.`,

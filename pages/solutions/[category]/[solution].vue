@@ -131,8 +131,8 @@
                 
                 ogTitle: `${solutionData.value.title} - ${categoryData.value.title}`,
                 ogDescription: `Explore top solutions in ${solutionData.value.title}.`,
-                ogImage: solutionData.value.image || '',
-
+                ogImage: 'https://moya.com/images/og-image-1200x630.png',
+                
                 twitterTitle: `${solutionData.value.title} - ${categoryData.value.title}`,
                 twitterDescription: `Explore ${solutionData.value.title} for innovative solutions.`,
                 twitterCard: 'summary_large_image',

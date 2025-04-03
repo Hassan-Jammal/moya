@@ -1,114 +1,130 @@
 const categories = [
     {
-        title: "Core Network",
-        description: "Moya's Core Network is the central part of a telecommunications network that manages data routing, mobility, authentication, and service delivery.",
-        image: "core-network",
-        layout: "secondary",
-        features: [
-            {
-                title: "Carrier-grade guarantee",
-                icon: "carrier-grade-guarantee-core-network",
-            },
-            {
-                title: "High-speed Data Forwarding Processing",
-                icon: "high-speed-forwarding-processing",
-            },
-            {
-                title: "Support the needs of telecommunications and private network users",
-                icon: "support-telecom-private-network",
-            },
-            {
-                title: "High Scalable Capacity",
-                icon: "high-scalable-capacity",
-            },
-            {
-                title: "Support Centralized and Distributed(CUPS) architecture",
-                icon: "support-cups-architecture",
-            },
-            {
-                title: "Reliable, easy to deploy and easy to maintenance",
-                icon: "reliable-easy-deploy-maintenance",
-            },
-        ],
-        application_scenario: [
-            {
-                title: "Commercial Network",
-                image: "commercial-network"
-            },
-            {
-                title: "Industrial Network",
-                image: "industrial-network"
-            },
-            {
-                title: "Private Network",
-                image: "private-network"
-            },
-            {
-                title: "Confidential Network",
-                image: "confidential-network"
-            }
-        ],
+        title: "Antenna",
+        description: "Moya's Antenna are designed to adapt to a wide range of applications, seamlessly supporting both dense urban and rural environments. <br /> They offer flexible customization options for different frequency bands and gain levels, ensuring optimal performance. With a streamlined installation process, deployment is quick and efficient, minimizing operational complexity.",
+        image: "antenna",
+        layout: "primary",
+        features: null,
+        application_scenario: null,
         sub_categories: [
             {
-                title: "Evolved Packet Core",
-                acronym: "EPC",
+                title: "Omni Fiberglass Antenna",
+                acronym: "Omni Fiberglass",
                 products: [
                     {
-                        title: "Evolved Packet Core",
-                        acronym: "EPC",
-                        sub_title: "EPC",
-                        description: "It can be flexibly deployed based on network conditions, fully compliant with 3GPP standards, and supports integration with third-party devices. It offers full-featured capabilities, including VoLTE, allowing voice and data services to share the same network, while ensuring easy maintenance.",
-                        image_outer: "evolved-packet-core-outer",
-                        image_inner: "evolved-packet-core-inner",
-                        advantages: {
-                            title: "Key Benefits of EPC",
-                            items: [
-                                {
-                                    title: "Flexible Deployment",
-                                    description: "Be flexibly deployed in combination according to the status of the network",
-                                    icon: "flexible-deployment",
-                                },
-                                {
-                                    title: "Standards-Compliant",
-                                    description: "Complies with 3GPP standards, provides full-featured features, and supports docking of third-party devices",
-                                    icon: "standards-compliant",
-                                },
-                                {
-                                    title: "Seamless VoLTE & Data Integration",
-                                    description: "Support VoLTE, voice and data services share the same network",
-                                    icon: "seamless-volte-and-data-integration",
-                                },
-                                {
-                                    title: "Easy Maintenance",
-                                    description: "Minimal operational complexity, reducing downtime and operational costs",
-                                    icon: "easy-maintenance",
-                                },
-                            ],
-                            layout: "secondary",
-                        },
+                        title: "Omni Fiberglass Antenna",
+                        acronym: "Omni Fiberglass Antenna",
+                        sub_title: "Easy Installation",
+                        description: "This fiberglass omnidirectional antenna covers 660-960 MHz and 1710-2700 MHz with vertical polarization, offering 6±1 dBi and 8±1 dBi gain. It provides 360° horizontal coverage, a 25±10° vertical beamwidth, and a VSWR of ≤2.8. The antenna features 50Ω impedance and grounding protection, ideal for communication applications.",
+                        image_outer: "omni-fiberglass-antenna-outer",
+                        image_inner: "omni-fiberglass-antenna-inner",
+                        advantages: null,
                         specs: {
-                            title: "Features and Capacity",
-                            items: [
+                            title: "Product Specifications",
+                            categories: [
                                 {
-                                    title: "Protocol Specification",
-                                    description: "3GPP Release 14"
+                                    title: "Electrical Specifications",
+                                    items: [
+                                        { 
+                                            title: "Type No.",
+                                            description: "97011820"
+                                        },
+                                        { 
+                                            title: "Frequency Range (MHZ)",
+                                            description: "660-960 | 1710-2700"
+                                        },
+                                        { 
+                                            title: "Polarization Type",
+                                            description: "Vertical"
+                                        },
+                                        { 
+                                            title: "Gain (dBi)",
+                                            description: "6±1@660-960MHZ, 8±1@1710-2700MHZ"
+                                        },
+                                        { 
+                                            title: "Horizontal Beamwidth (°)",
+                                            description: "360°"
+                                        },
+                                        { 
+                                            title: "Vertical Beamwidth (°)",
+                                            description: "25±10°"
+                                        },
+                                        { 
+                                            title: "Ovality (dB)",
+                                            description: "≤±2dB"
+                                        },
+                                        { 
+                                            title: "VSWR",
+                                            description: "≤2.5@660-698MHz, ≤2.0@698-960&1710-2700MHZ"
+                                        },
+                                        { 
+                                            title: "Max Input Power (W)",
+                                            description: "50"
+                                        },
+                                        { 
+                                            title: "Impedance (Ω)",
+                                            description: "50"
+                                        },
+                                        { 
+                                            title: "Lightning Protection",
+                                            description: "DC Ground"
+                                        }
+                                    ]
                                 },
                                 {
-                                    title: "Capacity",
-                                    description: "100-10M user"
+                                    title: "Mechanical Specifications",
+                                    items: [
+                                        { 
+                                            title: "Dimensions (Excl. Connectors & Mounting bracket (mm)",
+                                            description: "Ф60*750"
+                                        },
+                                        { 
+                                            title: "Connector",
+                                            description: "4.4-10-Female"
+                                        },
+                                        { 
+                                            title: "Weight (Kg)",
+                                            description: "0.8±0.1"
+                                        },
+                                        { 
+                                            title: "Color",
+                                            description: "White"
+                                        },
+                                        { 
+                                            title: "Random Material",
+                                            description: "ABS"
+                                        }
+                                    ]
                                 },
                                 {
-                                    title: "Data Processing Capabilities",
-                                    description: "10Gbps data throughput"
-                                },
-                                {
-                                    title: "Deployment",
-                                    description: "Supports multiple virtualization deployments, including virtual machines, cloud deployments, and docker deployments"
-                                },
-                                {
-                                    title: "System Management",
-                                    description: "<p>System management functions based on human-machine interface</p><ol><li>User data management</li><li>System Configuration</li><li>System monitoring</li><li>Alarm and log collection</li><li>System backup function</li></ol>"
-                                },
+                                    title: "Environmental Specifications",
+                                    items: [
+                                        { 
+                                            title: "Operational Temperature (°C)",
+                                            description: "-30 to +65"
+                                        },
+                                        { 
+                                            title: "Operational Humidity (%)",
+                                            description: "≤95"
+                                        },
+                                        { 
+                                            title: "Wind Residence",
+                                            description: "36.9m/s"
+                                        },
+                                        { 
+                                            title: "Waterproof",
+                                            description: "IP65"
+                                        },
+                                        { 
+                                            title: "Installation Method",
+                                            description: "Installation of holding pole"
+                                        },
+                                        { 
+                                            title: "Mounting Hardware (mm)",
+                                            description: "¢30~¢50"
+                                        }
+                                    ]
+                                }
                             ],
                             image: null,
                             layout: "secondary",
@@ -117,63 +133,318 @@ const categories = [
                 ]
             },
             {
-                title: "IP MultiMedia Subsystem",
-                acronym: "IMS",
+                title: "Omni Cluster Antenna",
+                acronym: "Omni Cluster",
                 products: [
                     {
-                        title: "IP MultiMedia Subsystem",
-                        acronym: "IMS",
-                        sub_title: "IMS",
-                        description: "Compliant with 3GPP standards, it offers full-featured capabilities and seamless integration with third-party devices. Designed for scalability, it supports up to a million users, with a capacity reaching 600K. Additionally, it ensures easy maintenance for efficient operation.",
-                        image_outer: "ip-multimedia-subsystem-outer",
-                        image_inner: "ip-multimedia-subsystem-inner",
-                        advantages: {
-                            title: "Key Benefits of IMS",
-                            items: [
-                                {
-                                    title: "Flexible Deployment",
-                                    description: "100% cloud implementation of IMS core deployment",
-                                    icon: "flexible-deployment",
-                                },
-                                {
-                                    title: "Standards-Compliant",
-                                    description: "Complies with 3GPP standards, provides full-featured features, and supports docking of third-party devices",
-                                    icon: "standards-compliant",
-                                },
-                                {
-                                    title: "Seamless VoLTE & Data Integration",
-                                    description: "Support million user capacity, user capacity can be up to 600K",
-                                    icon: "seamless-volte-and-data-integration",
-                                },
-                                {
-                                    title: "Easy Maintenance",
-                                    description: "Minimal operational complexity, reducing downtime and operational costs",
-                                    icon: "easy-maintenance",
-                                },
-                            ],
-                            layout: "secondary",
-                        },
+                        title: "Omni Cluster Antenna",
+                        acronym: "Omni Cluster Antenna",
+                        sub_title: "Easy Installation",
+                        description: "Cluster antenna combines multiple antennas to enhance signal strength, improve coverage, and reduce interference. It's commonly used in communication systems for better performance and directional coverage.",
+                        image_outer: "omni-cluster-antenna-outer",
+                        image_inner: "omni-cluster-antenna-inner",
+                        advantages: null,
                         specs: {
-                            title: "Features and Capacity",
-                            items: [
+                            title: "Product Specifications",
+                            categories: [
                                 {
-                                    title: "Main Service",
-                                    description: "<ul><li>Voice calls using VoNR, VoLTE or VoIP technology</li><li>Video calls using VoNR, VoLTE or VoIP technology</li><li>Intercommunication calls between LTE and PSTN or 2/3G CS via E1/T1 connections</li><li>Interaction between IMS networks</li><li>Instant Messaging</li><li>Generate prepaid or postpaid billing events</li><li>Support IPSec ESP for signal transmission</li><li>Support AKAv1 / AKAv2 / Http Digest / SIP Digest authentication</li><li>Multi-Party Call</li><li>T.30, T.38 Fax service</li><li>Connect with intelligent platform</li><li>Interact with SMC & SMGW to support SMS services</li><li>Ringback Tone</li><li>Roaming</li></ul>"
+                                    title: "Electrical Specifications",
+                                    items: [
+                                        { 
+                                            title: "Port",
+                                            description: "Port 1 - 2 | Port 3 - 4"
+
+                                        },
+                                        { 
+                                            title: "Frequency Range (MHz)",
+                                            description: "698~960 | 1710~2400"
+
+                                        },
+                                        { 
+                                            title: "Polarization Type",
+                                            description: "±45° | ±45°"
+
+                                        },
+                                        { 
+                                            title: "Gain (dBi)",
+                                            description: "8±1.5 | 10±1.5"
+
+                                        },
+                                        { 
+                                            title: "Horizontal Beamwidth (°)",
+                                            description: "360° | 360°"
+
+                                        },
+                                        { 
+                                            title: "Vertical Beamwidth (°)",
+                                            description: "16° | 10°"
+
+                                        },
+                                        { 
+                                            title: "Cross-polar Discrimination @0° (dB)",
+                                            description: "≥ 15 | ≥ 15"
+
+                                        },
+                                        { 
+                                            title: "Electrical Down Tilt (°)",
+                                            description: "2 | 2"
+
+                                        },
+                                        { 
+                                            title: "Electrical Down Tilt Deviation (°)",
+                                            description: "±1 | ±1"
+
+                                        },
+                                        { 
+                                            title: "VSWR",
+                                            description: "≤1.5 | ≤1.5"
+
+                                        },
+                                        { 
+                                            title: "Isolation Intra-system (dB)",
+                                            description: "≥23 | ≥23"
+
+                                        },
+                                        { 
+                                            title: "Impedance (Ω)",
+                                            description: "50 | 50"
+
+                                        },
+                                        { 
+                                            title: "Max. Power per Port (W)",
+                                            description: "150 | 150"
+
+                                        },
+                                    ]
                                 },
                                 {
-                                    title: "Supplementary services",
-                                    description: "<ul><li>Calling Line Identification Demo</li><li>Calling Line Identification Restriction</li><li>Unconditional call forwarding</li><li>Call forwarding when mobile users are busy</li><li>No answer call forwarding</li><li>Call forwarding on mobile subscribers cannot be reached</li><li>Call Waiting</li><li>Call Hold</li><li>Restrictions set by the operator</li></ul>"
+                                    title: "Mechanical Specifications",
+                                    items: [
+                                        { 
+                                            title: "Connector Type",
+                                            description: "4*4.3-10 Female"
+
+                                        },
+                                        { 
+                                            title: "Estimated Antenna Dimensions",
+                                            description: "Ф380× (1300+300) mm"
+
+                                        },
+                                        { 
+                                            title: "Estimated Packing Dimensions (mm)",
+                                            description: "1700*480×480"
+
+                                        },
+                                        { 
+                                            title: "Estimated Antenna Net Weight (kg)",
+                                            description: "31KG"
+
+                                        },
+                                        { 
+                                            title: "Estimated Gross Weight (kg)",
+                                            description: "42KG"
+
+                                        },
+                                        { 
+                                            title: "Radome Material and Color",
+                                            description: "UPVC, Grey"
+
+                                        },
+                                        { 
+                                            title: "Mounting Method",
+                                            description: "Flange mounted"
+
+                                        },
+                                        { 
+                                            title: "Mechanical Downtilt (°)",
+                                            description: "0"
+
+                                        },
+                                    ]
                                 },
                                 {
-                                    title: "Capacity",
-                                    description: "<ul><li>600K Online users</li><li>200K concurrent calls</li></ul>"
-                                },
+                                    title: "Environmental Specifications",
+                                    items: [
+                                        { 
+                                            title: "Operational Temperature (°C)",
+                                            description: "-40~+70"
+
+                                        },
+                                        { 
+                                            title: "Operational Humidity (%)",
+                                            description: "-55~+75"
+
+                                        },
+                                        { 
+                                            title: "Storage Temperature (°C)",
+                                            description: "95%"
+
+                                        },
+                                        { 
+                                            title: "Max Wind Speed (km/h)",
+                                            description: "200"
+
+                                        },
+                                        { 
+                                            title: "Protection Level",
+                                            description: "IP65"
+
+                                        },
+                                        { 
+                                            title: "Protection Level",
+                                            description: "IP65"
+
+                                        },
+                                        { 
+                                            title: "Others",
+                                            description: "Anti-corrosion/Rust"
+
+                                        },
+                                        { 
+                                            title: "Lightning Protection",
+                                            description: "DC ground"
+
+                                        },
+                                    ]
+                                }
                             ],
                             image: null,
                             layout: "secondary",
                         }
-                    }
-                ], 
+                    },
+                ]
+            },
+            {
+                title: "Panel Antenna",
+                acronym: "Panel",
+                products: [
+                    {
+                        title: "Panel Antenna",
+                        acronym: "Panel Antenna",
+                        sub_title: "Easy Installation",
+                        description: "A panel antenna is a flat, directional antenna designed for focused signal transmission and reception. It offers high gain, reduced interference, and is commonly used in cellular, Wi-Fi, and point-to-point communication systems.",
+                        image_outer: "panel-antenna-outer",
+                        image_inner: "panel-antenna-inner",
+                        advantages: null,
+                        specs: {
+                            title: "Product Specifications",
+                            categories: [
+                                {
+                                    title: "Electrical Specifications",
+                                    "items": [
+                                        { 
+                                            title: "Frequency Range (MHZ)",
+                                            description: "698-960/1710-2700MHz"
+                                        },
+                                        { 
+                                            title: "Gain (dBi)",
+                                            description: "12/14±1dBi"
+                                        },
+                                        { 
+                                            title: "VSWR",
+                                            description: "≤1.8≤1.5"
+                                        },
+                                        { 
+                                            title: "Polarization",
+                                            description: "±45º"
+                                        },
+                                        { 
+                                            title: "Horizontal Beamwidth (°)",
+                                            description: "65±10º"
+                                        },
+                                        { 
+                                            title: "Vertical Beamwidth (°)",
+                                            description: "32±5º/16±3°"
+                                        },
+                                        { 
+                                            title: "Front-to-back ratio (dB)",
+                                            description: "≥23"
+                                        },
+                                        { 
+                                            title: "Isolation (dB)",
+                                            description: "≥25"
+                                        },
+                                        { 
+                                            title: "Intermodulation (dBc)",
+                                            description: "（2@37dBm）≤ -107dBm"
+                                        },
+                                        { 
+                                            title: "Electrical lower inclination (°)",
+                                            description: "0º"
+                                        },
+                                        { 
+                                            title: "Input Impedance (Ω)",
+                                            description: "50Ω"
+                                        },
+                                        { 
+                                            title: "Maximum Input Power (W)",
+                                            description: "100W"
+                                        },
+                                        { 
+                                            title: "Input Connector Type",
+                                            description: "2*N-Female"
+                                        },
+                                        { 
+                                            title: "Lightning Protection",
+                                            description: "DC Ground"
+                                        }
+                                    ]
+                                },
+                                {
+                                    title: "Mechanical Specifications",
+                                    "items": [
+                                        { 
+                                            title: "Dimensions (mm) (Height/Width/Depth)",
+                                            description: "650*280*125mm"
+                                        },
+                                        { 
+                                            title: "Packing Size (mm)",
+                                            description: "780*345*250mm"
+                                        },
+                                        { 
+                                            title: "Antenna Weight (kg)",
+                                            description: "5.2Kg"
+                                        },
+                                        { 
+                                            title: "Rated Wind Velocity (m/s)",
+                                            description: "43m/s"
+                                        },
+                                        { 
+                                            title: "Operational Humidity (%)",
+                                            description: "10-95"
+                                        },
+                                        { 
+                                            title: "Radome Color",
+                                            description: "White"
+                                        },
+                                        { 
+                                            title: "Radome Material",
+                                            description: "UPVC"
+                                        },
+                                        { 
+                                            title: "Operating Temperature (°C)",
+                                            description: "-30～65 º"
+                                        },
+                                        { 
+                                            title: "Installation Method",
+                                            description: "Pole mounting"
+                                        },
+                                        { 
+                                            title: "Mounting Hardware (mm)",
+                                            description: "￠30～￠75"
+                                        },
+                                        { 
+                                            title: "Mechanical Tilt (°)",
+                                            description: "0-10º"
+                                        }
+                                    ]
+                                }
+                            ],
+                            image: null,
+                            layout: "secondary",
+                        }
+                    },
+                ]
             }
         ]
     },
@@ -1690,131 +1961,115 @@ const categories = [
         ]
     },
     {
-        title: "Antenna",
-        description: "Moya's Antenna are designed to adapt to a wide range of applications, seamlessly supporting both dense urban and rural environments. <br /> They offer flexible customization options for different frequency bands and gain levels, ensuring optimal performance. With a streamlined installation process, deployment is quick and efficient, minimizing operational complexity.",
-        image: "antenna",
-        layout: "primary",
-        features: null,
-        application_scenario: null,
+        title: "Core Network",
+        description: "Moya's Core Network is the central part of a telecommunications network that manages data routing, mobility, authentication, and service delivery.",
+        image: "core-network",
+        layout: "secondary",
+        features: [
+            {
+                title: "Carrier-grade guarantee",
+                icon: "carrier-grade-guarantee-core-network",
+            },
+            {
+                title: "High-speed Data Forwarding Processing",
+                icon: "high-speed-forwarding-processing",
+            },
+            {
+                title: "Support the needs of telecommunications and private network users",
+                icon: "support-telecom-private-network",
+            },
+            {
+                title: "High Scalable Capacity",
+                icon: "high-scalable-capacity",
+            },
+            {
+                title: "Support Centralized and Distributed(CUPS) architecture",
+                icon: "support-cups-architecture",
+            },
+            {
+                title: "Reliable, easy to deploy and easy to maintenance",
+                icon: "reliable-easy-deploy-maintenance",
+            },
+        ],
+        application_scenario: [
+            {
+                title: "Commercial Network",
+                image: "commercial-network"
+            },
+            {
+                title: "Industrial Network",
+                image: "industrial-network"
+            },
+            {
+                title: "Private Network",
+                image: "private-network"
+            },
+            {
+                title: "Confidential Network",
+                image: "confidential-network"
+            }
+        ],
         sub_categories: [
             {
-                title: "Omni Fiberglass Antenna",
-                acronym: "Omni Fiberglass",
+                title: "Evolved Packet Core",
+                acronym: "EPC",
                 products: [
                     {
-                        title: "Omni Fiberglass Antenna",
-                        acronym: "Omni Fiberglass Antenna",
-                        sub_title: "Easy Installation",
-                        description: "This fiberglass omnidirectional antenna covers 660-960 MHz and 1710-2700 MHz with vertical polarization, offering 6±1 dBi and 8±1 dBi gain. It provides 360° horizontal coverage, a 25±10° vertical beamwidth, and a VSWR of ≤2.8. The antenna features 50Ω impedance and grounding protection, ideal for communication applications.",
-                        image_outer: "omni-fiberglass-antenna-outer",
-                        image_inner: "omni-fiberglass-antenna-inner",
-                        advantages: null,
+                        title: "Evolved Packet Core",
+                        acronym: "EPC",
+                        sub_title: "EPC",
+                        description: "It can be flexibly deployed based on network conditions, fully compliant with 3GPP standards, and supports integration with third-party devices. It offers full-featured capabilities, including VoLTE, allowing voice and data services to share the same network, while ensuring easy maintenance.",
+                        image_outer: "evolved-packet-core-outer",
+                        image_inner: "evolved-packet-core-inner",
+                        advantages: {
+                            title: "Key Benefits of EPC",
+                            items: [
+                                {
+                                    title: "Flexible Deployment",
+                                    description: "Be flexibly deployed in combination according to the status of the network",
+                                    icon: "flexible-deployment",
+                                },
+                                {
+                                    title: "Standards-Compliant",
+                                    description: "Complies with 3GPP standards, provides full-featured features, and supports docking of third-party devices",
+                                    icon: "standards-compliant",
+                                },
+                                {
+                                    title: "Seamless VoLTE & Data Integration",
+                                    description: "Support VoLTE, voice and data services share the same network",
+                                    icon: "seamless-volte-and-data-integration",
+                                },
+                                {
+                                    title: "Easy Maintenance",
+                                    description: "Minimal operational complexity, reducing downtime and operational costs",
+                                    icon: "easy-maintenance",
+                                },
+                            ],
+                            layout: "secondary",
+                        },
                         specs: {
-                            title: "Product Specifications",
-                            categories: [
+                            title: "Features and Capacity",
+                            items: [
                                 {
-                                    title: "Electrical Specifications",
-                                    items: [
-                                        { 
-                                            title: "Type No.",
-                                            description: "97011820"
-                                        },
-                                        { 
-                                            title: "Frequency Range (MHZ)",
-                                            description: "660-960 | 1710-2700"
-                                        },
-                                        { 
-                                            title: "Polarization Type",
-                                            description: "Vertical"
-                                        },
-                                        { 
-                                            title: "Gain (dBi)",
-                                            description: "6±1@660-960MHZ, 8±1@1710-2700MHZ"
-                                        },
-                                        { 
-                                            title: "Horizontal Beamwidth (°)",
-                                            description: "360°"
-                                        },
-                                        { 
-                                            title: "Vertical Beamwidth (°)",
-                                            description: "25±10°"
-                                        },
-                                        { 
-                                            title: "Ovality (dB)",
-                                            description: "≤±2dB"
-                                        },
-                                        { 
-                                            title: "VSWR",
-                                            description: "≤2.5@660-698MHz, ≤2.0@698-960&1710-2700MHZ"
-                                        },
-                                        { 
-                                            title: "Max Input Power (W)",
-                                            description: "50"
-                                        },
-                                        { 
-                                            title: "Impedance (Ω)",
-                                            description: "50"
-                                        },
-                                        { 
-                                            title: "Lightning Protection",
-                                            description: "DC Ground"
-                                        }
-                                    ]
+                                    title: "Protocol Specification",
+                                    description: "3GPP Release 14"
                                 },
                                 {
-                                    title: "Mechanical Specifications",
-                                    items: [
-                                        { 
-                                            title: "Dimensions (Excl. Connectors & Mounting bracket (mm)",
-                                            description: "Ф60*750"
-                                        },
-                                        { 
-                                            title: "Connector",
-                                            description: "4.4-10-Female"
-                                        },
-                                        { 
-                                            title: "Weight (Kg)",
-                                            description: "0.8±0.1"
-                                        },
-                                        { 
-                                            title: "Color",
-                                            description: "White"
-                                        },
-                                        { 
-                                            title: "Random Material",
-                                            description: "ABS"
-                                        }
-                                    ]
+                                    title: "Capacity",
+                                    description: "100-10M user"
                                 },
                                 {
-                                    title: "Environmental Specifications",
-                                    items: [
-                                        { 
-                                            title: "Operational Temperature (°C)",
-                                            description: "-30 to +65"
-                                        },
-                                        { 
-                                            title: "Operational Humidity (%)",
-                                            description: "≤95"
-                                        },
-                                        { 
-                                            title: "Wind Residence",
-                                            description: "36.9m/s"
-                                        },
-                                        { 
-                                            title: "Waterproof",
-                                            description: "IP65"
-                                        },
-                                        { 
-                                            title: "Installation Method",
-                                            description: "Installation of holding pole"
-                                        },
-                                        { 
-                                            title: "Mounting Hardware (mm)",
-                                            description: "¢30~¢50"
-                                        }
-                                    ]
-                                }
+                                    title: "Data Processing Capabilities",
+                                    description: "10Gbps data throughput"
+                                },
+                                {
+                                    title: "Deployment",
+                                    description: "Supports multiple virtualization deployments, including virtual machines, cloud deployments, and docker deployments"
+                                },
+                                {
+                                    title: "System Management",
+                                    description: "<p>System management functions based on human-machine interface</p><ol><li>User data management</li><li>System Configuration</li><li>System monitoring</li><li>Alarm and log collection</li><li>System backup function</li></ol>"
+                                },
                             ],
                             image: null,
                             layout: "secondary",
@@ -1823,321 +2078,66 @@ const categories = [
                 ]
             },
             {
-                title: "Omni Cluster Antenna",
-                acronym: "Omni Cluster",
+                title: "IP MultiMedia Subsystem",
+                acronym: "IMS",
                 products: [
                     {
-                        title: "Omni Cluster Antenna",
-                        acronym: "Omni Cluster Antenna",
-                        sub_title: "Easy Installation",
-                        description: "Cluster antenna combines multiple antennas to enhance signal strength, improve coverage, and reduce interference. It's commonly used in communication systems for better performance and directional coverage.",
-                        image_outer: "omni-cluster-antenna-outer",
-                        image_inner: "omni-cluster-antenna-inner",
-                        advantages: null,
+                        title: "IP MultiMedia Subsystem",
+                        acronym: "IMS",
+                        sub_title: "IMS",
+                        description: "Compliant with 3GPP standards, it offers full-featured capabilities and seamless integration with third-party devices. Designed for scalability, it supports up to a million users, with a capacity reaching 600K. Additionally, it ensures easy maintenance for efficient operation.",
+                        image_outer: "ip-multimedia-subsystem-outer",
+                        image_inner: "ip-multimedia-subsystem-inner",
+                        advantages: {
+                            title: "Key Benefits of IMS",
+                            items: [
+                                {
+                                    title: "Flexible Deployment",
+                                    description: "100% cloud implementation of IMS core deployment",
+                                    icon: "flexible-deployment",
+                                },
+                                {
+                                    title: "Standards-Compliant",
+                                    description: "Complies with 3GPP standards, provides full-featured features, and supports docking of third-party devices",
+                                    icon: "standards-compliant",
+                                },
+                                {
+                                    title: "Seamless VoLTE & Data Integration",
+                                    description: "Support million user capacity, user capacity can be up to 600K",
+                                    icon: "seamless-volte-and-data-integration",
+                                },
+                                {
+                                    title: "Easy Maintenance",
+                                    description: "Minimal operational complexity, reducing downtime and operational costs",
+                                    icon: "easy-maintenance",
+                                },
+                            ],
+                            layout: "secondary",
+                        },
                         specs: {
-                            title: "Product Specifications",
-                            categories: [
+                            title: "Features and Capacity",
+                            items: [
                                 {
-                                    title: "Electrical Specifications",
-                                    items: [
-                                        { 
-                                            title: "Port",
-                                            description: "Port 1 - 2 | Port 3 - 4"
-
-                                        },
-                                        { 
-                                            title: "Frequency Range (MHz)",
-                                            description: "698~960 | 1710~2400"
-
-                                        },
-                                        { 
-                                            title: "Polarization Type",
-                                            description: "±45° | ±45°"
-
-                                        },
-                                        { 
-                                            title: "Gain (dBi)",
-                                            description: "8±1.5 | 10±1.5"
-
-                                        },
-                                        { 
-                                            title: "Horizontal Beamwidth (°)",
-                                            description: "360° | 360°"
-
-                                        },
-                                        { 
-                                            title: "Vertical Beamwidth (°)",
-                                            description: "16° | 10°"
-
-                                        },
-                                        { 
-                                            title: "Cross-polar Discrimination @0° (dB)",
-                                            description: "≥ 15 | ≥ 15"
-
-                                        },
-                                        { 
-                                            title: "Electrical Down Tilt (°)",
-                                            description: "2 | 2"
-
-                                        },
-                                        { 
-                                            title: "Electrical Down Tilt Deviation (°)",
-                                            description: "±1 | ±1"
-
-                                        },
-                                        { 
-                                            title: "VSWR",
-                                            description: "≤1.5 | ≤1.5"
-
-                                        },
-                                        { 
-                                            title: "Isolation Intra-system (dB)",
-                                            description: "≥23 | ≥23"
-
-                                        },
-                                        { 
-                                            title: "Impedance (Ω)",
-                                            description: "50 | 50"
-
-                                        },
-                                        { 
-                                            title: "Max. Power per Port (W)",
-                                            description: "150 | 150"
-
-                                        },
-                                    ]
+                                    title: "Main Service",
+                                    description: "<ul><li>Voice calls using VoNR, VoLTE or VoIP technology</li><li>Video calls using VoNR, VoLTE or VoIP technology</li><li>Intercommunication calls between LTE and PSTN or 2/3G CS via E1/T1 connections</li><li>Interaction between IMS networks</li><li>Instant Messaging</li><li>Generate prepaid or postpaid billing events</li><li>Support IPSec ESP for signal transmission</li><li>Support AKAv1 / AKAv2 / Http Digest / SIP Digest authentication</li><li>Multi-Party Call</li><li>T.30, T.38 Fax service</li><li>Connect with intelligent platform</li><li>Interact with SMC & SMGW to support SMS services</li><li>Ringback Tone</li><li>Roaming</li></ul>"
                                 },
                                 {
-                                    title: "Mechanical Specifications",
-                                    items: [
-                                        { 
-                                            title: "Connector Type",
-                                            description: "4*4.3-10 Female"
-
-                                        },
-                                        { 
-                                            title: "Estimated Antenna Dimensions",
-                                            description: "Ф380× (1300+300) mm"
-
-                                        },
-                                        { 
-                                            title: "Estimated Packing Dimensions (mm)",
-                                            description: "1700*480×480"
-
-                                        },
-                                        { 
-                                            title: "Estimated Antenna Net Weight (kg)",
-                                            description: "31KG"
-
-                                        },
-                                        { 
-                                            title: "Estimated Gross Weight (kg)",
-                                            description: "42KG"
-
-                                        },
-                                        { 
-                                            title: "Radome Material and Color",
-                                            description: "UPVC, Grey"
-
-                                        },
-                                        { 
-                                            title: "Mounting Method",
-                                            description: "Flange mounted"
-
-                                        },
-                                        { 
-                                            title: "Mechanical Downtilt (°)",
-                                            description: "0"
-
-                                        },
-                                    ]
+                                    title: "Supplementary services",
+                                    description: "<ul><li>Calling Line Identification Demo</li><li>Calling Line Identification Restriction</li><li>Unconditional call forwarding</li><li>Call forwarding when mobile users are busy</li><li>No answer call forwarding</li><li>Call forwarding on mobile subscribers cannot be reached</li><li>Call Waiting</li><li>Call Hold</li><li>Restrictions set by the operator</li></ul>"
                                 },
                                 {
-                                    title: "Environmental Specifications",
-                                    items: [
-                                        { 
-                                            title: "Operational Temperature (°C)",
-                                            description: "-40~+70"
-
-                                        },
-                                        { 
-                                            title: "Operational Humidity (%)",
-                                            description: "-55~+75"
-
-                                        },
-                                        { 
-                                            title: "Storage Temperature (°C)",
-                                            description: "95%"
-
-                                        },
-                                        { 
-                                            title: "Max Wind Speed (km/h)",
-                                            description: "200"
-
-                                        },
-                                        { 
-                                            title: "Protection Level",
-                                            description: "IP65"
-
-                                        },
-                                        { 
-                                            title: "Protection Level",
-                                            description: "IP65"
-
-                                        },
-                                        { 
-                                            title: "Others",
-                                            description: "Anti-corrosion/Rust"
-
-                                        },
-                                        { 
-                                            title: "Lightning Protection",
-                                            description: "DC ground"
-
-                                        },
-                                    ]
-                                }
+                                    title: "Capacity",
+                                    description: "<ul><li>600K Online users</li><li>200K concurrent calls</li></ul>"
+                                },
                             ],
                             image: null,
                             layout: "secondary",
                         }
-                    },
-                ]
-            },
-            {
-                title: "Panel Antenna",
-                acronym: "Panel",
-                products: [
-                    {
-                        title: "Panel Antenna",
-                        acronym: "Panel Antenna",
-                        sub_title: "Easy Installation",
-                        description: "A panel antenna is a flat, directional antenna designed for focused signal transmission and reception. It offers high gain, reduced interference, and is commonly used in cellular, Wi-Fi, and point-to-point communication systems.",
-                        image_outer: "panel-antenna-outer",
-                        image_inner: "panel-antenna-inner",
-                        advantages: null,
-                        specs: {
-                            title: "Product Specifications",
-                            categories: [
-                                {
-                                    title: "Electrical Specifications",
-                                    "items": [
-                                        { 
-                                            title: "Frequency Range (MHZ)",
-                                            description: "698-960/1710-2700MHz"
-                                        },
-                                        { 
-                                            title: "Gain (dBi)",
-                                            description: "12/14±1dBi"
-                                        },
-                                        { 
-                                            title: "VSWR",
-                                            description: "≤1.8≤1.5"
-                                        },
-                                        { 
-                                            title: "Polarization",
-                                            description: "±45º"
-                                        },
-                                        { 
-                                            title: "Horizontal Beamwidth (°)",
-                                            description: "65±10º"
-                                        },
-                                        { 
-                                            title: "Vertical Beamwidth (°)",
-                                            description: "32±5º/16±3°"
-                                        },
-                                        { 
-                                            title: "Front-to-back ratio (dB)",
-                                            description: "≥23"
-                                        },
-                                        { 
-                                            title: "Isolation (dB)",
-                                            description: "≥25"
-                                        },
-                                        { 
-                                            title: "Intermodulation (dBc)",
-                                            description: "（2@37dBm）≤ -107dBm"
-                                        },
-                                        { 
-                                            title: "Electrical lower inclination (°)",
-                                            description: "0º"
-                                        },
-                                        { 
-                                            title: "Input Impedance (Ω)",
-                                            description: "50Ω"
-                                        },
-                                        { 
-                                            title: "Maximum Input Power (W)",
-                                            description: "100W"
-                                        },
-                                        { 
-                                            title: "Input Connector Type",
-                                            description: "2*N-Female"
-                                        },
-                                        { 
-                                            title: "Lightning Protection",
-                                            description: "DC Ground"
-                                        }
-                                    ]
-                                },
-                                {
-                                    title: "Mechanical Specifications",
-                                    "items": [
-                                        { 
-                                            title: "Dimensions (mm) (Height/Width/Depth)",
-                                            description: "650*280*125mm"
-                                        },
-                                        { 
-                                            title: "Packing Size (mm)",
-                                            description: "780*345*250mm"
-                                        },
-                                        { 
-                                            title: "Antenna Weight (kg)",
-                                            description: "5.2Kg"
-                                        },
-                                        { 
-                                            title: "Rated Wind Velocity (m/s)",
-                                            description: "43m/s"
-                                        },
-                                        { 
-                                            title: "Operational Humidity (%)",
-                                            description: "10-95"
-                                        },
-                                        { 
-                                            title: "Radome Color",
-                                            description: "White"
-                                        },
-                                        { 
-                                            title: "Radome Material",
-                                            description: "UPVC"
-                                        },
-                                        { 
-                                            title: "Operating Temperature (°C)",
-                                            description: "-30～65 º"
-                                        },
-                                        { 
-                                            title: "Installation Method",
-                                            description: "Pole mounting"
-                                        },
-                                        { 
-                                            title: "Mounting Hardware (mm)",
-                                            description: "￠30～￠75"
-                                        },
-                                        { 
-                                            title: "Mechanical Tilt (°)",
-                                            description: "0-10º"
-                                        }
-                                    ]
-                                }
-                            ],
-                            image: null,
-                            layout: "secondary",
-                        }
-                    },
-                ]
+                    }
+                ], 
             }
         ]
-    }
+    },
 ]
 
 export default categories;

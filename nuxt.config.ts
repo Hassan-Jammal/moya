@@ -87,7 +87,14 @@ export default defineNuxtConfig({
 		},
 		//pageTransition: { name: 'page', mode: 'out-in' }
 	},
-	modules: ['@nuxtjs/tailwindcss', "@nuxt/image", "@nuxt/icon", "nuxt-swiper", "@nuxt/scripts"],
+	modules: [
+		'@nuxtjs/tailwindcss',
+		"@nuxt/image",
+		"@nuxt/icon",
+		"nuxt-swiper",
+		"@nuxt/scripts",
+		"@vueuse/nuxt",
+	],
 	image: {
 		provider: "twicpics",
 	},

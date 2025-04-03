@@ -21,7 +21,7 @@
                         <div class="absolute top-full left-0 h-[var(--header-height)] w-full group-hover:block hidden before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:bg-transparent before:w-5 before:h-5"></div>
 
                         <!-- Children Routes Dropdown -->
-                        <div class="nav fixed top-[var(--header-height)] left-0 z-[1] w-full py-24 border-2 border-t border-[#D4D4D422] bg-white overflow-hidden invisible opacity-0 group-hover:visible group-hover:opacity-100 shadow-lg transition-opacity duration-300 ease-in-out" @mouseleave="hideNav" ref="navMenu">
+                        <div class="nav fixed top-[var(--header-height)] left-0 z-[1] w-full py-24 border-2 border-t border-[#D4D4D422] bg-white overflow-hidden invisible opacity-0 group-hover:visible group-hover:opacity-100 shadow-lg transition-opacity duration-300 ease-in-out" ref="navMenu">
                             <div class="container grid grid-cols-3 gap-6 xl:gap-12">
                                 <div class="col-span-2 flex justify-evenly gap-x-4">
                                     <div v-for="(subItem, subItemIndex) in item.links" :key="subItemIndex" class="flex flex-col text-black gap-8">
@@ -31,7 +31,7 @@
                                             <NuxtLink v-if="subItem.clickable" :to="`/${subItem.path}`" class="font-Harmony font-bold">{{ subItem.title }}</NuxtLink>
                                             <span v-else class="font-Harmony font-bold">{{ subItem.title }}</span>
                                             <div class="flex flex-col gap-6">
-                                                <NuxtLink v-for="(subLink, subLinkIndex) in subItem.subLinks" :key="subLinkIndex" :to="`/${subItem.path}/${subLink.path}`" @click="hideNav" class="link rounded-full hover:bg-primary/15 cursor-pointer select-none transition-all duration-300 ease-in-out">{{ subLink.title }}</NuxtLink>
+                                                <NuxtLink v-for="(subLink, subLinkIndex) in subItem.subLinks" :key="subLinkIndex" :to="`/${subItem.path}/${subLink.path}`" class="link rounded-full hover:bg-primary/15 cursor-pointer select-none transition-all duration-300 ease-in-out">{{ subLink.title }}</NuxtLink>
                                             </div>
                                         </template>
 
@@ -81,13 +81,4 @@
     const props = defineProps({
         menuItems: Array,
     });
-
-    const navMenu = ref(null);
-
-    const hideNav = () => {
-        if (navMenu.value) {
-            navMenu.value.classList.remove('group-hover:visible', 'group-hover:opacity-100');
-            navMenu.value.classList.add('invisible', 'opacity-0');
-        }
-    };
 </script>
