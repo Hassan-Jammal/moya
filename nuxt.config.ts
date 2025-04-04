@@ -16,37 +16,37 @@ export default defineNuxtConfig({
 				{
 					rel: "icon",
 					type: "image/png",
-					href: "http://moya.localhost/images/favicon-64x64.png",
+					href: "https://moya.com/images/favicon-64x64.png",
 				},
 				{
 					rel: "icon",
 					type: "image/png",
-					href: "http://moya.localhost/images/favicon-32x32.png",
+					href: "https://moya.com/images/favicon-32x32.png",
 				},
 				{
 					rel: "icon",
 					type: "image/png",
-					href: "http://moya.localhost/images/favicon-16x16.png",
+					href: "https://moya.com/images/favicon-16x16.png",
 				},
 				{
 					rel: "apple-touch-icon",
 					type: "image/png",
-					href: "http://moya.localhost/images/apple-touch-icon-180x180.png",
+					href: "https://moya.com/images/apple-touch-icon-180x180.png",
 				},
 				{
 					rel: "mask-icon",
-					href: "http://moya.localhost/images/icons/mask-icon.svg",
+					href: "https://moya.com/images/icons/mask-icon.svg",
 					color: "#32393C",
 				},
 				{
 					rel: "icon",
 					sizes: "192x192",
-					href: "http://moya.localhost/images/android-chrome-192x192.png",
+					href: "https://moya.com/images/android-chrome-192x192.png",
 				},
 				{
 					rel: "icon",
 					sizes: "512x512",
-					href: "http://moya.localhost/images/android-chrome-512x512.png",
+					href: "https://moya.com/images/android-chrome-512x512.png",
 				},
 			],
 			meta: [
@@ -71,15 +71,15 @@ export default defineNuxtConfig({
 						"name": "Moya",
 						"url": "https://www.moya.com",
 						"description": "",
-						"logo": "http://moya.localhost/images/logo.svg", // png
+						"logo": "https://moya.com/images/logo.svg", // png
 						"sameAs": [
-							"https://www.facebook.com/moya",
-							"https://x.com/moyaapp",
-							"https://www.instagram.com/moya",
-							"https://www.linkedin.com/company/my-monty",
-							"https://www.youtube.com/@moya4395",
-							"https://apps.apple.com/lb/app/moya-europe/id6451243007",
-							"https://play.google.com/store/apps/details?id=com.moya.wallet",
+							// "https://www.facebook.com/moya",
+							// "https://x.com/moyaapp",
+							// "https://www.instagram.com/moya",
+							// "https://www.linkedin.com/company/my-monty",
+							// "https://www.youtube.com/@moya4395",
+							// "https://apps.apple.com/lb/app/moya-europe/id6451243007",
+							// "https://play.google.com/store/apps/details?id=com.moya.wallet",
 						]
 					})
 				},

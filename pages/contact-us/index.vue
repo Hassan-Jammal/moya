@@ -1,5 +1,5 @@
 <template>
-    <section class="mt-12 py-24 relative">
+    <section class="py-24 relative">
         <div class="absolute bottom-0 left-0 w-full h-full">
             <NuxtImg class="w-full h-full object-cover" src="images/contact-us-bg.webp" alt="About Us" width="" height="" />
         </div>

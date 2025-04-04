@@ -70,7 +70,7 @@
 
                         <ul v-if="item.links && item.links.length > 0" class="children-menu flex flex-col gap-4 max-sm:max-h-0 max-sm:ml-4 text-[#D4D4D4] overflow-hidden transition-all duration-300 ease-in-out">
                             <li v-for="(subItem, linkIndex) in item.links" :key="linkIndex">
-                                <NuxtLink :to="`${subItem.link}`" class="hover:text-primary transition-all duration-300 ease-in-out">{{ subItem.name }}</NuxtLink>
+                                <NuxtLink :to="`${subItem.path}`" class="hover:text-primary transition-all duration-300 ease-in-out">{{ subItem.title }}</NuxtLink>
                             </li>
                         </ul>
                     </li>
@@ -245,41 +245,41 @@
             title: "Solutions",
             clickable: false,
             links: [
-                { name: "MNO Solution", link: "/solutions/core-network/mno-solution" },
-                { name: "FWA Solution", link: "/solutions/core-network/fwa-solution" },
-                { name: "Enterprise Solution", link: "/solutions/core-network/enterprise-private-network-solution" },
-                { name: "Dense Area Solution", link: "/solutions/4g5g-ran/dense-area-solution" },
-                { name: "Rural Area Solution", link: "/solutions/4g5g-ran/rural-area-solution" },
-                { name: "Indoor Solution", link: "/solutions/4g5g-ran/indoor-solution" },
-                { name: "Fiber Solution", link: "/solutions/repeater/fiber-solution" },
-                { name: "Wireless Solution", link: "/solutions/repeater/wireless-solution" },
-                { name: "ICS Wireless Solution", link: "/solutions/repeater/ics-wireless-solution" },
+                { title: "MNO Solution", path: "/solutions/core-network/mno-solution" },
+                { title: "FWA Solution", path: "/solutions/core-network/fwa-solution" },
+                { title: "Enterprise Solution", path: "/solutions/core-network/enterprise-private-network-solution" },
+                { title: "Dense Area Solution", path: "/solutions/4g5g-ran/dense-area-solution" },
+                { title: "Rural Area Solution", path: "/solutions/4g5g-ran/rural-area-solution" },
+                { title: "Indoor Solution", path: "/solutions/4g5g-ran/indoor-solution" },
+                { title: "Fiber Solution", path: "/solutions/repeater/fiber-solution" },
+                { title: "Wireless Solution", path: "/solutions/repeater/wireless-solution" },
+                { title: "ICS Wireless Solution", path: "/solutions/repeater/ics-wireless-solution" },
             ]
         },
         {
             title: "Products",
             clickable: false,
             links: [
-                { name: "Evolved Packet Core (EPC)", link: "/products/core-network/evolved-packet-core" },
-                { name: "IP Multimedia Subsystem (IMS)", link: "/products/core-network/ip-multimedia-subsystem" },
-                { name: "Baseband Unit (BBU)", link: "/products/4g5g-ran/baseband-unit" },
-                { name: "Remote Radio Unit (RRU)", link: "/products/4g5g-ran/remote-radio-unit" },
-                { name: "Integrated eNB (Outdoor)", link: "/products/4g5g-ran/integrated-enb" },
-                { name: "Femtocell (Indoor)", link: "/products/4g5g-ran/femtocell" },
-                { name: "Fiber Repeater", link: "/products/repeater/fiber-repeater" },
-                { name: "Wireless Repeater", link: "/products/repeater/wireless-repeater" },
-                { name: "ICS Repeater", link: "/products/repeater/ics-wireless-repeater" },
-                { name: "Omni Antenna", link: "/products/antenna/omni-fiberglass-antenna" },
-                { name: "Cluster Antenna", link: "/products/antenna/omni-cluster-antenna" },
-                { name: "Panel Antenna", link: "/products/antenna/panel-antenna" },
+                { title: "Evolved Packet Core (EPC)", path: "/products/core-network/evolved-packet-core" },
+                { title: "IP Multimedia Subsystem (IMS)", path: "/products/core-network/ip-multimedia-subsystem" },
+                { title: "Baseband Unit (BBU)", path: "/products/4g5g-ran/baseband-unit" },
+                { title: "Remote Radio Unit (RRU)", path: "/products/4g5g-ran/remote-radio-unit" },
+                { title: "Integrated eNB (Outdoor)", path: "/products/4g5g-ran/integrated-enb" },
+                { title: "Femtocell (Indoor)", path: "/products/4g5g-ran/femtocell" },
+                { title: "Fiber Repeater", path: "/products/repeater/fiber-repeater" },
+                { title: "Wireless Repeater", path: "/products/repeater/wireless-repeater" },
+                { title: "ICS Repeater", path: "/products/repeater/ics-wireless-repeater" },
+                { title: "Omni Antenna", path: "/products/antenna/omni-fiberglass-antenna" },
+                { title: "Cluster Antenna", path: "/products/antenna/omni-cluster-antenna" },
+                { title: "Panel Antenna", path: "/products/antenna/panel-antenna" },
             ]
         },
         {
             title: "Company",
             clickable: false,
             links: [
-                { name: "About Us", link: "/about-us" },
-                { name: "Contact Us", link: "/contact-us" },
+                { title: "About Us", path: "/about-us" },
+                { title: "Contact Us", link: "/contact-us" },
             ]
         }
     ]);

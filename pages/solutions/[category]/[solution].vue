@@ -1,5 +1,5 @@
 <template>
-    <section v-if="solutionData" class="my-12 py-12">
+    <section v-if="solutionData" class="py-12">
 		<div class="container">
 			<ul class="flex items-center gap-2 text-xs">
 				<li><NuxtLink to="/">Home</NuxtLink></li>
@@ -64,10 +64,10 @@
                     <h4 class="text-sm">Application Scenario</h4>
                     <h2 class="text-xl lg:text-3xl font-semibold mt-4">Tailored Scenario for Every Challenge</h2>
                 </div>
-                <div class="grid gap-8 lg:gap-4 text-center" :class="{'md:grid-cols-4': solutionData.application_scenario.length === 4, 'md:grid-cols-3': solutionData.application_scenario.length === 3, 'md:grid-cols-4': solutionData.application_scenario.length >= 4 && solutionData.application_scenario.length % 2 === 0}">
+                <div class="grid gap-8 lg:gap-4 text-center" :class="{'md:grid-cols-2 lg:grid-cols-4': solutionData.application_scenario.length === 4, 'md:grid-cols-3': solutionData.application_scenario.length === 3, 'md:grid-cols-2 lg:grid-cols-4': solutionData.application_scenario.length >= 4 && solutionData.application_scenario.length % 2 === 0}">
                     <div v-for="(scenario, index) in solutionData.application_scenario" :key="index" class="relative aspect-video overflow-hidden rounded-3xl">
                         <NuxtImg class="w-full h-full object-cover" :src="`/images/${scenario.image}.png`" :alt="scenario.title" width="366" height="342" />
-                        <h2 class="absolute bottom-10 left-10 text-2xl font-bold text-white mt-4">{{ scenario.title }}</h2>
+                        <h2 class="absolute bottom-8 left-8 text-2xl font-bold text-white mt-4">{{ scenario.title }}</h2>
                     </div>
                 </div>
             </div>
@@ -76,8 +76,8 @@
 
     <section v-if="solutionData" class="mt-12 pb-56">
         <div class="container">
-            <div class="flex flex-col gap-24 mt-24">
-				<h3 class="text-xl lg:text-3xl font-semibold textcenter">Included Products</h3>
+            <div class="flex flex-col gap-8 mt-24">
+				<h3 class="text-xl lg:text-3xl font-semibold">Included Products</h3>
 				<div class="grid lg:grid-cols-3 gap-12">
 					<div v-for="(product, productIndex) in solutionData.products" :key="productIndex" class="flex flex-col justify-between items-center gap-12 py-12 px-4 lg:px-8 text-center bg-[#F8F8F9] rounded-3xl">
 						<div class="flex flex-col justify-center items-center gap-4 w-full">

@@ -1,5 +1,5 @@
 <template>
-    <section v-if="productData" class="mt-12 py-24 relative">
+    <section v-if="productData" class="py-12 relative">
         <div class="absolute bottom-0 left-0 w-full h-full">
             <video width="100%" autoplay loop muted playsinline class="w-full h-full object-cover opacity-50">
                 <source src="/videos/products-bg.mp4" type="video/mp4">

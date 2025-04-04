@@ -1,8 +1,9 @@
 <template>
-    <svg class="absolute" width="100%" viewBox="0 0 1440 1137" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="hidden lg:block absolute" width="100%" viewBox="0 0 1440 1137" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M703 545.718C327.56 545.718 33.763 934.376 -1 1137V0H1443C1208.75 523.706 895.533 599.562 703 545.718Z" fill="#2B6FF6"/>
     </svg>
-    <section class="mt-12 py-24 relative">
+
+    <section class="py-12 relative max-lg:bg-gradient-to-b max-lg:from-[#2B6FF6] max-lg:from-30% max-lg:to-white max-lg:to-30%">
         <div class="container">
             <div class="w-full 2xl:w-4/5 mx-auto">
                 <div class="flex flex-col gap-6 text-white">
@@ -15,7 +16,7 @@
                     <p class="text-base">Complete the form below and get in touch with us</p>
                 </div>
                 
-                <div class="flex flex-col gap-4 lg:gap-8 py-16 px-24 bg-[#F8F8F9] rounded-2xl mt-12">
+                <div class="flex flex-col gap-4 lg:gap-8 py-16 px-4 lg:px-24 bg-[#F8F8F9] rounded-2xl mt-12">
                     <div class="flex max-lg:flex-col gap-4 lg:gap-8 justify-between items-start">
                         <div class="flex flex-col gap-1 w-full">
                             <label for="full-name" class="text-base">Full Name</label>

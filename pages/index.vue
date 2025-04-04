@@ -69,7 +69,6 @@
                     }"
                     class="mt-14"
                 >
-                    <!-- :centered-slides="true" -->
                     <swiper-slide v-for="(solution, index) in solutions" :key="index" :class="`h-auto flex flex-col items-between justify-between gap-12 group block relative rounded-3xl aspect-[3/4] lg:aspect-video bg-gradient-to-b from-[#000000] from-40% to-[${solution.color}] to-100%`">
                         <div class="flex flex-col pt-12 px-4 lg:px-12 text-white">
                             <h2 class="text-base font-semibold">{{ solution.category }}</h2>
@@ -127,18 +126,18 @@
         </div>
     </section>
 
-    <section class="md:pt-32 xl:pt-56 pb-24 text-white bg-gradient-to-b from-[#F8F8F9] from-50% to-white to-50%">
+    <section class="pt-12 md:pt-32 xl:pt-56 pb-12 text-white bg-gradient-to-b from-[#F8F8F9] from-50% to-white to-50%">
         <div class="container">
-            <div class="relative flex md:justify-end md:items-center py-12 px-4 md:px-8 bg-primary rounded-3xl md:aspect-[24/9]">
-                <div class="hidden md:block absolute bottom-0 lg:left-24 w-1/2 lg:w-2/5">
+            <div class="relative flex md:justify-end md:items-center py-12 px-4 md:px-8 rounded-3xl md:aspect-[24/9]">
+                <div class="hidden md:block absolute bottom-0 md:left-0 lg:left-24 w-1/2 lg:w-2/5 z-20">
                     <NuxtImg src="/images/have-questions-talk-to-us.png" alt="" width="" height="" />
                 </div>
                 
-                <div class="absolute top-0 left-0 w-full h-full">
-                    <NuxtImg class="w-full h-full object-cover mix-blend-color-burn" src="/images/have-questions-talk-to-us-bg.png" alt="" width="" height="" />
+                <div class="absolute top-0 left-0 w-full h-full z-10 rounded-3xl overflow-hidden">
+                    <NuxtImg class="w-full h-full object-cover" src="/images/have-questions-talk-to-us-bg.png" alt="Have Questions Image" width="3480" height="986" />
                 </div>
 
-                <div class="flex flex-col gap-4 md:w-1/2">
+                <div class="flex flex-col gap-4 md:w-1/2 z-10">
                     <h2 class="text-2xl md:text-5xl font-semibold">Have Questions?<br />Talk To Us</h2>
                     <p class="text-sm">Get in touch with us at Moya easily! Whether you have questions<br class="max-lg:hidden" /> or need assistance.</p>
                     <NuxtLink to="/contact-us">
@@ -290,18 +289,13 @@
             category: "Core Network", 
             link: "",
             image: "mno-solution-partner", 
-            width: "", 
-            height: "", 
             color: "#2B6FF6", 
-            // background: linear-gradient(180deg, rgba(0,0,0,1) 47%, rgba(43,111,246,1) 100%);
         },
         {  
             title: "Dense Area Solution", 
-            category: "RAN", 
+            category: "4G/5G RAN", 
             link: "",
             image: "dense-area-solution-partner", 
-            width: "", 
-            height: "", 
             color: "#43516D", 
         },
         {  
@@ -309,8 +303,6 @@
             category: "Repeater", 
             link: "",
             image: "fiber-solution-partner", 
-            width: "", 
-            height: "", 
             color: "#323D86", 
         },
         {  
@@ -318,17 +310,13 @@
             category: "Core Network", 
             link: "",
             image: "fwa-solution-partner", 
-            width: "", 
-            height: "", 
             color: "#2B6FF6", 
         },
         {  
             title: "Rural Area Solution", 
-            category: "RAN", 
+            category: "4G/5G RAN", 
             link: "",
             image: "rural-area-solution-partner", 
-            width: "", 
-            height: "", 
             color: "#43516D", 
         },
         {  
@@ -336,26 +324,20 @@
             category: "Repeater", 
             link: "",
             image: "wireless-solution-partner", 
-            width: "", 
-            height: "", 
             color: "#323D86", 
         },
         {  
-            title: "Enterprise Solution", 
+            title: "Enterprise / Private Network Solution", 
             category: "Core Network", 
             link: "",
             image: "enterprise-solution-partner", 
-            width: "", 
-            height: "", 
             color: "#2B6FF6", 
         },
         {  
             title: "Indoor Solution", 
-            category: "Repeater", 
+            category: "4G/5G RAN", 
             link: "",
             image: "indoor-solution-partner", 
-            width: "", 
-            height: "", 
             color: "#43516D", 
         },
         {  
@@ -363,8 +345,6 @@
             category: "Repeater", 
             link: "",
             image: "ics-wireless-solution-partner", 
-            width: "", 
-            height: "", 
             color: "#2B6FF6", 
         },
     ]
