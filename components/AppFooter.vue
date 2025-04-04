@@ -106,9 +106,12 @@
 
             <div class="flex max-sm:flex-col max-sm:gap-4 justify-between items-center">
                 <div class="flex gap-4">
-                    <NuxtLink to="/privacy-policy" class="underline">Privacy Policy</NuxtLink>
+                    <!-- <NuxtLink to="/privacy-policy" class="underline">Privacy Policy</NuxtLink>
                     <NuxtLink to="/terms-and-conditions" class="underline">Terms & conditions</NuxtLink>
-                    <NuxtLink to="/cookie-policy" class="underline">Cookie Policy</NuxtLink>
+                    <NuxtLink to="/cookie-policy" class="underline">Cookie Policy</NuxtLink> -->
+                    <p class="underline">Privacy Policy</p>
+                    <p class="underline">Terms & conditions</p>
+                    <p class="underline">Cookie Policy</p>
                 </div>
 
                 <p>© {{ new Date().getFullYear() }} Moya. All Rights Reserved.</p>

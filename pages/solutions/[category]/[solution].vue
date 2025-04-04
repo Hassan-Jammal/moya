@@ -13,7 +13,7 @@
 
 			<h1 class="text-3xl lg:text-5xl font-semibold mt-4">{{ solutionData.title }}</h1>
 
-			<div class="relative pt-12 pb-0 px-4 lg:py-24 lg:px-14 text-white rounded-3xl mt-12 bg-gradient-to-b from-[#000000] from-40% to-[#2B6FF6] to-100%">
+			<div class="relative flex flex-col justify-center min-h-[400px] pt-12 pb-0 px-4 lg:py-24 lg:px-14 text-white rounded-3xl mt-12 bg-gradient-to-b from-[#000000] from-40% to-[#2B6FF6] to-100%">
 				<div class="flex flex-col gap-8 lg:w-1/2">
 					<h2 class="text-3xl lg:text-4xl font-semibold">{{ categoryData.sub_title }}</h2>
 					<p class="text-sm" v-html="categoryData.description"></p>
@@ -28,12 +28,12 @@
 		</div>
 	</section>
 
-    <section v-if="solutionData" class="my-12 py-12">
+    <section v-if="solutionData" class="my-12">
 		<div class="container">
             <div class="flex max-lg:flex-col lg:items-center gap-12 lg:gap-48">
                 <div class="lg:w-3/5">
                     <h2 class="text-2xl font-bold">{{ solutionData.sub_title }}</h2>
-                    <p class="text-sm mt-4" v-html="solutionData.description"></p>
+                    <p class="text-lg mt-4" v-html="solutionData.description"></p>
                 </div>
                 <div class="lg:w-2/5 flex flex-col justify-center gap-12 bg-[#F8F8F9] p-12 rounded-3xl">
                     <div v-for="(feature, index) in solutionData.features" :key="index" class="flex items-center gap-12">
@@ -55,7 +55,7 @@
                     <h2 class="text-xl lg:text-3xl font-semibold">{{ solutionData.benefits.title }}</h2>
                 </div>
                 <div class="flex max-lg:flex-col justify-between gap-4 lg:gap-8 w-full xl:w-4/5 mx-auto mt-12 text-center">
-                    <h4 v-for="(item, index) in solutionData.benefits.items" :key="index" class="p-4 lg:p-8 border rounded-3xl text-xl font-semibold flex items-center justify-center">{{ item }}</h4>
+                    <h4 v-for="(item, index) in solutionData.benefits.items" :key="index" class="flex-1 p-4 lg:p-8 border rounded-3xl text-xl font-semibold flex items-center justify-center">{{ item }}</h4>
                 </div>
             </div>
 
@@ -65,8 +65,8 @@
                     <h2 class="text-xl lg:text-3xl font-semibold mt-4">Tailored Scenario for Every Challenge</h2>
                 </div>
                 <div class="grid gap-8 lg:gap-4 text-center" :class="{'md:grid-cols-4': solutionData.application_scenario.length === 4, 'md:grid-cols-3': solutionData.application_scenario.length === 3, 'md:grid-cols-4': solutionData.application_scenario.length >= 4 && solutionData.application_scenario.length % 2 === 0}">
-                    <div v-for="(scenario, index) in solutionData.application_scenario" :key="index" class="relative">
-                        <NuxtImg class="w-full" :src="`/images/${scenario.image}.png`" :alt="scenario.title" width="366" height="342" />
+                    <div v-for="(scenario, index) in solutionData.application_scenario" :key="index" class="relative aspect-video overflow-hidden rounded-3xl">
+                        <NuxtImg class="w-full h-full object-cover" :src="`/images/${scenario.image}.png`" :alt="scenario.title" width="366" height="342" />
                         <h2 class="absolute bottom-10 left-10 text-2xl font-bold text-white mt-4">{{ scenario.title }}</h2>
                     </div>
                 </div>

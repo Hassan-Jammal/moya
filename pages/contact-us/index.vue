@@ -107,7 +107,7 @@
                         <div v-if="errors.message" class="text-xs text-red-500">{{ errors.message }}</div>
                     </div>
                 </div>
-                <div class="flex justify-between items-baseline gap-2">
+                <div class="flex items-baseline gap-2">
                     <input v-model="isAcknowledged" type="checkbox" class="inline cursor-pointer">
                     <p class="inline text-sm text-[#ACA8A8]">Yes, I agree to receive communications about Moya products and solutions and to the processing of my personal data under the <NuxtLink :to="'/privacy-policy'" class="text-primary">Privacy Policy</NuxtLink>, and <NuxtLink :to="'terms-and-conditions'" class="text-primary">Terms & Conditions</NuxtLink>.</p>
                 </div>

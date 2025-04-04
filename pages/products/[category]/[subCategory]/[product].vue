@@ -2,8 +2,7 @@
     <section v-if="productData" class="mt-12 py-24 relative">
         <div class="absolute bottom-0 left-0 w-full h-full">
             <video width="100%" autoplay loop muted playsinline class="w-full h-full object-cover opacity-50">
-                <source src="/images/products-bg.mp4" type="video/mp4">
-                <source src="/images/products-bg.webm" type="video/webm">
+                <source src="/videos/products-bg.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <!-- <NuxtImg class="w-full h-full object-cover" src="images/products-bg.gif" alt="Products Background" width="" height="" /> -->

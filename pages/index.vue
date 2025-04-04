@@ -1,23 +1,19 @@
 <template>
     <section class="h-[calc(100vh-var(--header-height))] flex items-center relative bg-black">
         <div class="absolute bottom-0 left-0 w-full z-[1]">
-            <!-- <NuxtImg class="mix-blend-color-dodge w-full" src="/images/main-banner.png" alt="" width="1444" height="309" /> -->
             <video width="100%" autoplay loop muted playsinline class="hidden lg:block w-full h-full object-cover opacity-full">
-                <!-- <source src="/images/products-bg.mp4" type="video/mp4"> -->
-                <source src="/images/background-desktop.mp4" type="video/mp4">
+                <source src="/videos/main-banner-desktop.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <video width="100%" autoplay loop muted playsinline class="block lg:hidden w-full h-full object-cover opacity-full">
-                <!-- <source src="/images/products-bg.mp4" type="video/mp4"> -->
-                <source src="/images/background-mobile.mp4" type="video/mp4">
+                <source src="/videos/main-banner-mobile.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-        <!-- <div class="absolute bottom-0 right-0 w-full lg:w-2/3 z-[2]">
-            <NuxtImg class="w-full" src="/images/antenna.gif" alt="" width="1444" height="309" />
-        </div> -->
+
         <div class="container">
-            <div class="relative flex flex-col gap-8 max-lg:items-center text-white max-lg:text-center z-[3] max-lg:-mt-80">
+            <div class="relative flex flex-col gap-8 max-lg:items-center text-white max-lg:text-center z-[3] max-lg:-mt-80
+            ">
                 <h1 class="text-3xl lg:text-6xl font-bold lg:w-2/5">Connecting Your World<span class="text-primary"> Everywhere</span></h1>
                 <p class="text-sm text-[#ACA8A8] lg:w-1/3">Stay connected effortlessly with our reliable telecom solutions, ensuring seamless communication anytime, anywhere. Experience high-speed networks, crystal-clear calls, and innovative services.</p>
                 
