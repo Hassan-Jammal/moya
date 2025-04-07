@@ -60,7 +60,7 @@
             </div>
         </section>
     
-        <section v-if="solutionData" class="my-12 bg-[#F8F8F9]">
+        <section v-if="solutionData" class="my-12 py-24 bg-[#F8F8F9]">
             <div class="container">
                 <div class="py-24 px-4 lg:px-14 text-white rounded-3xl bg-[url('/images/solutions-category-bg.webp')] bg-cover bg-center">
                     <div class="flex flex-col items-center text-center gap-8 lg:w-1/2 mx-auto">
