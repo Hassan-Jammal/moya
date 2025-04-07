@@ -279,7 +279,7 @@
             clickable: false,
             links: [
                 { title: "About Us", path: "/about-us" },
-                { title: "Contact Us", link: "/contact-us" },
+                { title: "Contact Us", path: "/contact-us" },
             ]
         }
     ]);

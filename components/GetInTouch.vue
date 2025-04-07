@@ -3,7 +3,7 @@
         <div class="container">
             <div class="relative py-12 px-4 lg:px-24 bg-primary rounded-3xl overflow-hidden">
                 <div class="absolute top-0 left-0 w-full h-full">
-                    <NuxtImg class="w-full h-full object-cover mix-blend-color-burn" src="/images/have-questions-talk-to-us-bg.png" alt="" width="" height="" />
+                    <NuxtImg class="w-full h-full object-cover mix-blend-color-burn" src="/images/have-questions-talk-to-us-bg.webp" alt="" width="" height="" />
                 </div>
 
                 <div class="flex max-lg:flex-col justify-between items-center gap-4 max-lg:text-center text-white">

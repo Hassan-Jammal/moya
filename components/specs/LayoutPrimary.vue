@@ -1,7 +1,7 @@
 <template>
     <div class="flex max-lg:flex-col justify-between gap-12">
         <div class="flex-1">
-            <NuxtImg class="w-full" :src="`images/${productData.specs.image}.png`" :alt="productData.specs.title" />
+            <NuxtImg class="w-full" :src="`images/${productData.specs.image}.webp`" :alt="productData.specs.title" />
         </div>
         <div class="flex-1 h-full flex flex-col gap-12">
             <h2 class="text-xl lg:text-3xl font-semibold">{{ productData.specs.title }}</h2>

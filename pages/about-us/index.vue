@@ -80,7 +80,7 @@
                                 Your browser does not support the video tag.
                             </video>
                             <!-- <NuxtImg v-ixf="solution.type == 'gif'" class="w-full" :src="`images/${solution.media}.gif`" alt="" width="" height="" /> -->
-                            <NuxtImg v-else class="w-full rounded-3xl" :src="`images/${solution.media}.png`" alt="" width="1486" height="836" />
+                            <NuxtImg v-else class="w-full rounded-3xl" :src="`images/${solution.media}.webp`" alt="" width="1486" height="836" />
                         </swiper-slide>
                     </swiper-container>
 

@@ -22,7 +22,7 @@
 					</NuxtLink>
 				</div>
                 <div class="w-full lg:w-1/2 relative lg:absolute bottom-0 right-0 max-lg:mt-12">
-					<NuxtImg class="ml-auto w-full 2xl:w-4/5 4xl:w-3/5" :src="`/images/${solutionData.image}.png`" alt="" width="" height="" />
+					<NuxtImg class="ml-auto w-full 2xl:w-4/5 4xl:w-3/5" :src="`/images/${solutionData.image}.webp`" alt="" width="" height="" />
 				</div>
 			</div>
 		</div>
@@ -43,13 +43,13 @@
                 </div>
             </div>
 
-            <NuxtImg class="w-full mt-12 pt-12" :src="`images/${solutionData.image1}.png`" :alt="solutionData.title" width="2292" height="1482" />
+            <NuxtImg class="w-full mt-12 pt-12" :src="`images/${solutionData.image1}.webp`" :alt="solutionData.title" width="2292" height="1482" />
 		</div>
     </section>
  
     <section v-if="solutionData" class="my-12 py-24 bg-[#F8F8F9]">
         <div class="container">
-            <div class="py-24 px-4 lg:px-14 text-white rounded-3xl bg-[url('/images/solutions-category-bg.png')] bg-cover bg-center">
+            <div class="py-24 px-4 lg:px-14 text-white rounded-3xl bg-[url('/images/solutions-category-bg.webp')] bg-cover bg-center">
                 <div class="flex flex-col items-center text-center gap-8 lg:w-1/2 mx-auto">
                     <h3 class="text-sm uppercase">Key Benefits</h3>
                     <h2 class="text-xl lg:text-3xl font-semibold">{{ solutionData.benefits.title }}</h2>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="grid gap-8 lg:gap-4 text-center" :class="{'md:grid-cols-2 lg:grid-cols-4': solutionData.application_scenario.length === 4, 'md:grid-cols-3': solutionData.application_scenario.length === 3, 'md:grid-cols-2 lg:grid-cols-4': solutionData.application_scenario.length >= 4 && solutionData.application_scenario.length % 2 === 0}">
                     <div v-for="(scenario, index) in solutionData.application_scenario" :key="index" class="relative aspect-video overflow-hidden rounded-3xl">
-                        <NuxtImg class="w-full h-full object-cover" :src="`/images/${scenario.image}.png`" :alt="scenario.title" width="366" height="342" />
+                        <NuxtImg class="w-full h-full object-cover" :src="`/images/${scenario.image}.webp`" :alt="scenario.title" width="366" height="342" />
                         <h2 class="absolute bottom-8 left-8 text-2xl font-bold text-white mt-4">{{ scenario.title }}</h2>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
 				<div class="grid lg:grid-cols-3 gap-12">
 					<div v-for="(product, productIndex) in solutionData.products" :key="productIndex" class="flex flex-col justify-between items-center gap-12 py-12 px-4 lg:px-8 text-center bg-[#F8F8F9] rounded-3xl">
 						<div class="flex flex-col justify-center items-center gap-4 w-full">
-							<NuxtImg class="w-full" :src="`/images/${product.image}.png`" :alt="product.title" width="" height="" />
+							<NuxtImg class="w-full" :src="`/images/${product.image}.webp`" :alt="product.title" width="" height="" />
 							<h3 class="text-sm mt-6">{{ product.sub_title }}</h3>
 							<NuxtLink :to="`/products/${slugify(product.category)}/${slugify(product.sub_category)}/${slugify(product.title)}`">
 								<h2 class="text-2xl font-BankGothic font-bold">{{ product.title }}</h2>

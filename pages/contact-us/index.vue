@@ -134,7 +134,7 @@
 
         ogTitle: 'Contact Us',
         ogDescription: '',
-        ogImage: 'https://moya.com/images/og-image-1200x630.png',
+        ogImage: 'https://moya.com/images/og-image-1200x630.webp',
 
         twitterTitle: 'Contact Us',
         twitterDescription: '',

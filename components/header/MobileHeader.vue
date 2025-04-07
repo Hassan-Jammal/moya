@@ -42,14 +42,14 @@
                 <p class="text-[#A2A2A2] uppercase text-sm">Featured Items</p>
                 <div class="flex flex-col gap-4">
                     <div class="w-full flex items-center gap-4 border rounded-lg p-4">
-                        <NuxtImg src="/images/core-network-menu.png" alt="Core Network" width="86" height="72" />
+                        <NuxtImg src="/images/core-network-menu.webp" alt="Core Network" width="86" height="72" />
                         <div class="flex flex-col gap-2">
                             <p class="text-sm">MNO Solution</p>
                             <p class="text-[10px] text-[#A2A2A2]">End-to-end solution compliant with 3GPP standards, offering full functionality, third-party device integration, and scalable user capacity from 100 to 10 million.</p>
                         </div>
                     </div>
                     <div class="w-full flex items-center gap-4 border rounded-lg p-4">
-                        <NuxtImg src="/images/4g-lte-micro-bbu-menu.png" alt="4G LTE MICRO BBU" width="86" height="72" />
+                        <NuxtImg src="/images/4g-lte-micro-bbu-menu.webp" alt="4G LTE MICRO BBU" width="86" height="72" />
                         <div class="flex flex-col gap-2">
                             <p class="text-sm">4G LTE BBU</p>
                             <p class="text-[10px] text-[#A2A2A2]">Distributed Site - Micro BBU</p>

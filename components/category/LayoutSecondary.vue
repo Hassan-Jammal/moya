@@ -29,7 +29,7 @@
                     
                     <div class="flex max-lg:flex-col justify-between lg:items-center gap-12">
                         <div class="flex-1 flex flex-col gap-4">
-                            <NuxtImg class="w-full" :src="`/images/${categoryData.image}.png`" :alt="categoryData.title" />
+                            <NuxtImg class="w-full" :src="`/images/${categoryData.image}.webp`" :alt="categoryData.title" />
                             <p class="text-xs mt-12 text-[#ACA8A8] text-center" v-html="categoryData.description"></p>
                         </div>
 
@@ -51,7 +51,7 @@
                         <h4 class="text-sm font-semibold">Application Scenario</h4>
                         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 text-center">
                             <div v-for="(scenario, index) in categoryData.application_scenario" :key="index">
-                                <NuxtImg class="w-full" :src="`/images/${scenario.image}.png`" :alt="scenario.title" width="392" height="206" />
+                                <NuxtImg class="w-full" :src="`/images/${scenario.image}.webp`" :alt="scenario.title" width="392" height="206" />
                                 <p class="text-sm mt-4" v-html="scenario.title"></p>
                             </div>
                         </div>

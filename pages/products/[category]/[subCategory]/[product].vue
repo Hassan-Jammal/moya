@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div class="flex-1">
-                    <NuxtImg class="w-full" :src="`images/${productData.image_inner}.png`" :alt="productData.title" :width="productData.width" :height="productData.height" />
+                    <NuxtImg class="w-full" :src="`images/${productData.image_inner}.webp`" :alt="productData.title" :width="productData.width" :height="productData.height" />
                 </div>
             </div>
         </div>
@@ -66,7 +66,7 @@
                 <div v-for="(product, index) in relatedProducts" :key="index"
                      class="flex flex-col justify-between items-center gap-12 py-12 px-4 lg:px-8 text-center bg-[#F8F8F9] rounded-3xl">
                     <div class="flex flex-col justify-center items-center gap-4 w-full">
-                        <NuxtImg class="w-full" :src="`/images/${product.image_outer}.png`" :alt="product.title" />
+                        <NuxtImg class="w-full" :src="`/images/${product.image_outer}.webp`" :alt="product.title" />
                         <h3 class="text-sm mt-6">{{ product.sub_title }}</h3>
                         <NuxtLink :to="`/products/${slugify(categoryData.title)}/${slugify(product.parentSubcategory)}/${slugify(product.title)}`">
                             <h2 class="text-2xl font-BankGothic font-bold">{{ product.title }}</h2>

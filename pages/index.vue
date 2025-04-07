@@ -39,7 +39,7 @@
             <div class="wrapper grid grid-flow-col auto-cols-[10rem] lg:auto-cols-[15rem] justify-items-center items-center mt-10 lg:my-10 animate-[marquee_20s_linear_infinite] lg:animate-[marqueelg_20s_linear_infinite]">
                 <template v-for="(marquee, index) in duplicatedMarqueeList" :key="index">
                     <a :href="marquee.link" target="_blank">
-                        <img loading="lazy" class="marquee-item w-2/3 opacity-75" :src="`images/${marquee.image}.png`" :alt="marquee.alt" :width="marquee.width" :height="marquee.height" data-aos="fade-up" :data-aos-delay="(index + 1) * 100"/>
+                        <NuxtImg class="marquee-item w-full opacity-75" :src="`images/${marquee.image}.webp`" :alt="marquee.alt" :width="marquee.width" :height="marquee.height" />
                     </a>
                 </template>
             </div>
@@ -80,7 +80,7 @@
                                 </button>
                             </NuxtLink>
                         </div>
-                        <NuxtImg class="w-full lg:w-4/5 mx-auto" :src="`images/${solution.image}.png`" :alt="solution.title" :width="solution.width" :height="solution.height" />
+                        <NuxtImg class="w-full lg:w-4/5 mx-auto" :src="`images/${solution.image}.webp`" :alt="solution.title" :width="solution.width" :height="solution.height" />
                     </swiper-slide>
                 </swiper-container>
             </ClientOnly>
@@ -130,11 +130,11 @@
         <div class="container">
             <div class="relative flex md:justify-end md:items-center py-12 px-4 md:px-8 rounded-3xl md:aspect-[24/9]">
                 <div class="hidden md:block absolute bottom-0 md:left-0 lg:left-24 w-1/2 lg:w-2/5 z-20">
-                    <NuxtImg src="/images/have-questions-talk-to-us.png" alt="" width="" height="" />
+                    <NuxtImg src="/images/have-questions-talk-to-us.webp" alt="" width="" height="" />
                 </div>
                 
                 <div class="absolute top-0 left-0 w-full h-full z-10 rounded-3xl overflow-hidden">
-                    <NuxtImg class="w-full h-full object-cover" src="/images/have-questions-talk-to-us-bg.png" alt="Have Questions Image" width="3480" height="986" />
+                    <NuxtImg class="w-full h-full object-cover" src="/images/have-questions-talk-to-us-bg.webp" alt="Have Questions Image" width="3480" height="986" />
                 </div>
 
                 <div class="flex flex-col gap-4 md:w-1/2 z-10">
@@ -170,7 +170,7 @@
                         <template v-if="category.sub_categories.length">
                             <div v-for="(product, productIndex) in getThreeProducts(category.sub_categories)" :key="productIndex" class="flex flex-col justify-between items-center gap-12 py-12 px-4 lg:px-8 text-center bg-[#F8F8F9] rounded-3xl">
                                 <div class="flex flex-col justify-center items-center gap-4">
-                                    <NuxtImg class="w-full" :src="`/images/${product.image_outer}.png`" :alt="product.title" width="" height="" />
+                                    <NuxtImg class="w-full" :src="`/images/${product.image_outer}.webp`" :alt="product.title" width="" height="" />
                                     <h3 class="text-sm">{{ product.sub_title }}</h3>
                                     <NuxtLink :to="`/products/${slugify(category.title)}/${slugify(product.title)}`">
                                         <h2 class="text-3xl font-BankGothic font-bold">{{ product.title }}</h2>
@@ -274,6 +274,11 @@
     };
 
     const marqueeList = [
+        { image: "1", alt: "MyMonty", width: "174", height: "35", link: "https://mymonty.com" },
+        { image: "2", alt: "Comium", width: "154", height: "38", link: "https://comium.gm" },
+        { image: "3", alt: "MontyPay", width: "183", height: "33", link: "https://montypay.com" },
+        { image: "4", alt: "Monty Mobile", width: "154", height: "48", link: "https://montymobile.com" },
+        { image: "5", alt: "Monty Capital", width: "225", height: "35", link: "https://montycapital.com" },
         { image: "1", alt: "MyMonty", width: "174", height: "35", link: "https://mymonty.com" },
         { image: "2", alt: "Comium", width: "154", height: "38", link: "https://comium.gm" },
         { image: "3", alt: "MontyPay", width: "183", height: "33", link: "https://montypay.com" },
@@ -402,10 +407,13 @@
 
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
     swiper-container::part(scrollbar) 
         position: relative
         height: 2px
         background-color: #2B6FF622
         margin-top: 100px
+
+    .marquee .wrapper:hover
+        animation-play-state: paused
 </style>

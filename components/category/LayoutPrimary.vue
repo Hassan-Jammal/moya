@@ -27,7 +27,7 @@
                     </div>
                     <p class="mt-12 text-xs text-[#ACA8A8]" v-html="categoryData.description"></p>
                 </div>
-                <NuxtImg class="w-full mx-auto mt-12" :src="`/images/${categoryData.image}.png`" :alt="categoryData.title" />
+                <NuxtImg class="w-full mx-auto mt-12" :src="`/images/${categoryData.image}.webp`" :alt="categoryData.title" />
             </div>
         </div>
     </transition>

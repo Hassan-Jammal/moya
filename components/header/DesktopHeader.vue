@@ -44,7 +44,7 @@
                                     <div class="flex flex-col gap-4">
                                         <div class="w-full flex items-center gap-4 border rounded-lg p-4">
                                             <div class="flex-shrink-0">
-                                                <NuxtImg class="w-full" src="/images/core-network-menu.png" alt="Core Network" width="86" height="72" />
+                                                <NuxtImg class="w-full" src="/images/core-network-menu.webp" alt="Core Network" width="86" height="72" />
                                             </div>
                                             <div class="flex flex-col gap-2">
                                                 <p class="text-sm">MNO Solution</p>
@@ -53,7 +53,7 @@
                                         </div>
                                         <div class="w-full flex items-center gap-4 border rounded-lg p-4">
                                             <div class="flex-shrink-0">
-                                                <NuxtImg class="w-full" src="/images/4g-lte-micro-bbu-menu.png" alt="4G LTE MICRO BBU" width="86" height="72" />
+                                                <NuxtImg class="w-full" src="/images/4g-lte-micro-bbu-menu.webp" alt="4G LTE MICRO BBU" width="86" height="72" />
                                             </div>
                                             <div class="flex flex-col gap-2">
                                                 <p class="text-sm">4G LTE BBU</p>

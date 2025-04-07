@@ -14,9 +14,9 @@
 
 			<h1 class="text-3xl lg:text-5xl font-semibold mt-4">{{ subCategoryData.title }}</h1>
 
-			<div class="py-24 px-4 lg:px-14 text-white rounded-3xl mt-12 bg-[url('/images/products-for-seamless-connectivity-bg.png')] bg-cover bg-center">
+			<div class="py-24 px-4 lg:px-14 text-white rounded-3xl mt-12 bg-[url('/images/products-for-seamless-connectivity-bg.webp')] bg-cover bg-center">
 				<!-- <div class="absolute top-0 left-0 w-full h-full">
-					<NuxtImg class="w-full h-full object-cover" src="/images/products-for-seamless-connectivity.png" alt="" width="" height="" />
+					<NuxtImg class="w-full h-full object-cover" src="/images/products-for-seamless-connectivity.webp" alt="" width="" height="" />
 				</div> -->
 
 				<div class="flex flex-col gap-8 lg:w-1/2">
@@ -48,7 +48,7 @@
 				<div class="grid lg:grid-cols-3 gap-12">
 					<div v-for="(product, productIndex) in subCategoryData.products" :key="productIndex" class="flex flex-col justify-between items-center gap-12 py-12 px-4 lg:px-8 text-center bg-[#F8F8F9] rounded-3xl">
 						<div class="flex flex-col justify-center items-center gap-4 w-full">
-							<NuxtImg class="w-full" :src="`/images/${product.image_outer}.png`" :alt="product.title" width="" height="" />
+							<NuxtImg class="w-full" :src="`/images/${product.image_outer}.webp`" :alt="product.title" width="" height="" />
 							<h3 class="text-sm mt-6">{{ product.sub_title }}</h3>
 							<NuxtLink :to="`/products/${slugify(categoryData.title)}/${slugify(subCategoryData.title)}/${slugify(product.title)}`">
 								<h2 class="text-2xl font-BankGothic font-bold">{{ product.title }}</h2>
