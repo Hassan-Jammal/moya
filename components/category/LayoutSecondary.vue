@@ -7,7 +7,7 @@
             
             <!-- Modal Content -->
             <div class="w-11/12 md:w-2/3 lg:w-1/2 h-[94%] overflow-y-auto fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 py-8 md:py-8 lg:py-16 px-4 md:px-12 bg-white rounded-3xl shadow-lg">
-                <Icon name="fa6-solid:xmark" class="absolute top-4 right-4 cursor-pointer text-3xl" @click="onToggle" />
+                <Icon name="fa6-solid:xmark" class="absolute top-4 right-4 cursor-pointer text-xl opacity-50" @click="onToggle" />
                 
                 <div class="flex flex-col gap-12">
                     <div class="flex max-lg:flex-col justify-between lg:items-center gap-4">
@@ -20,7 +20,7 @@
                                 }}
                             </h3>
                         </div>
-                        <NuxtLink to="/">
+                        <NuxtLink to="/get-a-quote">
                             <button class="p-2 min-w-[120px] text-sm border border-white text-white bg-primary hover:text-white hover:bg-black rounded-full select-none transition-all duration-300 ease-in-out">
                                 Get a Quote
                             </button>

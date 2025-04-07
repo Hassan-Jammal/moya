@@ -15,7 +15,7 @@
                         <tbody>
                             <tr v-for="(item, index) in category.items" :key="index" class="border-b">
                                 <td class="border border-gray-300 px-4 py-2 lg:w-1/2 text-[#2B6FF6]">{{ item.title }}</td>
-                                <td class="border border-gray-300 px-4 py-2 lg:w-1/2 text-[#ACA8A8]" v-html="item.description"></td>
+                                <td class="border border-gray-300 px-4 py-2 lg:w-1/2" v-html="item.description"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -28,13 +28,13 @@
                     <thead>
                         <tr class="bg-gray-100 text-left">
                             <th class="border border-gray-300 px-4 py-2 lg:w-1/2 text-[#2B6FF6]">Item</th>
-                            <th class="border border-gray-300 px-4 py-2 lg:w-1/2 text-[#ACA8A8]">Specification</th>
+                            <th class="border border-gray-300 px-4 py-2 lg:w-1/2">Specification</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr v-for="(item, index) in productData.specs.items" :key="index" class="border-b">
                             <td class="border border-gray-300 px-4 py-2 text-[#2B6FF6]">{{ item.title }}</td>
-                            <td class="border border-gray-300 px-4 py-2 text-[#ACA8A8]" v-html="item.description"></td>
+                            <td class="border border-gray-300 px-4 py-2" v-html="item.description"></td>
                         </tr>
                     </tbody>
                 </table>

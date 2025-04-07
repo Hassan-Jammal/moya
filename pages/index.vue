@@ -18,9 +18,7 @@
                 <p class="text-sm text-[#ACA8A8] lg:w-1/3">Stay connected effortlessly with our reliable telecom solutions, ensuring seamless communication anytime, anywhere. Experience high-speed networks, crystal-clear calls, and innovative services.</p>
                 
                 <div class="flex gap-4">
-                    <NuxtLink to="/">
-                        <button class="p-2 min-w-[120px] text-sm text-black bg-white hover:text-white hover:bg-primary rounded-full select-none transition-all duration-300 ease-in-out">Explore</button>
-                    </NuxtLink>
+                    <ScrollButton target="products" class="p-2 min-w-[120px] text-sm text-black bg-white hover:text-white hover:bg-primary rounded-full select-none transition-all duration-300 ease-in-out">Explore</ScrollButton>
 
                     <NuxtLink to="/contact-us">
                         <button class="p-2 min-w-[120px] text-sm text-white bg-primary hover:text-black hover:bg-white rounded-full select-none transition-all duration-300 ease-in-out">Contact Us</button>
@@ -32,15 +30,15 @@
 
     <section class="py-12 bg-[#F8F8F9]">
         <div class="container">
-            <h2 class="text-center text-base lg:text-xl font-semibold">Trusted by Top Companies Worlwide</h2>
+            <h2 class="text-center text-base lg:text-xl font-semibold">Trusted by Top Companies Worldwide</h2>
         </div>
 
         <div class="marquee overflow-hidden">
-            <div class="wrapper grid grid-flow-col auto-cols-[10rem] lg:auto-cols-[15rem] justify-items-center items-center mt-10 lg:my-10 animate-[marquee_20s_linear_infinite] lg:animate-[marqueelg_20s_linear_infinite]">
+            <div class="wrapper grid grid-flow-col auto-cols-[10rem] lg:auto-cols-[20rem] justify-items-center items-center mt-10 animate-[marquee_20s_linear_infinite] lg:animate-[marqueelg_20s_linear_infinite]">
                 <template v-for="(marquee, index) in duplicatedMarqueeList" :key="index">
-                    <a :href="marquee.link" target="_blank">
-                        <NuxtImg class="marquee-item w-full opacity-75" :src="`images/${marquee.image}.webp`" :alt="marquee.alt" :width="marquee.width" :height="marquee.height" />
-                    </a>
+                    <!-- <a :href="marquee.link" target="_blank"> -->
+                        <NuxtImg class="marquee-item opacity-75" :src="`images/${marquee.image}.webp`" :alt="marquee.alt" :width="marquee.width" :height="marquee.height" />
+                    <!-- </a> -->
                 </template>
             </div>
         </div>
@@ -148,7 +146,7 @@
         </div>
     </section>
 
-    <section class="mt-12 py-12">
+    <section id="products" class="mt-12 py-12">
         <div class="container">
             <div class="flex flex-col gap-4">
                 <h2 class="text-2xl lg:text-5xl font-semibold">Moya's Products</h2>
@@ -213,7 +211,8 @@
 </template>
 
 <script setup>
-    import categories from '~/data/products';
+    import ScrollButton from '~/components/ScrollButton.vue';
+import categories from '~/data/products';
     import slugify from '~/utils/slugify';
     
     useSeoMeta({
@@ -279,11 +278,12 @@
         { image: "3", alt: "MontyPay", width: "183", height: "33", link: "https://montypay.com" },
         { image: "4", alt: "Monty Mobile", width: "154", height: "48", link: "https://montymobile.com" },
         { image: "5", alt: "Monty Capital", width: "225", height: "35", link: "https://montycapital.com" },
-        { image: "1", alt: "MyMonty", width: "174", height: "35", link: "https://mymonty.com" },
-        { image: "2", alt: "Comium", width: "154", height: "38", link: "https://comium.gm" },
-        { image: "3", alt: "MontyPay", width: "183", height: "33", link: "https://montypay.com" },
-        { image: "4", alt: "Monty Mobile", width: "154", height: "48", link: "https://montymobile.com" },
-        { image: "5", alt: "Monty Capital", width: "225", height: "35", link: "https://montycapital.com" },
+        { image: "6", alt: "MyMonty", width: "174", height: "35", link: "https://mymonty.com" },
+        { image: "7", alt: "Comium", width: "154", height: "38", link: "https://comium.gm" },
+        { image: "8", alt: "MontyPay", width: "183", height: "33", link: "https://montypay.com" },
+        { image: "9", alt: "Monty Mobile", width: "154", height: "48", link: "https://montymobile.com" },
+        { image: "10", alt: "Monty Capital", width: "225", height: "35", link: "https://montycapital.com" },
+        { image: "11", alt: "Monty Capital", width: "225", height: "35", link: "https://montycapital.com" },
     ];
 
     const duplicatedMarqueeList = computed(() => [...marqueeList, ...marqueeList]);
@@ -293,63 +293,63 @@
             title: "MNO Solution", 
             category: "Core Network", 
             link: "",
-            image: "mno-solution-partner", 
+            image: "mno-solution", 
             color: "#2B6FF6", 
         },
         {  
             title: "Dense Area Solution", 
             category: "4G/5G RAN", 
             link: "",
-            image: "dense-area-solution-partner", 
+            image: "dense-area-solution", 
             color: "#43516D", 
         },
         {  
             title: "Fiber Solution", 
             category: "Repeater", 
             link: "",
-            image: "fiber-solution-partner", 
+            image: "fiber-solution", 
             color: "#323D86", 
         },
         {  
             title: "FWA Solution", 
             category: "Core Network", 
             link: "",
-            image: "fwa-solution-partner", 
+            image: "fwa-solution", 
             color: "#2B6FF6", 
         },
         {  
             title: "Rural Area Solution", 
             category: "4G/5G RAN", 
             link: "",
-            image: "rural-area-solution-partner", 
+            image: "rural-area-solution", 
             color: "#43516D", 
         },
         {  
             title: "Wireless Solution", 
             category: "Repeater", 
             link: "",
-            image: "wireless-solution-partner", 
+            image: "wireless-solution", 
             color: "#323D86", 
         },
         {  
             title: "Enterprise / Private Network Solution", 
             category: "Core Network", 
             link: "",
-            image: "enterprise-solution-partner", 
+            image: "enterprise-private-network-solution", 
             color: "#2B6FF6", 
         },
         {  
             title: "Indoor Solution", 
             category: "4G/5G RAN", 
             link: "",
-            image: "indoor-solution-partner", 
+            image: "indoor-solution", 
             color: "#43516D", 
         },
         {  
             title: "ICS Wireless Solution", 
             category: "Repeater", 
             link: "",
-            image: "ics-wireless-solution-partner", 
+            image: "ics-wireless-solution", 
             color: "#2B6FF6", 
         },
     ]

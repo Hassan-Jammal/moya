@@ -3,6 +3,7 @@ const categories = [
         title: "Core Network",
         sub_title: "Core Strength for a Connected World.",
         description: "Empowering Networks, Transforming Communication.",
+        color: "#2B6FF6", 
         solutions: [
             {
                 title: "MNO Solution",
@@ -22,7 +23,7 @@ const categories = [
                         icon: "4g-networks",
                     }
                 ],
-                image: "mno-solution-partner",
+                image: "mno-solution",
                 image1: "mno-solution-infrastructure",
                 benefits: {
                     title: "Empowering Connectivity, Enabling Seamless 5G Transition.",
@@ -35,7 +36,7 @@ const categories = [
                 application_scenario: [
                     {
                         title: "Urban",
-                        image: "mno-solution-community-scenario"
+                        image: "mno-solution-urban-scenario"
                     },
                     {
                         title: "Country",
@@ -83,7 +84,7 @@ const categories = [
                         icon: "multi-vendors-enodesbs-supported",
                     }
                 ],
-                image: "fwa-solution-partner",
+                image: "fwa-solution",
                 image1: "fwa-solution-infrastructure",
                 benefits: {
                     title: "Seamless, Secure, and High-Performance LTE/5G Connectivity for Your Business.",
@@ -136,7 +137,7 @@ const categories = [
                         icon: "high-security-and-better-coverage",
                     }
                 ],
-                image: "mno-solution-partner",
+                image: "enterprise-private-network-solution",
                 image1: "enterprise-private-network-solution-infrastructure",
                 benefits: {
                     title: "Seamless Connectivity, Scalable Power, and Future-Ready Integration.",
@@ -187,12 +188,13 @@ const categories = [
                     }
                 ]
             },
-        ]
+        ],
     },
     {
         title: "4G/5G RAN",
         sub_title: "Smarter Networks, Stronger Connections.",
         description: "Empowering LTE/5G with Flexibility and Efficiency.",
+        color: "#43516D", 
         solutions: [
             {
                 title: "Dense Area Solution",
@@ -212,7 +214,7 @@ const categories = [
                         icon: "intelligent-traffic-steering-load-balancing",
                     }
                 ],
-                image: "dense-area-solution-partner",
+                image: "dense-area-solution",
                 image1: "dense-area-solution-infrastructure",
                 benefits: {
                     title: "Unifying Networks, Powering Innovation",
@@ -301,7 +303,7 @@ const categories = [
                         icon: "energy-efficient-off-grid-power-solutions",
                     }
                 ],
-                image: "rural-area-solution-partner",
+                image: "rural-area-solution",
                 image1: "rural-area-solution-infrastructure",
                 benefits: {
                     title: "Seamless Connectivity for Every Rural Need",
@@ -406,7 +408,7 @@ const categories = [
                         icon: "wi-fi-offloading-lte-5g",
                     }
                 ],
-                image: "indoor-solution-partner",
+                image: "indoor-solution",
                 image1: "indoor-solution-infrastructure",
                 benefits: {
                     title: "Optimized Indoor Connectivity, Effortless Deployment",
@@ -499,6 +501,7 @@ const categories = [
         title: "Repeater",
         sub_title: "Boosting Signals, Bridging Distances.",
         description: "Extending Coverage, Enhancing Connectivity.",
+        color: "#323D86", 
         solutions: [
             {
                 title: "Fiber Solution",
@@ -514,7 +517,7 @@ const categories = [
                         icon: "cloud-ran-with-fiber-backhaul",
                     }
                 ],
-                image: "fiber-solution-partner",
+                image: "fiber-solution",
                 image1: "fiber-solution-infrastructure",
                 benefits: {
                     title: "Optimized Indoor Connectivity, Effortless Deployment",
@@ -579,7 +582,7 @@ const categories = [
                         icon: "operated-in-low-power-consumption",
                     }
                 ],
-                image: "wireless-solution-partner",
+                image: "wireless-solution",
                 image1: "wireless-solution-infrastructure",
                 benefits: {
                     title: "Stronger Signals, Wider Reach, Seamless Connectivity",
@@ -640,7 +643,7 @@ const categories = [
                         icon: "mimo-signal-enhancement",
                     }
                 ],
-                image: "ics-wireless-solution-partner",
+                image: "ics-wireless-solution",
                 image1: "ics-wireless-solution-infrastructure",
                 benefits: {
                     title: "Smart Coverage, Strong Signals, Effortless Deployment",
