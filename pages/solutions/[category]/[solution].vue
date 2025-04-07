@@ -1,5 +1,5 @@
 <template>
-    <section v-if="solutionData" class="py-12 lg:fixed w-full lg:top-[--header-height] lg:h-[50vh]">
+    <section id="section-1" v-if="solutionData" class="py-12 lg:fixed w-full lg:top-[--header-height] lg:h-[--section-1-height]">
 		<div class="container">
 			<ul class="flex items-center gap-2 text-xs">
 				<li><NuxtLink to="/">Home</NuxtLink></li>
@@ -28,8 +28,8 @@
 		</div>
 	</section>
 
-    <div class="relative lg:mt-[calc(60vh-3rem)] lg:bg-white lg:z-20">
-        <section v-if="solutionData" class="my-12 py-24 max-lg:py-12">
+    <div class="relative lg:mt-[calc(var(--section-1-height)+var(--header-height)-3rem)] lg:bg-white lg:z-20">
+        <section v-if="solutionData" class="mb-12 py-24 max-lg:py-12">
             <div class="container">
                 <!-- <div class="flex max-lg:flex-col lg:items-center gap-12 lg:gap-48">
                     <div class="lg:w-3/5">
@@ -133,6 +133,8 @@
         if (!categoryData.value) return;
         // Find the solution within the category
         solutionData.value = categoryData.value.solutions.find(s => slugify(s.title) === solutionSlug.value) || null;
+
+        
     });
 
     // Update SEO metadata dynamically when categoryData is available
@@ -150,6 +152,19 @@
                 twitterDescription: `Explore ${solutionData.value.title} for innovative solutions.`,
                 twitterCard: 'summary_large_image',
             });
+        }
+    });
+
+    // Watch for when solutionData is set
+    watch(solutionData, async (val) => {
+        if (val) {
+            await nextTick(); // wait for DOM update
+            const section1 = document.getElementById('section-1');
+            if (section1) {
+                const section1Height = section1.getBoundingClientRect().height;
+                document.documentElement.style.setProperty('--section-1-height', `${section1Height}px`);
+            } else {
+            }
         }
     });
 </script>
