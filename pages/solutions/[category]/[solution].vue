@@ -29,7 +29,7 @@
 	</section>
 
     <div class="relative lg:mt-[calc(var(--section-1-height)+var(--header-height)-3rem)] lg:bg-white lg:z-20">
-        <section v-if="solutionData" class="mb-12 py-24 max-lg:py-12">
+        <section v-if="solutionData" class="py-24 max-lg:py-6">
             <div class="container">
                 <!-- <div class="flex max-lg:flex-col lg:items-center gap-12 lg:gap-48">
                     <div class="lg:w-3/5">
@@ -60,9 +60,9 @@
             </div>
         </section>
     
-        <section v-if="solutionData" class="my-12 py-24 bg-[#F8F8F9]">
+        <section v-if="solutionData" class="py-12 bg-[#F8F8F9]">
             <div class="container">
-                <div class="py-24 px-4 lg:px-14 text-white rounded-3xl bg-[url('/images/solutions-category-bg.webp')] bg-cover bg-center">
+                <div class="py-12 lg:py-24 px-4 lg:px-14 text-white rounded-3xl bg-[url('/images/solutions-category-bg.webp')] bg-cover bg-center">
                     <div class="flex flex-col items-center text-center gap-8 lg:w-1/2 mx-auto">
                         <h3 class="text-sm uppercase">Key Benefits</h3>
                         <h2 class="text-xl lg:text-3xl font-semibold">{{ solutionData.benefits.title }}</h2>
@@ -87,11 +87,11 @@
             </div>
         </section>
 
-        <section v-if="solutionData" class="mt-12 pb-56 bg-white">
+        <section v-if="solutionData" class="mt-12 lg:mt-24 pb-56 bg-white">
             <div class="container">
-                <div class="flex flex-col gap-8 mt-24">
+                <div class="flex flex-col gap-8">
                     <h3 class="text-xl lg:text-3xl font-semibold">Included Products</h3>
-                    <div class="grid lg:grid-cols-3 gap-12">
+                    <div class="grid lg:grid-cols-3 gap-4 lg:gap-8">
                         <div v-for="(product, productIndex) in solutionData.products" :key="productIndex" class="flex flex-col justify-between items-center gap-12 py-12 px-4 lg:px-8 text-center bg-[#F8F8F9] rounded-3xl">
                             <div class="flex flex-col justify-center items-center gap-4 w-full">
                                 <NuxtImg class="w-full" :src="`/images/${product.image}.webp`" :alt="product.title" width="" height="" />

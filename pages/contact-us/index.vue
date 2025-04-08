@@ -16,7 +16,7 @@
         </div>
 	</section>
 
-    <section class="py-24 bg-[#F8F8F9]">
+    <section class="py-12 lg:py-24 bg-[#F8F8F9]">
         <div class="container">
             <div class="flex flex-col gap-4 lg:gap-8 w-full lg:w-2/3 mx-auto">
                 <div class="flex max-lg:flex-col gap-4 lg:gap-8 justify-between items-start">

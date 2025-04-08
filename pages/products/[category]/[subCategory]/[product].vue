@@ -49,20 +49,20 @@
         </div>
 	</section>
 
-    <section v-if="productData" class="py-24 bg-[#F8F8F9]">
+    <section v-if="productData" class="py-12 lg:py-24 bg-[#F8F8F9]">
         <div class="container">
             <AdvantagesLayout :productData="productData" />
             <SpecsLayout :productData="productData" :class="{'mt-24': productData.advantages}" />
         </div>
 	</section>
 
-    <section v-if="categoryData" class="mt-12 pt-24 pb-56">
+    <section v-if="categoryData" class="pt-12 lg:pt-24 pb-56">
         <div class="container">
             <h2 class="text-xl lg:text-3xl font-semibold text-center">
                 {{ subCategoryData?.products?.length === 1 ? categoryData.title : subCategoryData?.title }} Products
             </h2>
 
-            <div class="grid lg:grid-cols-3 gap-12 mt-12">
+            <div class="grid lg:grid-cols-3 gap-4 lg:gap-8 mt-12">
                 <div v-for="(product, index) in relatedProducts" :key="index"
                      class="flex flex-col justify-between items-center gap-12 py-12 px-4 lg:px-8 text-center bg-[#F8F8F9] rounded-3xl">
                     <div class="flex flex-col justify-center items-center gap-4 w-full">

@@ -16,7 +16,7 @@
         </div>
 	</section>
 
-    <section class="mt-12 max-lg:py-12">
+    <section class="mt-12 max-lg:pt-6">
         <div class="container">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-4 w-full lg:w-4/5 mx-auto">
                 <NuxtImg class="w-full order-1 lg:order-0" src="images/mountasser-hachem.webp" alt="Mountasser Hachem" width="987" height="876" />
@@ -30,7 +30,7 @@
         </div>
 	</section>
 
-    <section class="py-24 bg-[#F8F8F9]">
+    <section class="py-12 lg:py-24 bg-[#F8F8F9]">
         <div class="container">
             <div class="grid lg:grid-cols-2 items-center gap-8 lg:gap-32">
                 <div class="flex flex-col justify-center gap-8">
@@ -54,7 +54,7 @@
         </div>
     </section>
 
-    <section class="mt-12 pt-12 pb-56 relative">
+    <section class="mt-6 pt-6 lg:mt-12 lg:pt-12 pb-56 relative">
         <div class="container">
             <div class="flex flex-col gap-8 lg:w-2/3 mx-auto text-center">
                 <h2 class="text-2xl lg:text-4xl font-semibold">Leading Global Telecommunications with Innovative, and Practical Solutions</h2>

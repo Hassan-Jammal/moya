@@ -30,7 +30,7 @@
 		</div>
 	</section>
 
-	<section v-if="categoryData" class="my-12 py-12">
+	<section v-if="categoryData" class="lg:my-12 py-12">
 		<div class="container">
 			<div class="flex max-lg:flex-col flex-row justify-between lg:items-center gap-4 overflow-scroll">
                 <h2 class="text-xl lg:text-3xl font-semibold">Get to Know {{ subCategoryData.acronym }}</h2>
@@ -43,9 +43,9 @@
 				<CategoryLayout :categoryData="categoryData" :isModalVisible="isModalVisible" :onToggle="onToggle" />
             </div>
 
-			<div class="flex flex-col gap-24 mt-24">
+			<div class="flex flex-col gap-24 mt-12 lg:mt-24">
 				<!-- <h3 v-if="categoryData.sub_categories.length > 1" class="text-lg lg:text-xl font-semibold">{{ subCategory.title }}</h3> -->
-				<div class="grid lg:grid-cols-3 gap-12">
+				<div class="grid lg:grid-cols-3 gap-4 lg:gap-8">
 					<div v-for="(product, productIndex) in subCategoryData.products" :key="productIndex" class="flex flex-col justify-between items-center gap-12 py-12 px-4 lg:px-8 text-center bg-[#F8F8F9] rounded-3xl">
 						<div class="flex flex-col justify-center items-center gap-4 w-full">
 							<NuxtImg class="w-full" :src="`/images/${product.image_outer}.webp`" :alt="product.title" width="" height="" />
@@ -69,10 +69,10 @@
 		</div>
 	</section>
 
-	<section class="mt-12 pt-24 pb-56 bg-[#F8F8F9]">
+	<section class="lg:mt-12 pt-12 lg:pt-24 pb-56 bg-[#F8F8F9]">
 		<div class="container">
 			<h2 class="text-2xl lg:text-5xl font-semibold">Moya's Capabilities</h2>
-			<div class="grid lg:grid-cols-3 gap-8 mt-12">
+			<div class="grid lg:grid-cols-3 gap-4 lg:gap-8 mt-12">
 				<div v-for="(value, index) in values" :key="index" class="flex flex-col gap-8 h-auto p-4 lg:p-8 rounded-3xl bg-white">
 					<NuxtImg :src="`images/icons/${value.icon}.svg`" :alt="value.title" width="42" height="42" />
 					<h3 class="text-2xl font-semibold">{{ value.title }}</h3>

@@ -12,8 +12,7 @@
         </div>
 
         <div class="container">
-            <div class="relative flex flex-col gap-8 max-lg:items-center text-white max-lg:text-center z-[3] max-lg:-mt-80
-            ">
+            <div class="relative flex flex-col gap-8 max-lg:items-center text-white max-lg:text-center z-[3] max-md:-mt-48 lg:mt-0">
                 <h1 class="text-3xl lg:text-6xl font-bold lg:w-2/5">Connecting Your World<span class="text-primary"> Everywhere</span></h1>
                 <p class="text-sm text-[#ACA8A8] lg:w-1/3">Stay connected effortlessly with our reliable telecom solutions, ensuring seamless communication anytime, anywhere. Experience high-speed networks, crystal-clear calls, and innovative services.</p>
                 
@@ -34,10 +33,10 @@
         </div>
 
         <div class="marquee overflow-hidden">
-            <div class="wrapper grid grid-flow-col auto-cols-[10rem] lg:auto-cols-[20rem] justify-items-center items-center mt-10 animate-[marquee_20s_linear_infinite] lg:animate-[marqueelg_20s_linear_infinite]">
+            <div class="wrapper grid grid-flow-col auto-cols-[8rem] lg:auto-cols-[20rem] justify-items-center items-center mt-10 animate-[marquee_20s_linear_infinite] lg:animate-[marqueelg_20s_linear_infinite]">
                 <template v-for="(marquee, index) in duplicatedMarqueeList" :key="index">
                     <!-- <a :href="marquee.link" target="_blank"> -->
-                        <NuxtImg class="marquee-item opacity-75" :src="`images/${marquee.image}.webp`" :alt="marquee.alt" :width="marquee.width" :height="marquee.height" />
+                        <NuxtImg class="marquee-item max-lg:w-2/3 opacity-75" :src="`images/${marquee.image}.webp`" :alt="marquee.alt" :width="marquee.width" :height="marquee.height" />
                     <!-- </a> -->
                 </template>
             </div>
@@ -196,7 +195,7 @@
         </div>
     </section>
 
-    <section class="mt-12 pt-24 pb-24 bg-[#F8F8F9] text-center">
+    <section class="lg:mt-12 pt-24 pb-24 bg-[#F8F8F9] text-center">
 		<div class="container">
 			<h2 class="text-2xl lg:text-5xl font-semibold">The Heart of Moya: <br /> Our Core Identity and Vision</h2>
 			<div class="grid lg:grid-cols-3 gap-8 w-4/5 mx-auto mt-12 lg:mt-24">
@@ -212,7 +211,7 @@
 
 <script setup>
     import ScrollButton from '~/components/ScrollButton.vue';
-import categories from '~/data/products';
+    import categories from '~/data/products';
     import slugify from '~/utils/slugify';
     
     useSeoMeta({

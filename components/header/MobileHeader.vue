@@ -1,6 +1,6 @@
 <template>
     <nav id="mobile-nav" :class="{ '-translate-x-full': !isNavOpen }"
-        class="block lg:hidden fixed top-[var(--header-height)] left-0 h-screen w-full bg-white z-[2]">
+        class="block lg:hidden fixed top-[var(--header-height)] left-0 h-dvh w-full bg-white z-[2]">
         <!-- Scrollable content container with bottom padding -->
         <div class="container relative h-full pb-48 overflow-y-scroll">
             <ul class="flex flex-col gap-6 pt-6">
