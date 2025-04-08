@@ -43,7 +43,7 @@
         </div>
     </section>
     
-    <section class="lg:my-12 lg:py-12">
+    <section class="my-12 lg:py-12">
         <div class="container">
             <div class="flex flex-col gap-4">
                 <h2 class="text-2xl lg:text-5xl font-semibold">Moya's Solutions</h2>

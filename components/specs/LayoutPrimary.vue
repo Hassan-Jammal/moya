@@ -8,8 +8,8 @@
             <div>
                 <div v-for="(item, index) in productData.specs.items" :key="index" class="flex flex-col">
                     <div class="grid grid-cols-5 gap-2">
-                        <p class="text-sm font-bold">{{ item.title }}</p>
-                        <p class="col-span-3 text-sm" v-html="item.description"></p>
+                        <p class="col-span-2 text-sm font-bold">{{ item.title }}</p>
+                        <p class="col-span-3 text-sm break-words" v-html="item.description"></p>
                     </div>
                     <hr v-if="productData.specs.items.length - 1 !== index" class="my-3" />
                 </div>
