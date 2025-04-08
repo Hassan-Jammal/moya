@@ -11,7 +11,7 @@
             <div class="flex max-lg:flex-col justify-between items-center max-lg:gap-8">
                 <div class="flex-1">
                     <div class="w-full xl:w-2/3">
-                        <ul class="flex items-center flex-wrap gap-2 text-xs">
+                        <ul class="hidden lg:flex items-center flex-wrap gap-2 text-xs">
                             <!-- <li><NuxtLink to="/">Home</NuxtLink></li>
                             <li class="flex"><Icon name="fa6-solid:angle-right" /></li>
                             <li>Products</li>
@@ -25,7 +25,7 @@
                             <li>{{ productData.title }}</li> -->
                         </ul>
 
-                        <h1 class="text-3xl lg:text-4xl font-BankGothic font-bold mt-8">{{ productData.title }}</h1>
+                        <h1 class="text-3xl lg:text-4xl font-BankGothic font-bold">{{ productData.title }}</h1>
                         <h2 class="text-xl font-BankGothic font-bold">{{ productData.sub_title }}</h2>
 
                         <hr class="my-8" />

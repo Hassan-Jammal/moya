@@ -1,7 +1,7 @@
 <template>
     <section id="section-1" v-if="solutionData" class="py-12 lg:fixed w-full lg:top-[--header-height] lg:h-[--section-1-height]">
 		<div class="container">
-			<ul class="flex items-center gap-2 text-xs">
+			<ul class="hidden lg:flex items-center gap-2 text-xs">
 				<li><NuxtLink to="/">Home</NuxtLink></li>
 				<li class="flex"><Icon name="fa6-solid:angle-right" /></li>
 				<li>Solutions</li>
@@ -11,7 +11,7 @@
 				<li>{{ solutionData.title }}</li>
 			</ul>
 
-			<h1 class="text-3xl lg:text-5xl font-semibold mt-4">{{ solutionData.title }}</h1>
+			<h1 class="text-3xl lg:text-5xl font-semibold">{{ solutionData.title }}</h1>
 
 			<div :class="`relative flex flex-col justify-center min-h-[400px] pt-12 pb-0 px-4 lg:py-24 lg:px-14 text-white rounded-3xl mt-12 bg-gradient-to-b from-[#000000] from-40% to-[${categoryData.color}] to-100%`">
 				<div class="flex flex-col gap-8 lg:w-1/2">

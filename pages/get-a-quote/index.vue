@@ -7,7 +7,7 @@
         <div class="container">
             <div class="w-full 2xl:w-4/5 mx-auto">
                 <div class="flex flex-col gap-6 text-white">
-                    <ul class="flex items-center flex-wrap gap-2 text-xs">
+                    <ul class="hidden lg:flex items-center flex-wrap gap-2 text-xs">
                         <li><NuxtLink to="/">Home</NuxtLink></li>
                         <li class="flex"><Icon name="fa6-solid:angle-right" /></li>
                         <li>Get a Quote</li>
