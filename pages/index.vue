@@ -1,5 +1,5 @@
 <template>
-    <section class="h-[calc(100vh-var(--header-height))] flex items-center relative bg-black">
+    <section class="h-screen flex items-center relative bg-black">
         <div class="absolute bottom-0 left-0 w-full z-[1]">
             <video width="100%" autoplay loop muted playsinline class="hidden lg:block w-full h-full object-cover opacity-full">
                 <source src="/videos/main-banner-desktop.mp4" type="video/mp4">
@@ -43,7 +43,7 @@
         </div>
     </section>
     
-    <section class="my-12 py-12">
+    <section class="lg:my-12 lg:py-12">
         <div class="container">
             <div class="flex flex-col gap-4">
                 <h2 class="text-2xl lg:text-5xl font-semibold">Moya's Solutions</h2>
@@ -145,7 +145,7 @@
         </div>
     </section>
 
-    <section id="products" class="mt-12 py-12">
+    <section id="products" class="lg:mt-12 py-12">
         <div class="container">
             <div class="flex flex-col gap-4">
                 <h2 class="text-2xl lg:text-5xl font-semibold">Moya's Products</h2>

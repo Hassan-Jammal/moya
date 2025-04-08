@@ -61,8 +61,8 @@
 
         <!-- Get Quote Button positioned absolutely at the bottom of the nav -->
         <div class="absolute bottom-[var(--header-height)] left-1/2 -translate-x-1/2 flex lg:hidden justify-center items-center gap-6 w-full bg-white border-t py-2 z-[3]">
-            <NuxtLink to="/get-a-quote">
-                <button class="py-2 px-6 text-white bg-primary rounded-full select-none transition-all duration-300 ease-in-out">Get a Quote</button>
+            <NuxtLink to="/get-a-quote" class="link">
+                <button class="link py-2 px-6 text-white bg-primary rounded-full select-none transition-all duration-300 ease-in-out">Get a Quote</button>
             </NuxtLink>
         </div>
     </nav>
