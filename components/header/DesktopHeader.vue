@@ -42,18 +42,18 @@
                                 <div class="w-full flex flex-col gap-4 border-l border-t-0 text-black pl-6 xl:pl-12">
                                     <p class="text-[#A2A2A2] uppercase text-sm">Featured Items</p>
                                     <div class="flex flex-col gap-4">
-                                        <div class="w-full flex items-center gap-4 border rounded-lg p-4">
+                                        <div class="w-full flex gap-4 border rounded-lg p-4">
                                             <div class="flex-shrink-0">
-                                                <NuxtImg class="w-full" src="/images/core-network-menu.webp" alt="Core Network" width="86" height="72" />
+                                                <NuxtImg class="w-[80px]" src="/images/core-network-menu.webp" alt="Core Network" width="86" height="72" />
                                             </div>
                                             <div class="flex flex-col gap-2">
                                                 <p class="text-sm">MNO Solution</p>
                                                 <p class="text-[10px] text-[#A2A2A2]">End-to-end solution compliant with 3GPP standards, offering full functionality, third-party device integration, and scalable user capacity from 100 to 10 million</p>
                                             </div>
                                         </div>
-                                        <div class="w-full flex items-center gap-4 border rounded-lg p-4">
+                                        <div class="w-full flex gap-4 border rounded-lg p-4">
                                             <div class="flex-shrink-0">
-                                                <NuxtImg class="w-full" src="/images/4g-lte-micro-bbu-menu.webp" alt="4G LTE MICRO BBU" width="86" height="72" />
+                                                <NuxtImg class="w-[80px]" src="/images/4g-lte-micro-bbu-menu.webp" alt="4G LTE MICRO BBU" width="86" height="72" />
                                             </div>
                                             <div class="flex flex-col gap-2">
                                                 <p class="text-sm">4G LTE BBU</p>
