@@ -34,7 +34,7 @@
                             <ul v-if="subItem.subLinks && subItem.subLinks.length" :class="activeIndices[`${itemIndex}-${subItemIndex}`] ? 'max-h-[700px]' : 'max-h-[700px]'" class="flex flex-col gap-4 mt-6 transition-all duration-500 ease-in-out overflow-hidden">
                                 <li v-for="(subSubItem, subSubIndex) in subItem.subLinks" :key="subSubIndex">
                                     <div class="flex items-center gap-4">
-                                        <NuxtImg v-if="subSubItem.icon" class="w-min" :src="`/images/icons/${subSubItem.icon}.svg`" :alt="subSubItem.title" width="115" height="115" />
+                                        <NuxtImg v-if="subSubItem.icon" class="w-min" :src="`/images/icons/${subSubItem.icon}.svg`" :alt="subSubItem.title" width="100" height="100" />
                                         <NuxtLink :to="`/${subItem.path}/${subSubItem.path}`" exactActiveClass="active" class="link text-lg font-bold">{{ subSubItem.title }}</NuxtLink>
                                     </div>
                                     <!-- :to="`/${subItem.path}/${subLink.path}`" -->
