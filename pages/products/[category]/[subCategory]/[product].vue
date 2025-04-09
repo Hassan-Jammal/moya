@@ -25,7 +25,7 @@
                             <li>{{ productData.title }}</li> -->
                         </ul>
 
-                        <h1 class="text-3xl lg:text-4xl font-BankGothic font-bold">{{ productData.title }}</h1>
+                        <h1 class="text-3xl lg:text-4xl font-BankGothic font-bold lg:mt-8">{{ productData.title }}</h1>
                         <h2 class="text-xl font-BankGothic font-bold">{{ productData.sub_title }}</h2>
 
                         <hr class="my-8" />

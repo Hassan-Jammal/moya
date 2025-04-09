@@ -37,29 +37,32 @@
             links: [
                 {
                     title: "Core Network",
+                    sub_title: "Core Strength for a Connected World.",
                     path: "solutions/core-network",
                     subLinks: [
-                        { title: "MNO Solution", path: "mno-solution" },
-                        { title: "FWA Solution", path: "fwa-solution" },
-                        { title: "Enterprise Solution", path: "enterprise-private-network-solution" }
+                        { title: "MNO Solution", path: "mno-solution", icon: "mno-solution" },
+                        { title: "FWA Solution", path: "fwa-solution", icon: "fwa-solution" },
+                        { title: "Enterprise Solution", path: "enterprise-private-network-solution", icon: "enterprise-private-network-solution" }
                     ]
                 },
                 {
                     title: "4G/5G RAN",
+                    sub_title: "Smarter Networks, Stronger Connections.",
                     path: "solutions/4g5g-ran",
                     subLinks: [
-                        { title: "Dense Area Solution", path: "dense-area-solution" },
-                        { title: "Rural Area Solution", path: "rural-area-solution" },
-                        { title: "Indoor Solution", path: "indoor-solution" }
+                        { title: "Dense Area Solution", path: "dense-area-solution", icon: "dense-area-solution" },
+                        { title: "Rural Area Solution", path: "rural-area-solution", icon: "rural-area-solution" },
+                        { title: "Indoor Solution", path: "indoor-solution", icon: "indoor-solution" }
                     ]
                 },
                 {
                     title: "Repeater",
+                    sub_title: "Boosting Signals, Bridging Distances.",
                     path: "solutions/repeater",
                     subLinks: [
-                        { title: "Fiber Solution", path: "fiber-solution" },
-                        { title: "Wireless Solution", path: "wireless-solution" },
-                        { title: "ICS Wireless Solution", path: "ics-wireless-solution" }
+                        { title: "Fiber Solution", path: "fiber-solution", icon: "fiber-solution" },
+                        { title: "Wireless Solution", path: "wireless-solution", icon: "wireless-solution" },
+                        { title: "ICS Wireless Solution", path: "ics-wireless-solution", icon: "ics-wireless-solution" }
                     ]
                 }
             ]

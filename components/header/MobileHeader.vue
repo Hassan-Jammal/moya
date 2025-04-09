@@ -2,32 +2,41 @@
     <nav id="mobile-nav" :class="{ '-translate-x-full': !isNavOpen }" class="block lg:hidden fixed top-[var(--header-height)] left-0 h-dvh w-full bg-white z-[2] transition-all duration-500 ease-in-out">
         <!-- Scrollable content container with bottom padding -->
         <div class="container relative h-full pb-48 overflow-y-scroll">
-            <ul class="flex flex-col gap-6 pt-6 text-base">
-                <li v-for="(item, itemIndex) in menuItems" :key="itemIndex">
+            <ul class="flex flex-col gap-6 pt-6">
+                <li v-for="(item, itemIndex) in menuItems" :key="itemIndex" class="border-b border-[#E5E5E5] pb-6">
                     <!-- Link if clickable -->
-                    <NuxtLink v-if="item.clickable" :to="`/${item.path}`" class="link text-black mb-2">{{ item.title }}</NuxtLink>
+                    <NuxtLink v-if="item.clickable" :to="`/${item.path}`" class="link text-xl font-bold">{{ item.title }}</NuxtLink>
 
                     <!-- Title if not clickable -->
-                    <div v-else @click="toggleActive(itemIndex)" class="flex justify-between items-center mb-2">
-                        <span class="text-black">{{ item.title }}</span>
-                        <!-- <NuxtImg v-if="item.links && item.links.length" class="transition-transform duration-300 ease-in-out" :class="{ 'rotate-180': activeIndices[itemIndex] }" src="/images/icons/chevron-down-black.svg" alt="Chevron Down" width="10" height="6" /> -->
+                    <div v-else @click="toggleActive(itemIndex)" class="flex justify-between items-center">
+                        <span class="text-xl font-bold transition-all duration-300 ease-in-out" :class="{ 'text-primary': activeIndices[itemIndex] }">{{ item.title }}</span>
+                        <NuxtImg v-if="item.links && item.links.length" class="transition-transform duration-300 ease-in-out" :class="{ 'rotate-180': activeIndices[itemIndex] }" :src="`/images/icons/chevron-down-${activeIndices[itemIndex] ? 'primary': 'black'}.svg`" alt="Chevron Down" width="10" height="6" />
                     </div>
 
                     <!-- Child Items -->
-                    <ul v-if="item.links && item.links.length" :class="activeIndices[itemIndex] ? 'max-h-[700px] mt-2' : 'max-h-[700px]'" class="children-menu flex flex-col gap-6 px-4 bg-[#ECECEE] rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+                    <ul v-if="item.links && item.links.length" :class="activeIndices[itemIndex] ? 'max-h-[1000px]' : 'max-h-0'" class="children-menu flex flex-col gap-12 rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
                         <li v-for="(subItem, subItemIndex) in item.links" :key="subItemIndex" :class="{ 'mt-4': subItemIndex === 0, 'mb-4': subItemIndex === item.links.length - 1 }">
                             <div v-if="subItem.subLinks && subItem.subLinks.length" @click.stop="toggleActive(`${itemIndex}-${subItemIndex}`)" class="flex justify-between items-center">
-                                <NuxtLink v-if="subItem.subLinks.clickable" :to="`/${subItem.path}`" class="font-Harmony font-bold">{{ subItem.title }}</NuxtLink>
-                                <span v-else class="font-Harmony font-bold">{{ subItem.title }}</span>
+                                <NuxtLink v-if="subItem.subLinks.clickable" :to="`/${subItem.path}`" class="flex flex-col gap-1">
+                                    <span class="text-base font-Harmony font-bold">{{ subItem.title }}</span>
+                                    <p class="text-xs text-[#A2A2A2]">{{ subItem.sub_title }}</p>
+                                </NuxtLink>
+                                <div v-else class="flex flex-col gap-1">
+                                    <span class="text-base font-Harmony font-bold">{{ subItem.title }}</span>
+                                    <p class="text-xs text-[#A2A2A2]">{{ subItem.sub_title }}</p>
+                                </div>
                                 <!-- <NuxtImg v-if="subItem.subLinks && subItem.subLinks.length" class="transition-transform duration-300 ease-in-out" :class="{ 'rotate-180': activeIndices[`${itemIndex}-${subItemIndex}`] }" src="/images/icons/chevron-down-black.svg" alt="Chevron Down" width="10" height="6" /> -->
                             </div>
 
                             <NuxtLink v-else :to="`/${subItem.path}`" class="link">{{ subItem.title }}</NuxtLink>
 
                             <!-- Sub-links -->
-                            <ul v-if="subItem.subLinks && subItem.subLinks.length" :class="activeIndices[`${itemIndex}-${subItemIndex}`] ? 'max-h-[700px] mt-2' : 'max-h-[700px] mt-4'" class="pl-4 flex flex-col gap-4 transition-all duration-500 ease-in-out overflow-hidden">
+                            <ul v-if="subItem.subLinks && subItem.subLinks.length" :class="activeIndices[`${itemIndex}-${subItemIndex}`] ? 'max-h-[700px]' : 'max-h-[700px]'" class="flex flex-col gap-4 mt-6 transition-all duration-500 ease-in-out overflow-hidden">
                                 <li v-for="(subSubItem, subSubIndex) in subItem.subLinks" :key="subSubIndex">
-                                    <NuxtLink :to="`/${subItem.path}/${subSubItem.path}`" class="link">{{ subSubItem.title }}</NuxtLink>
+                                    <div class="flex items-center gap-4">
+                                        <NuxtImg v-if="subSubItem.icon" class="w-min" :src="`/images/icons/${subSubItem.icon}.svg`" :alt="subSubItem.title" width="115" height="115" />
+                                        <NuxtLink :to="`/${subItem.path}/${subSubItem.path}`" class="link text-lg font-bold">{{ subSubItem.title }}</NuxtLink>
+                                    </div>
                                     <!-- :to="`/${subItem.path}/${subLink.path}`" -->
                                 </li>
                             </ul>
@@ -37,7 +46,7 @@
             </ul>
 
             <!-- Featured Items -->
-            <div class="w-full flex flex-col gap-4 border-t text-black pt-6 mt-6">
+            <div class="w-full flex flex-col gap-4 text-black pt-6 mt-6">
                 <p class="text-[#A2A2A2] uppercase text-sm">Featured Items</p>
                 <div class="flex flex-col gap-4">
                     <NuxtLink to="/solutions/core-network/mno-solution" class="link w-full flex items-center gap-4 border rounded-lg p-4">
