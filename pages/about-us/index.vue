@@ -18,7 +18,7 @@
 
     <section class="mt-12 max-lg:pt-6">
         <div class="container">
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-4 w-full lg:w-4/5 mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-24 w-full lg:w-4/5 mx-auto">
                 <NuxtImg class="w-full order-1 lg:order-0" src="images/mountasser-hachem.webp" alt="Mountasser Hachem" width="987" height="876" />
                 <div class="flex flex-col justify-center gap-4 order-0 lg:order-1">
                     <span class="text-6xl text-primary italic leading-10">“</span>

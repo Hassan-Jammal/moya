@@ -31,7 +31,7 @@
                                             <NuxtLink v-if="subItem.clickable" :to="`/${subItem.path}`" class="font-Harmony font-bold">{{ subItem.title }}</NuxtLink>
                                             <span v-else class="font-Harmony font-bold">{{ subItem.title }}</span>
                                             <div class="flex flex-col gap-6">
-                                                <NuxtLink v-for="(subLink, subLinkIndex) in subItem.subLinks" :key="subLinkIndex" :to="`/${subItem.path}/${subLink.path}`" class="link rounded-full hover:bg-primary/15 cursor-pointer select-none transition-all duration-300 ease-in-out">{{ subLink.title }}</NuxtLink>
+                                                <NuxtLink v-for="(subLink, subLinkIndex) in subItem.subLinks" :key="subLinkIndex" :to="`/${subItem.path}/${subLink.path}`" exactActiveClass="active" class="link rounded-full hover:bg-primary/15 cursor-pointer select-none transition-all duration-300 ease-in-out">{{ subLink.title }}</NuxtLink>
                                             </div>
                                         </template>
 
