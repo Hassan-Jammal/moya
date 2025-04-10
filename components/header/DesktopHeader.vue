@@ -2,7 +2,7 @@
     <nav class="hidden lg:block">
         <!--  44px to match the height of the other 2 dropdown -->
         <ul class="flex items-center gap-12">
-            <li v-for="(item, index) in menuItems" :key="index" class="relative group">
+            <li v-for="(item, index) in menuItems" :key="index" :class="['group relative', { 'pointer-events-none': disableHover }]">
                 <div class="flex justify-between items-center gap-2">
                     <!-- Link if clickable -->
                     <NuxtLink v-if="item.clickable" :to="`/${item.path}`" class="transition-all duration-300 ease-in-out text-white hover:text-primary">{{ item.title }}</NuxtLink>
@@ -21,7 +21,7 @@
                         <div class="absolute top-full left-0 h-[var(--header-height)] w-full group-hover:block hidden before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:bg-transparent before:w-5 before:h-5"></div>
 
                         <!-- Children Routes Dropdown -->
-                        <div class="nav fixed top-[var(--header-height)] left-0 z-[1] w-full py-24 border-2 border-t border-[#D4D4D422] bg-white overflow-hidden invisible opacity-0 group-hover:visible group-hover:opacity-100 shadow-lg transition-opacity duration-300 ease-in-out" ref="navMenu">
+                        <div class="nav fixed top-[var(--header-height)] left-0 z-[1] w-full py-24 border-2 border-t border-[#D4D4D422] bg-white overflow-hidden invisible opacity-0 group-hover:visible group-hover:opacity-100 shadow-lg transition-opacity duration-300 ease-in-out">
                             <div class="container grid grid-cols-3 gap-6 xl:gap-12">
                                 <div class="col-span-2 flex justify-evenly gap-x-4">
                                     <div v-for="(subItem, subItemIndex) in item.links" :key="subItemIndex" class="flex flex-col text-black gap-8">
@@ -39,6 +39,7 @@
                                         <NuxtLink v-else :to="`/${subItem.path}`" class="link hover:text-primary transition-all duration-300 ease-in-out">{{ subItem.title }}</NuxtLink>
                                     </div>
                                 </div>
+
                                 <div class="w-full flex flex-col gap-4 border-l border-t-0 text-black pl-6 xl:pl-12">
                                     <p class="text-[#A2A2A2] uppercase text-sm">Featured Items</p>
                                     <div class="flex flex-col gap-4">
@@ -81,4 +82,15 @@
     const props = defineProps({
         menuItems: Array,
     });
+
+    const disableHover = ref(false)
+    const route = useRoute()
+
+    watch(route, () => {
+        disableHover.value = true
+        // Re-enable hover after short delay
+        setTimeout(() => {
+            disableHover.value = false
+        }, 600) // enough to avoid re-hover edge cases
+    })
 </script>
