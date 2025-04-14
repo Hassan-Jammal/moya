@@ -23,8 +23,9 @@
                 <div class="flex flex-col justify-center gap-4 order-0 lg:order-1">
                     <span class="text-6xl text-primary italic leading-10">“</span>
                     <p class="text-xl italic">Although <span class="font-bold">innovation in the telecom</span> industry seems to be getting rarer every day, I believe there are still many opportunities <span class="font-bold">for the bold</span>. All that is needed is an agile, lean approach where innovation <span class="font-bold">is a must</span>.</p>
-                    <p class="text-xl font-bold">Mountasser Hachem</p>
-                    <span class="rotate-180 text-6xl text-primary italic self-end leading-10">“</span>
+                    <!-- <p class="text-xl font-bold">Mountasser Hachem</p> -->
+                    <NuxtImg :src="`images/icons/signature.svg`" alt="Monty's Signature" width="300" height="108" />
+                    <!-- <span class="rotate-180 text-6xl text-primary italic self-end leading-10">“</span> -->
                 </div>
             </div>
         </div>
