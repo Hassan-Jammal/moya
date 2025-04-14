@@ -39,10 +39,7 @@
                     <p class="text-sm text-[#5D5D5D]">With over 25 years of pioneering experience and a legacy of transformative success in the telecom industry, including the establishment of the mobile operator management business unit, Mountasser Hachem, founder and chairman of Monty Holding, is now bringing his visionary concept to life with the launch of Moya, his own telecom equipment brand. This bold venture marks the realization of a long-held vision, setting a new standard for the future of telecommunications technology.<br /><br />Moya seeks to break free from these outdated paradigms, offering fast, agile deployment, just like a "network in a box," with extreme interoperability and no license limitations.<br /><br />Our roadmap includes deploying a 4G core based on Release 9, to be tested and certified through the Comium network. Following this, IMS and Diameter systems will be integrated in the coming quarters. Designed and assembled in Sweden, with production in the Far East, the plan also encompasses O-RAN, IoT, and AI.
                     </p>
                 </div>
-                <video width="100%" autoplay loop muted playsinline class="w-full h-full object-cover rounded-3xl">
-                    <source src="/videos/pioneering-the-future-of-telecommunication.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <NuxtImg :src="`images/pioneering-the-future-of-telecommunication.webp`" alt="Pioneering the future of telecommunications" width="1044" height="704" />
             </div>
 
             <div class="flex max-lg:flex-col max-lg:gap-16 lg:justify-around mt-12 lg:mt-24">
