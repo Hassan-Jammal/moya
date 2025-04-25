@@ -24,7 +24,7 @@
                     <span class="text-6xl text-primary italic leading-10">“</span>
                     <p class="text-xl italic">Although <span class="font-bold">innovation in the telecom</span> industry seems to be getting rarer every day, I believe there are still many opportunities <span class="font-bold">for the bold</span>. All that is needed is an agile, lean approach where innovation <span class="font-bold">is a must</span>.</p>
                     <!-- <p class="text-xl font-bold">Mountasser Hachem</p> -->
-                    <NuxtImg :src="`images/icons/signature.svg`" alt="Monty's Signature" width="300" height="108" />
+                    <NuxtImg class="w-[250px]" :src="`images/icons/signature.svg`" alt="Monty's Signature" width="300" height="108" />
                     <!-- <span class="rotate-180 text-6xl text-primary italic self-end leading-10">“</span> -->
                 </div>
             </div>
@@ -33,7 +33,7 @@
 
     <section class="py-12 lg:py-24 bg-[#F8F8F9]">
         <div class="container">
-            <div class="grid lg:grid-cols-2 items-center gap-8 lg:gap-32">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-32">
                 <div class="flex flex-col justify-center gap-8">
                     <h3 class="text-primary text-sm">About Us</h3>
                     <h2 class="text-2xl lg:text-4xl font-semibold">Pioneering the Future of Telecommunications with Moya</h2>
@@ -43,7 +43,7 @@
                 <NuxtImg :src="`images/pioneering-the-future-of-telecommunication.webp`" alt="Pioneering the future of telecommunications" width="1044" height="704" />
             </div>
 
-            <div class="grid lg:grid-cols-2 items-center gap-8 lg:gap-32 mt-12 lg:mt-24">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-32 mt-12 lg:mt-24">
                 <NuxtImg :src="`images/agile-telecom-infrastructure.webp`" alt="Agile Telecom Infrastructure" width="1044" height="704" />
                 <div class="flex flex-col justify-center gap-8">
                     <h3 class="text-primary text-sm">What We Offer</h3>
