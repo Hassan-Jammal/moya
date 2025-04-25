@@ -35,7 +35,7 @@
         <div class="container">
             <div class="grid lg:grid-cols-2 items-center gap-8 lg:gap-32">
                 <div class="flex flex-col justify-center gap-8">
-                    <h3 class="text-sm">About Us</h3>
+                    <h3 class="text-primary text-sm">About Us</h3>
                     <h2 class="text-2xl lg:text-4xl font-semibold">Pioneering the Future of Telecommunications with Moya</h2>
                     <p class="text-sm text-[#5D5D5D]">With over 25 years of pioneering experience and a legacy of transformative success in the telecom industry, including the establishment of the mobile operator management business unit, Mountasser Hachem, founder and chairman of Monty Holding, is now bringing his visionary concept to life with the launch of Moya, his own telecom equipment brand. This bold venture marks the realization of a long-held vision, setting a new standard for the future of telecommunications technology.<br /><br />Moya seeks to break free from these outdated paradigms, offering fast, agile deployment, just like a "network in a box," with extreme interoperability and no license limitations.<br /><br />Our roadmap includes deploying a 4G core based on Release 9, to be tested and certified through the Comium network. Following this, IMS and Diameter systems will be integrated in the coming quarters. Designed and assembled in Sweden, with production in the Far East, the plan also encompasses O-RAN, IoT, and AI.
                     </p>
@@ -43,10 +43,56 @@
                 <NuxtImg :src="`images/pioneering-the-future-of-telecommunication.webp`" alt="Pioneering the future of telecommunications" width="1044" height="704" />
             </div>
 
+            <div class="grid lg:grid-cols-2 items-center gap-8 lg:gap-32 mt-12 lg:mt-24">
+                <NuxtImg :src="`images/agile-telecom-infrastructure.webp`" alt="Agile Telecom Infrastructure" width="1044" height="704" />
+                <div class="flex flex-col justify-center gap-8">
+                    <h3 class="text-primary text-sm">What We Offer</h3>
+                    <h2 class="text-2xl lg:text-4xl font-semibold">Agile Telecom Infrastructure with Global Reach and Smart Integration</h2>
+                    <p class="text-sm text-[#5D5D5D]">Moya seeks to break free from these outdated paradigms, offering fast, agile deployment, just like a "network in a box," with extreme interoperability and no license limitations.<br /><br />Our roadmap includes deploying a 4G core based on Release 9, to be tested and certified through the Comium network. Following this, IMS and Diameter systems will be integrated in the coming quarters.<br /><br />Designed and assembled in Sweden, with production based in the Far East, the scope of delivery will cover several verticals and specific requirements. It encompasses solutions for small networks with less than 1000k subscribers in fixed wireless broadband, as well as innovations in IoT, AI, and FinTech. Additionally, it supports smart city infrastructure, addressing needs in education, health, and security, alongside serving as a comprehensive digital enabler.<br /><br />Moya aims to position itself as a regional and global leader in the rapidly evolving telecommunications sector, empowering the industry to achieve unprecedented technological breakthroughs by blending innovation with practicality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 lg:py-24">
+        <div class="container">
+            <div class="w-full lg:w-1/2 mx-auto text-center">
+                <div class="flex flex-col justify-center gap-8">
+                    <h3 class="text-primary text-sm">Our Vision</h3>
+                    <h2 class="text-2xl lg:text-4xl font-semibold">A Vision for Empowering the Future Through Seamless Network Innovation</h2>
+                    <p class="text-sm text-[#5D5D5D]">We envision a future where mobile networks are the source of all data, empowering individuals, businesses, and societies to reach their full potential. Moya aims to provide superior network coverage through innovative solutions and rapid deployment at any part of the network delivery phase, offering connectivity and analytics within the shortest time-to-market and the most competitive cost of ownership.</p>
+                </div>
+
+                <div class="flex flex-col justify-center gap-8 mt-12 lg:mt-24">
+                    <h3 class="text-primary text-sm">Our Mission</h3>
+                    <h2 class="text-2xl lg:text-4xl font-semibold">Mission-Driven Innovation for a Connected and Sustainable Tomorrow</h2>
+                    <p class="text-sm text-[#5D5D5D]">At Moya, we design and deploy networks that minimize costs and maximize analytics, delivering technology that brings people together. Today, we are laying the foundation for a world where limitless connectivity enhances lives, reshapes businesses, and paves the way toward a sustainable future.</p>
+                </div>
+            </div>
+
             <div class="flex max-lg:flex-col max-lg:gap-16 lg:justify-around mt-12 lg:mt-24">
                 <div v-for="(item,index) in items" :key="index" class="flex flex-col gap-4 text-center items-center">
                     <NuxtImg :src="`images/icons/${item.icon}.svg`" :alt="item.title" width="52" height="52" />
-                    <h3 class="font-bold text-xl">{{ item.title }}</h3>
+                    <h3 class="text-xl w-full lg:w-2/3" v-html="item.title"></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-12 lg:py-24 bg-[#F8F8F9]">
+        <div class="container">
+            <div class="flex flex-col justify-center gap-8">
+                <h3 class="text-primary text-sm">Moya's Team</h3>
+                <h2 class="text-2xl lg:text-4xl font-semibold">Leadership</h2>
+                <p class="text-sm text-[#5D5D5D]">Driven by Industry Professionals with a Clear Strategic Vision</p>
+            </div>
+
+            <div class="flex max-lg:flex-col gap-16 lg:justify-around mt-12 lg:mt-24">
+                <div v-for="(item,index) in leadership" :key="index" class="flex flex-col gap-4 text-center items-center">
+                    <NuxtImg class="flex-shrink-1" :src="`images/${item.image}.webp`" :alt="item.name" width="714" height="810" />
+                    <h3 class="font-semibold text-2xl mt-4">{{ item.name }}</h3>
+                    <h2 class="text-lg mt-2">{{ item.position }}</h2>
                 </div>
             </div>
         </div>
@@ -115,18 +161,37 @@
         twitterCard: 'summary_large_image',
     })
 
+
+    const leadership = [
+        {
+            name: 'Mountasser Hachem',
+            position: 'Chairman',
+            image: 'mountasser-hachem-1'
+        },
+        {
+            name: 'Cesar Jabr',
+            position: 'CEO - Sweden',
+            image: 'cesar-jabr'
+        },
+        {
+            name: 'Hassan Raya',
+            position: 'CEO - China',
+            image: 'hassan-raya'
+        },
+    ]
+        
     const items = [
         {
-            title: 'Fast Deployment',
-            icon: 'fast-deployment'
+            title: '<span class="font-semibold">Cost-efficient</span>, analytics-driven networks',
+            icon: 'cost-efficient-analytics-driven-networks'
         },
         {
-            title: 'License-Free Innovation',
-            icon: 'license-free-innovation'
+            title: 'Technology that <span class="font-semibold">connects people</span>',
+            icon: 'technology-that-connects-people'
         },
         {
-            title: 'Interoperability',
-            icon: 'interoperability'
+            title: 'Sustainable, future-ready <span class="font-semibold">connectivity</span>',
+            icon: 'sustainable-future-ready-connectivity'
         },
 
     ]
