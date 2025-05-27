@@ -11,7 +11,7 @@
     const SpecsLayoutSecondary = defineAsyncComponent(() => import('./LayoutSecondary.vue'))
 
     const specsComponent = computed(() => {
-        if (!props.productData.specs) return null;  // Prevent errors
-        return props.productData.specs.layout === 'primary' ? SpecsLayoutPrimary : SpecsLayoutSecondary
+        if (!props.productData) return null;  // Prevent errors
+        return props.productData.layout === 'primary' ? SpecsLayoutPrimary : SpecsLayoutSecondary
     });
 </script>

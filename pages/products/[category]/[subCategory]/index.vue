@@ -69,6 +69,14 @@
 		</div>
 	</section>
 
+	<section v-if="categoryData" class="lg:my-12 py-12">
+		<div class="container">
+			<div v-for="(product, productIndex) in subCategoryData.products" :key="productIndex">
+				<NuxtImg class="w-full" :src="`/images/${product.image_inner}.webp`" :alt="product.title" width="" height="" />
+			</div>
+		</div>
+	</section>
+	
 	<section class="lg:mt-12 pt-12 lg:pt-24 pb-56 bg-[#F8F8F9]">
 		<div class="container">
 			<h2 class="text-2xl lg:text-5xl font-semibold">Moya's Capabilities</h2>
@@ -141,7 +149,7 @@
         },
         {
             title: "Customizable Solution",
-            description: "Moya excels in deploying high-performance RAN solutions with expertise in multi-vendor integration, virtualization, and scalable network design.",
+            description: "Moya offers flexible and scalable solutions tailored to meet diverse network requirements.With a focus on efficiency and innovation.",
             icon: "customizable-solution",
         },
         {

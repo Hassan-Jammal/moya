@@ -16,7 +16,7 @@
                     <p class="text-base">Complete the form below and get in touch with us</p>
                 </div>
                 
-                <div class="flex flex-col gap-4 lg:gap-8 py-16 px-4 lg:px-24 bg-[#F8F8F9] rounded-2xl mt-12">
+                <div class="flex flex-col gap-4 lg:gap-8 py-16 px-4 lg:px-24 bg-[#F8F8F9] rounded-3xl mt-12">
                     <div class="flex max-lg:flex-col gap-4 lg:gap-8 justify-between items-start">
                         <div class="flex flex-col gap-1 w-full">
                             <label for="full-name" class="text-base">Full Name</label>
@@ -127,8 +127,8 @@
                         <p class="inline text-sm text-[#ACA8A8]">Yes, I agree to receive communications about Moya products and solutions and to the processing of my personal data under the <NuxtLink :to="'/privacy-policy'" class="text-primary">Privacy Policy</NuxtLink>, and <NuxtLink :to="'terms-and-conditions'" class="text-primary">Terms & Conditions</NuxtLink>.</p>
                     </div>
                     <div class="flex flex-col gap-1 w-full">
+                        <div v-if="submissionMessage" class="w-max mx-auto px-2 bg-red-100 text-center" :class="{'text-red-500': isError, 'text-gray-500': !isError}">{{ submissionMessage }}</div>
                         <button :disabled="!isAcknowledged || isSubmitting" @click.prevent="handleSubmit" class="min-w-[120px] mx-auto p-2 text-white bg-primary rounded-full select-none transition-all duration-300 ease-in-out disabled:bg-[#D4D4D4] mt-14">Submit</button>
-                        <div v-if="submissionMessage" :class="{'text-red-500': isError, 'text-gray-500': !isError}">{{ submissionMessage }}</div>
                     </div>
                 </div>
             </div>

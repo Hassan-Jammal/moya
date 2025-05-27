@@ -10,13 +10,13 @@
                     <li class="flex"><Icon name="fa6-solid:angle-right" /></li>
                     <li>About Us</li>
                 </ul>
-                <h1 class="text-3xl lg:text-4xl font-bold">The Heart of Moya <br /> Our Core Identity & Vision</h1>
+                <h1 class="text-3xl lg:text-4xl font-bold">The Heart of Moya. Our Core Identity & Vision</h1>
                 <p class="text-base">Connecting the Future, Empowering Today.</p>
             </div>
         </div>
 	</section>
 
-    <section class="mt-12 max-lg:pt-6">
+    <section class="max-lg:pt-6 mt-12">
         <div class="container">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-24 w-full lg:w-4/5 mx-auto">
                 <NuxtImg class="w-full order-1 lg:order-0" src="images/mountasser-hachem.webp" alt="Mountasser Hachem" width="987" height="876" />

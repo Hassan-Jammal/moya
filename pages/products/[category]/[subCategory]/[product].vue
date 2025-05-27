@@ -51,8 +51,15 @@
 
     <section v-if="productData" class="py-12 lg:py-24 bg-[#F8F8F9]">
         <div class="container">
-            <AdvantagesLayout :productData="productData" />
-            <SpecsLayout :productData="productData" :class="{'mt-24': productData.advantages}" />
+            <AdvantagesLayout :productData="productData.advantages[0]" />
+            <SpecsLayout :productData="productData.specs[0]" :class="{'mt-24': productData.advantages[0]}" />
+        </div>
+	</section>
+
+    <section v-if="productData" class="py-12 lg:py-24 bg-[#F8F8F9]">
+        <div class="container">
+            <AdvantagesLayout :productData="productData.advantages[1]" />
+            <SpecsLayout :productData="productData.specs[1]" :class="{'mt-24': productData.advantages[1]}" />
         </div>
 	</section>
 
@@ -112,7 +119,7 @@
 
         // Find the selected product
         productData.value = subCategoryData.value.products.find(product => slugify(product.title) === productSlug.value);
-        
+
         // **KEEPING YOUR LOGIC FOR RELATED PRODUCTS**
         relatedProducts.value = subCategoryData.value.products.length === 1
             ? categoryData.value.sub_categories

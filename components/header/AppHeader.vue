@@ -114,6 +114,27 @@
             ]
         },
         {
+            title: "Technology",
+            clickable: false,
+            links: [
+                {
+                    title: "Innovation",
+                    sub_title: "",
+                    path: "technology/innovation",
+                },
+                {
+                    title: "Performance",
+                    sub_title: "",
+                    path: "technology/performance",
+                },
+                {
+                    title: "Testing & Certifications",
+                    sub_title: "",
+                    path: "technology/testing-and-certifications",
+                }
+            ]
+        },
+        {
             title: "About Us",
             clickable: true,
             path: "about-us"

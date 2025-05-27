@@ -365,8 +365,8 @@
             icon: "end-to-end-solution",
         },
         {
-            title: "Fiel Proven Product",
-            description: "Comprehensive service that addresses all aspects of a customer's need, from start to finish and ensuring seamless integration, performance, and support.",
+            title: "Field Proven Product",
+            description: "Reliable, scalable, and tested in real-world networks Our solutions ensure seamless connectivity, and future-ready performance.",
             icon: "fiel-proven-product",
         },
         {

@@ -11,7 +11,7 @@
     const AdvantagesLayoutSecondary = defineAsyncComponent(() => import('./LayoutSecondary.vue'))
 
     const advantagesComponent = computed(() => {
-        if (!props.productData.advantages) return null;  // Prevent errors
-        return props.productData.advantages.layout === 'primary' ? AdvantagesLayoutPrimary : AdvantagesLayoutSecondary
+        if (!props.productData) return null;  // Prevent errors
+        return props.productData.layout === 'primary' ? AdvantagesLayoutPrimary : AdvantagesLayoutSecondary
     });
 </script>

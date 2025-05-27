@@ -3,7 +3,7 @@
         <GetInTouch v-if="!isIncluded" />
 
         <div class="container">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-48">
                 <div>
                     <div class="flex flex-col gap-4 lg:gap-8">
                         <NuxtLink :to="'/'">
@@ -21,7 +21,7 @@
                             <div class="flex flex-shrink-0 justify-center items-center size-10 bg-primary rounded-md">
                                 <Icon name="fa6-solid:envelope" class="text-white" />
                             </div>
-                            <a href="mailto:evan.wu@montymobile.com">evan.wu@montymobile.com</a>
+                            <a href="mailto:info@moya.com">info@moya.com</a>
                         </div>
 
                         <div class="hidden lg:flex flex-col gap-4 lg:gap-8">
@@ -51,7 +51,7 @@
                     </div>
                 </div>
 
-                <ul class="lg:col-span-2 grid sm:grid-cols-3 gap-6 lg:gap-12 lg:justify-items-end !items-start">
+                <ul class="lg:col-span-2 grid sm:grid-cols-3 gap-6 lg:gap-12 items-start">
                     <li v-for="(item, index) in menuItems" :key="index" :class="{ 'active': activeIndices.includes(index) }" @click="toggleActive(index)" class="flex flex-col sm:gap-10 group">
                         <template v-if="item.clickable">
                             <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 text-white hover:text-primary transition-all duration-300 ease-in-out">
@@ -142,7 +142,7 @@
     const validationRules = {
         newsletter_email: {
             required: 'Please enter your email address',
-            newsletter_email: 'Please enter a valid email address',
+            email: 'Please enter a valid email address',
             safe: 'Your input has invalid value'
         },
     };
@@ -275,13 +275,38 @@
             ]
         },
         {
+            title: "Technology",
+            clickable: false,
+            links: [
+                { title: "Innovation", path: "/about-us" },
+                { title: "Performance", path: "/contact-us" },
+                { title: "Testing & Certifications", path: "/contact-us" },
+            ]
+        },
+        {
             title: "Company",
             clickable: false,
             links: [
                 { title: "About Us", path: "/about-us" },
                 { title: "Contact Us", path: "/contact-us" },
             ]
-        }
+        },
+        {
+            title: "",
+            clickable: false,
+            links: [
+                { title: "", path: "" },
+            ]
+        },
+        {
+            title: "",
+            clickable: false,
+            links: [
+                { title: "", path: "/" },
+            ]
+        },
+        
+        
     ]);
 
     const { width } = useWindowSize() // Optional: width tracking
