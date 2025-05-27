@@ -1,5 +1,5 @@
 <template>
-    <section v-if="productData" class="py-12 relative">
+    <section v-if="categoryData || subCategoryData || productData" class="py-12 relative">
         <div class="absolute bottom-0 left-0 w-full h-full">
             <video width="100%" autoplay loop muted playsinline class="w-full h-full object-cover opacity-50">
                 <source src="/videos/products-bg.mp4" type="video/mp4">
@@ -49,21 +49,21 @@
         </div>
 	</section>
 
-    <section v-if="productData" class="py-12 lg:py-24 bg-[#F8F8F9]">
+    <section v-if="categoryData || subCategoryData || productData" class="py-12 lg:py-24 bg-[#F8F8F9]">
         <div class="container">
             <AdvantagesLayout :productData="productData.advantages[0]" />
             <SpecsLayout :productData="productData.specs[0]" :class="{'mt-24': productData.advantages[0]}" />
         </div>
 	</section>
 
-    <section v-if="productData" class="py-12 lg:py-24 bg-[#F8F8F9]">
+    <section v-if="categoryData || subCategoryData || productData" class="py-12 lg:py-24 bg-[#F8F8F9]">
         <div class="container">
             <AdvantagesLayout :productData="productData.advantages[1]" />
             <SpecsLayout :productData="productData.specs[1]" :class="{'mt-24': productData.advantages[1]}" />
         </div>
 	</section>
 
-    <section v-if="categoryData" class="pt-12 lg:pt-24 pb-56">
+    <section v-if="categoryData || subCategoryData || productData" class="pt-12 lg:pt-24 pb-56">
         <div class="container">
             <h2 class="text-xl lg:text-3xl font-semibold text-center">
                 {{ subCategoryData?.products?.length === 1 ? categoryData.title : subCategoryData?.title }} Products
@@ -101,6 +101,7 @@
     const route = useRoute();
     const categorySlug = ref(route.params.category);
     const productSlug = ref(route.params.product);
+    const subCategorySlug = ref(route.params.subCategory);
     const categoryData = ref(null);
     const subCategoryData = ref(null);
     const productData = ref(null);
@@ -112,13 +113,27 @@
         if (!categoryData.value) return;
 
         // Find the subcategory that contains the selected product
-        subCategoryData.value = categoryData.value.sub_categories.find(subCategory =>
-            subCategory.products.some(product => slugify(product.title) === productSlug.value)
+        // subCategoryData.value = categoryData.value.sub_categories.find(subCategory =>
+        //     subCategory.products.some(product => slugify(product.title) === productSlug.value)
+        // );
+        // if (!subCategoryData.value) return;
+
+        // // Find the selected product
+        // productData.value = subCategoryData.value.products.find(product => slugify(product.title) === productSlug.value);
+
+        // Find the subcategory directly from slug
+        subCategoryData.value = categoryData.value.sub_categories.find(
+            sub => slugify(sub.title) === subCategorySlug.value
         );
+
         if (!subCategoryData.value) return;
 
-        // Find the selected product
-        productData.value = subCategoryData.value.products.find(product => slugify(product.title) === productSlug.value);
+        // Now find the product only within that subcategory
+        productData.value = subCategoryData.value.products.find(
+            product => slugify(product.title) === productSlug.value
+        );
+
+        if (!productData.value) return;
 
         // **KEEPING YOUR LOGIC FOR RELATED PRODUCTS**
         relatedProducts.value = subCategoryData.value.products.length === 1
