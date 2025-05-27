@@ -84,7 +84,7 @@
 				<div v-for="(value, index) in values" :key="index" class="flex flex-col gap-8 h-auto p-4 lg:p-8 rounded-3xl bg-white">
 					<NuxtImg :src="`images/icons/${value.icon}.svg`" :alt="value.title" width="42" height="42" />
 					<h3 class="text-2xl font-semibold">{{ value.title }}</h3>
-					<p class="text-[#ACA8A8]">{{ value.description }}</p>
+					<p>{{ value.description }}</p>
 				</div>
 			</div>
 		</div>

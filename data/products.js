@@ -2143,19 +2143,19 @@ const categories = [
                                 items: [
                                     {
                                         title: "Protocol Specification",
-                                        description: "3GPP Release 14"
+                                        description: "3GPP compliance"
                                     },
                                     {
                                         title: "Capacity",
-                                        description: "100-10M user"
+                                        description: "Maximum 40m users"
                                     },
                                     {
                                         title: "Data Processing Capabilities",
-                                        description: "10Gbps data throughput"
+                                        description: "More than 150Gbps throughput (supports dynamic scaling)"
                                     },
                                     {
                                         title: "Deployment",
-                                        description: "Supports multiple virtualization deployments, including virtual machines, cloud deployments, and docker deployments"
+                                        description: "Supports Docker, cloud platforms, VMs, and Kubernetes (k8s)"
                                     },
                                     {
                                         title: "Reliability",
