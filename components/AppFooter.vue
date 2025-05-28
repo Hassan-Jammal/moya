@@ -3,21 +3,21 @@
         <GetInTouch v-if="!isIncluded" />
 
         <div class="container">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-48">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-48">
                 <div>
                     <div class="flex flex-col gap-4 lg:gap-8">
                         <NuxtLink :to="'/'">
                             <NuxtImg src="/images/logo.svg" alt="Logo" width="100" height="30" />
                         </NuxtLink>
 
-                        <div class="flex items-center gap-4">
+                        <div class="flex items-start gap-4">
                             <div class="flex flex-shrink-0 justify-center items-center size-10 bg-primary rounded-md">
                                 <Icon name="fa6-solid:location-dot" class="text-white" />
                             </div>
                             <p>1001, Building B, R&D Center, OFILM Headquarters, Fenghuang Street, Guangming District, Shenzhen, China</p>
                         </div>
 
-                        <div class="flex items-center gap-4">
+                        <div class="flex items-start gap-4">
                             <div class="flex flex-shrink-0 justify-center items-center size-10 bg-primary rounded-md">
                                 <Icon name="fa6-solid:envelope" class="text-white" />
                             </div>
@@ -51,24 +51,24 @@
                     </div>
                 </div>
 
-                <ul class="lg:col-span-2 grid sm:grid-cols-3 gap-6 lg:gap-12 items-start">
-                    <li v-for="(item, index) in menuItems" :key="index" :class="{ 'active': activeIndices.includes(index) }" @click="toggleActive(index)" class="flex flex-col sm:gap-10 group">
+                <ul ref="grid" class="md:col-span-2 grid md:grid-cols-3 gap-6 md:gap-12 items-start">
+                    <li ref="masonryItems" v-for="(item, index) in menuItems" :key="index" :class="{ 'active': activeIndices.includes(index) }" @click="toggleActive(index)" class="flex flex-col md:gap-10 group">
                         <template v-if="item.clickable">
-                            <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 text-white hover:text-primary transition-all duration-300 ease-in-out">
+                            <div class="children-toggle max-md:flex max-md:justify-between max-md:gap-4 text-white hover:text-primary transition-all duration-300 ease-in-out">
                                 <NuxtLink :to="`/${item.path}`">{{ item.title }}</NuxtLink>
-                                <NuxtImg loading="lazy" v-if="item.links && item.links.length > 0" class="block sm:hidden transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-white.svg" alt="Chevron Down White" width="14" height="8" />
+                                <NuxtImg loading="lazy" v-if="item.links && item.links.length > 0" class="block md:hidden transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-white.svg" alt="Chevron Down White" width="14" height="8" />
                             </div>
                         </template>
 
                         <!-- Render as text if not clickable -->
                         <template v-else>
-                            <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 text-white">
+                            <div class="children-toggle max-md:flex max-md:justify-between max-md:gap-4 text-white">
                                 <span class="text-white font-bold text-base">{{ item.title }}</span>
-                                <NuxtImg loading="lazy" v-if="item.links && item.links.length > 0" class="block sm:hidden transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-white.svg" alt="Chevron Down White" width="14" height="8" />
+                                <NuxtImg loading="lazy" v-if="item.links && item.links.length > 0" class="block md:hidden transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-white.svg" alt="Chevron Down White" width="14" height="8" />
                             </div>
                         </template>
 
-                        <ul v-if="item.links && item.links.length > 0" class="children-menu flex flex-col gap-4 max-sm:max-h-0 max-sm:ml-4 text-[#D4D4D4] overflow-hidden transition-all duration-300 ease-in-out">
+                        <ul v-if="item.links && item.links.length > 0" class="children-menu flex flex-col gap-4 max-md:max-h-0 max-md:ml-4 text-[#D4D4D4] overflow-hidden transition-all duration-300 ease-in-out">
                             <li v-for="(subItem, linkIndex) in item.links" :key="linkIndex">
                                 <NuxtLink :to="`${subItem.path}`" class="hover:text-primary transition-all duration-300 ease-in-out">{{ subItem.title }}</NuxtLink>
                             </li>
@@ -125,6 +125,33 @@
 
     const route = useRoute();
     const isIncluded = computed(() => route.path === '/' || route.path === '/contact-us' || route.path === '/get-a-quote')
+
+    const grid = ref(null);
+    const masonryItems = ref([]);
+
+    function applyMasonryLayout() {
+        if (!grid.value) return;
+
+        const rowHeight = 2;
+        const gapStr = getComputedStyle(grid.value).getPropertyValue('row-gap');
+        const rowGap = parseInt(gapStr);
+
+        masonryItems.value.forEach((item) => {
+            const height = item.clientHeight;
+            const rowSpan = Math.ceil((height + rowGap) / (rowGap + rowHeight));
+            item.style.gridRowEnd = `span ${rowSpan}`;
+        });
+    }
+
+    onMounted(async () => {
+        await nextTick();
+        applyMasonryLayout();
+        window.addEventListener('resize', applyMasonryLayout);
+    });
+
+    onUnmounted(() => {
+        window.removeEventListener('resize', applyMasonryLayout);
+    });
 
     // Submission State
     const submissionMessage = ref('');
@@ -291,22 +318,6 @@
                 { title: "Contact Us", path: "/contact-us" },
             ]
         },
-        {
-            title: "",
-            clickable: false,
-            links: [
-                { title: "", path: "" },
-            ]
-        },
-        {
-            title: "",
-            clickable: false,
-            links: [
-                { title: "", path: "/" },
-            ]
-        },
-        
-        
     ]);
 
     const { width } = useWindowSize() // Optional: width tracking
