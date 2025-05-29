@@ -27,7 +27,7 @@
                         <div class="hidden lg:flex flex-col gap-4 lg:gap-8">
                             <div class="flex flex-col gap-2 mt-8">
                                 <div class="relative">
-                                    <input v-model="form.newsletter_email" type="text" placeholder="Enter your email to receive latest updates" class="w-full py-4 px-6 border border-[#3F3F3F] rounded-lg bg-transparent text-xs" />
+                                    <input v-model="form.newsletter_email" type="text" placeholder="Enter your email to receive latest updates" class="w-full py-4 pl-6 pr-12 border border-[#3F3F3F] rounded-lg bg-transparent text-xs" />
                                     <Icon :disabled="isSubmitting" @click.prevent="handleSubmit" name="fa6-solid:arrow-right" class="absolute top-1/2 right-6 -translate-y-1/2 bg-primary text-xl cursor-pointer transition duration-300 ease-in-out group-hover:translate-x-1" />
                                 </div>
                                 <div v-if="errors.newsletter_email" class="text-xs text-red-500">{{ errors.newsletter_email }}</div>
@@ -68,7 +68,7 @@
                             </div>
                         </template>
 
-                        <ul v-if="item.links && item.links.length > 0" class="children-menu flex flex-col gap-4 max-md:max-h-0 max-md:ml-4 text-[#D4D4D4] overflow-hidden transition-all duration-300 ease-in-out">
+                        <ul v-if="item.links && item.links.length > 0" class="children-menu flex flex-col gap-4 max-md:max-h-0 max-md:ml-4 text-[#A2A2A2] overflow-hidden transition-all duration-300 ease-in-out">
                             <li v-for="(subItem, linkIndex) in item.links" :key="linkIndex">
                                 <NuxtLink :to="`${subItem.path}`" class="hover:text-primary transition-all duration-300 ease-in-out">{{ subItem.title }}</NuxtLink>
                             </li>
@@ -109,9 +109,8 @@
                     <!-- <NuxtLink to="/privacy-policy" class="underline">Privacy Policy</NuxtLink>
                     <NuxtLink to="/terms-and-conditions" class="underline">Terms & conditions</NuxtLink>
                     <NuxtLink to="/cookie-policy" class="underline">Cookie Policy</NuxtLink> -->
-                    <p class="underline">Privacy Policy</p>
-                    <p class="underline">Terms & conditions</p>
-                    <p class="underline">Cookie Policy</p>
+                    <NuxtLink to="/privacy-policy" exactActiveClass="active" class="underline hover:text-primary transition-all duration-300 ease-in-out">Privacy Policy</NuxtLink>
+                    <NuxtLink to="/terms-and-conditions" exactActiveClass="active" class="underline hover:text-primary transition-all duration-300 ease-in-out">Terms & Conditions</NuxtLink>
                 </div>
 
                 <p>© {{ new Date().getFullYear() }} Moya. All Rights Reserved.</p>

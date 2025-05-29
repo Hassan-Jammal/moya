@@ -69,13 +69,13 @@
 		</div>
 	</section>
 
-	<!-- <section v-if="categoryData" class="lg:my-12 py-12">
+	<section v-if="categoryData && categoryData.title == 'Core Network'" class="lg:my-12 py-12">
 		<div class="container">
 			<div v-for="(product, productIndex) in subCategoryData.products" :key="productIndex">
 				<NuxtImg class="w-full" :src="`/images/${product.image_inner}.webp`" :alt="product.title" width="" height="" />
 			</div>
 		</div>
-	</section> -->
+	</section>
 	
 	<section class="lg:mt-12 pt-12 lg:pt-24 pb-56 bg-[#F8F8F9]">
 		<div class="container">
