@@ -300,15 +300,15 @@
                 { title: "Panel Antenna", path: "/products/antenna/panel-antenna" },
             ]
         },
-        {
-            title: "Technology",
-            clickable: false,
-            links: [
-                { title: "Innovation", path: "/about-us" },
-                { title: "Performance", path: "/contact-us" },
-                { title: "Testing & Certifications", path: "/contact-us" },
-            ]
-        },
+        // {
+        //     title: "Technology",
+        //     clickable: false,
+        //     links: [
+        //         { title: "Innovation", path: "/about-us" },
+        //         { title: "Performance", path: "/contact-us" },
+        //         { title: "Testing & Certifications", path: "/contact-us" },
+        //     ]
+        // },
         {
             title: "Company",
             clickable: false,
