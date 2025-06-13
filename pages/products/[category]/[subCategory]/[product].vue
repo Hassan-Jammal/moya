@@ -16,7 +16,7 @@
                             <li class="flex"><Icon name="fa6-solid:angle-right" /></li>
                             <li>Products</li>
                             <li class="flex"><Icon name="fa6-solid:angle-right" /></li> -->
-                            <li>{{ categoryData.title }}</li>
+                            <li><NuxtLink :to="`/products/${slugify(categoryData.title)}`">{{ categoryData.title }}</NuxtLink></li>
                             <li class="flex"><Icon name="fa6-solid:angle-right" /></li>
                             <li>{{ subCategoryData.title }}</li>
                             <li class="flex"><Icon name="fa6-solid:angle-right" /></li>
@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div class="flex-1">
-                    <NuxtImg class="w-full" :src="`images/${productData.image_inner}.webp`" :alt="productData.title" :width="productData.width" :height="productData.height" />
+                    <NuxtImg class="mx-auto" :src="`images/${productData.image_inner}.webp`" :alt="productData.title" :width="productData.width" :height="productData.height" />
                 </div>
             </div>
         </div>
@@ -70,8 +70,7 @@
             </h2>
 
             <div class="grid lg:grid-cols-3 gap-4 lg:gap-8 mt-12">
-                <div v-for="(product, index) in relatedProducts" :key="index"
-                     class="flex flex-col justify-between items-center gap-12 py-12 px-4 lg:px-8 text-center bg-[#F8F8F9] rounded-3xl">
+                <div v-for="(product, index) in relatedProducts" :key="index" class="flex flex-col justify-between items-center gap-12 py-12 px-4 lg:px-8 text-center bg-[#F8F8F9] rounded-3xl">
                     <div class="flex flex-col justify-center items-center gap-4 w-full">
                         <NuxtImg class="w-full" :src="`/images/${product.image_outer}.webp`" :alt="product.title" />
                         <h3 class="text-sm mt-6">{{ product.sub_title }}</h3>

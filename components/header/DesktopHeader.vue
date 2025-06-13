@@ -22,25 +22,40 @@
 
                         <!-- Children Routes Dropdown -->
                         <div class="nav fixed top-[var(--header-height)] left-0 z-[1] w-full py-24 border-2 border-t border-[#D4D4D422] bg-white overflow-hidden invisible opacity-0 group-hover:visible group-hover:opacity-100 shadow-lg transition-opacity duration-300 ease-in-out">
-                            <div class="container grid grid-cols-3 gap-6 xl:gap-12">
-                                <div class="col-span-2 flex justify-evenly gap-x-4">
-                                    <div v-for="(subItem, subItemIndex) in item.links" :key="subItemIndex" class="flex flex-col text-black gap-8">
-                                        <!-- Check if the subItem has subLinks -->
-                                        
+                            <div class="container">
+                                <div class="col-span-2 flex justify-between gap-x-8">
+                                    <div v-for="(subItem, subItemIndex) in item.links" :key="subItemIndex" class="w-full flex flex-col text-black gap-6">
                                         <template v-if="subItem.subLinks && subItem.subLinks.length">
-                                            <NuxtLink v-if="subItem.clickable" :to="`/${subItem.path}`" class="font-Harmony font-bold">{{ subItem.title }}</NuxtLink>
-                                            <span v-else class="font-Harmony font-bold">{{ subItem.title }}</span>
-                                            <div class="flex flex-col gap-6">
-                                                <NuxtLink v-for="(subLink, subLinkIndex) in subItem.subLinks" :key="subLinkIndex" :to="`/${subItem.path}/${subLink.path}`" exactActiveClass="active" class="link rounded-full hover:bg-primary/15 cursor-pointer select-none transition-all duration-300 ease-in-out">{{ subLink.title }}</NuxtLink>
-                                            </div>
-                                        </template>
+                                            <!-- Title (clickable or not) -->
+                                            <NuxtLink v-if="subItem.clickable" :to="`/${subItem.path}`" class="font-Harmony font-bold text-lg hover:text-primary transition-colors duration-300">{{ subItem.title }}</NuxtLink>
+                                            <span v-else class="font-Harmony font-bold text-lg text-black">{{ subItem.title }}</span>
 
-                                        <!-- If subItem doesn't have subLinks, treat it as a normal link -->
-                                        <NuxtLink v-else :to="`/${subItem.path}`" class="link hover:text-primary transition-all duration-300 ease-in-out">{{ subItem.title }}</NuxtLink>
+                                            <!-- SubLinks container with gap-3 -->
+                                            <div class="flex flex-col gap-6">
+                                                <div v-for="(subLink, subLinkIndex) in subItem.subLinks" :key="subLinkIndex" class="flex flex-col gap-3">
+                                                    <!-- Main sublink -->
+                                                    <div v-if="subLink.subSubLinks && subLink.subSubLinks.length" :to="`/${subItem.path}/${subLink.path}`" class="transition-all duration-300 font-semibold">{{ subLink.title }}</div>
+                                                    <NuxtLink v-else :to="`/${subItem.path}/${subLink.path}`" exactActiveClass="active" :class="['transition-all duration-300 cursor-pointer', subLink.subSubLinks && subLink.subSubLinks.length ? 'font-semibold' : '' ]">{{ subLink.title }}</NuxtLink>
+
+                                                    <!-- SubSubLinks -->
+                                                    <div v-if="subLink.subSubLinks && subLink.subSubLinks.length" class="flex flex-col gap-2">
+                                                        <NuxtLink v-for="(subSubLink, subSubLinkIndex) in subLink.subSubLinks" :key="subSubLinkIndex" :to="`/${subItem.path}/${subLink.path}/${subSubLink.path}/`" exactActiveClass="active" class="text-sm rounded-full transition-all duration-300 cursor-pointer">{{ subSubLink.title }}</NuxtLink>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <NuxtLink v-if="subItem.showDiveLink" :to="`/${subItem.path}`" class="flex items-center gap-1 text-primary">
+                                                <span>Take a deeper dive</span>
+                                                <Icon name="fa6-solid:arrow-right" class="cursor-pointer transition-transform duration-300 ease-in-out" />
+                                            </NuxtLink>
+                                        </template>
+                                        
+                                        <!-- Regular link if no subLinks -->
+                                        <NuxtLink v-else :to="`/${subItem.path}`" class="hover:text-primary transition-all duration-300 ease-in-out">{{ subItem.title }}</NuxtLink>
                                     </div>
                                 </div>
 
-                                <div class="w-full flex flex-col gap-4 border-l border-t-0 text-black pl-6 xl:pl-12">
+                                <!-- <div class="w-full flex flex-col gap-4 border-l border-t-0 text-black pl-6 xl:pl-12">
                                     <p class="text-[#A2A2A2] uppercase text-sm">Featured Items</p>
                                     <div class="flex flex-col gap-4">
                                         <div class="w-full flex gap-4 border rounded-lg p-4">
@@ -62,7 +77,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </template>

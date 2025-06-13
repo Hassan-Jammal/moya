@@ -83,7 +83,7 @@
                 <div class="flex flex-col gap-2">
                     <div class="relative">
                         <input v-model="form.newsletter_email" type="text" placeholder="Enter your email to receive latest updates" class="w-full py-4 px-6 border border-[#3F3F3F] rounded-lg bg-transparent text-xs" />
-                        <Icon :disabled="isSubmitting" @click.prevent="handleSubmit" name="fa6-solid:arrow-right" class="absolute top-1/2 right-6 -translate-y-1/2 bg-primary text-xl cursor-pointer transition duration-300 ease-in-out group-hover:translate-x-1" />
+                        <Icon :disabled="isSubmitting" @click.prevent="handleSubmit" name="fa6-solid:arrow-right" class="absolute top-1/2 right-6 -translate-y-1/2 bg-primary text-xl cursor-pointer transition duration-300 ease-in-out" />
                     </div>
                     <div v-if="errors.newsletter_email" class="text-xs text-red-500">{{ errors.newsletter_email }}</div>
                     <div v-if="submissionMessage" :class="{'text-red-500': isError, 'text-gray-500': !isError}">{{ submissionMessage }}</div>
@@ -286,18 +286,10 @@
             title: "Products",
             clickable: false,
             links: [
-                { title: "Evolved Packet Core (EPC)", path: "/products/core-network/evolved-packet-core" },
-                { title: "IP Multimedia Subsystem (IMS)", path: "/products/core-network/ip-multimedia-subsystem" },
-                { title: "Baseband Unit (BBU)", path: "/products/4g5g-ran/baseband-unit" },
-                { title: "Remote Radio Unit (RRU)", path: "/products/4g5g-ran/remote-radio-unit" },
-                { title: "Integrated eNB (Outdoor)", path: "/products/4g5g-ran/integrated-enb" },
-                { title: "Femtocell (Indoor)", path: "/products/4g5g-ran/femtocell" },
-                { title: "Fiber Repeater", path: "/products/repeater/fiber-repeater" },
-                { title: "Wireless Repeater", path: "/products/repeater/wireless-repeater" },
-                { title: "ICS Repeater", path: "/products/repeater/ics-wireless-repeater" },
-                { title: "Omni Antenna", path: "/products/antenna/omni-fiberglass-antenna" },
-                { title: "Cluster Antenna", path: "/products/antenna/omni-cluster-antenna" },
-                { title: "Panel Antenna", path: "/products/antenna/panel-antenna" },
+                { title: "Core Network", path: "/products/core-network" },
+                { title: "4G/5G RAN", path: "/products/4g5g-ran" },
+                { title: "Repeater", path: "/products/repeater" },
+                { title: "Antenna", path: "/products/antenna" },
             ]
         },
         // {

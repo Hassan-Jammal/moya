@@ -1,12 +1,10 @@
 <template>
-    <component :is="categoryComponent" :categoryData="categoryData" :isModalVisible="isModalVisible" :onToggle="onToggle" />
+    <component :is="categoryComponent" :categoryData="categoryData"  />
 </template>
 
 <script setup>
     const props = defineProps({
         categoryData: Object,
-        isModalVisible: Boolean,
-        onToggle: Function
     });
     
     const CategoryLayoutPrimary = defineAsyncComponent(() => import('./LayoutPrimary.vue'))

@@ -2,69 +2,47 @@
     <nav id="mobile-nav" :class="{ '-translate-x-full': !isNavOpen }" class="block lg:hidden fixed top-[var(--header-height)] left-0 h-dvh w-full bg-white z-[2] transition-all duration-500 ease-in-out">
         <!-- Scrollable content container with bottom padding -->
         <div class="container relative h-full pb-48 overflow-y-scroll">
-            <ul class="flex flex-col gap-6 pt-6">
-                <li v-for="(item, itemIndex) in menuItems" :key="itemIndex" class="border-b border-[#E5E5E5] pb-6">
-                    <!-- Link if clickable -->
-                    <NuxtLink v-if="item.clickable" :to="`/${item.path}`" class="link text-xl font-bold">{{ item.title }}</NuxtLink>
+            <ul class="flex flex-col pt-6 divide-y divide-[#E5E5E5]">
+                <li v-for="(item, itemIndex) in menuItems" :key="itemIndex" class="py-6">
+                    <div v-if="item.clickable" class="flex justify-between items-center"><NuxtLink :to="`/${item.path}`" class="text-xl font-bold link">{{ item.title }}</NuxtLink></div>
+                    <div v-else @click="toggleActive(itemIndex)" class="flex justify-between items-center cursor-pointer"><span class="text-xl font-bold" :class="{ 'textprimary': activeIndices[itemIndex] }">{{ item.title }}</span><NuxtImg v-if="item.links && item.links.length" class="transition-transform duration-300" :class="{ 'rotate-180': activeIndices[itemIndex] }" src="/images/icons/chevron-down-black.svg" alt="Chevron Down" width="10" height="6" /></div>
 
-                    <!-- Title if not clickable -->
-                    <div v-else @click="toggleActive(itemIndex)" class="flex justify-between items-center">
-                        <span class="text-xl font-bold transition-all duration-300 ease-in-out" :class="{ 'text-primary': activeIndices[itemIndex] }">{{ item.title }}</span>
-                        <NuxtImg v-if="item.links && item.links.length" class="transition-transform duration-300 ease-in-out" :class="{ 'rotate-180': activeIndices[itemIndex] }" :src="`/images/icons/chevron-down-${activeIndices[itemIndex] ? 'primary': 'black'}.svg`" alt="Chevron Down" width="10" height="6" />
-                    </div>
-
-                    <!-- Child Items -->
-                    <ul v-if="item.links && item.links.length" :class="activeIndices[itemIndex] ? 'max-h-[1000px]' : 'max-h-0'" class="children-menu flex flex-col gap-12 rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
-                        <li v-for="(subItem, subItemIndex) in item.links" :key="subItemIndex" :class="{ 'mt-4': subItemIndex === 0, 'mb-4': subItemIndex === item.links.length - 1 }">
-                            <div v-if="subItem.subLinks && subItem.subLinks.length" @click.stop="toggleActive(`${itemIndex}-${subItemIndex}`)" class="flex justify-between items-center">
-                                <NuxtLink v-if="subItem.subLinks.clickable" :to="`/${subItem.path}`" class="flex flex-col gap-1">
-                                    <span class="text-base font-Harmony font-bold">{{ subItem.title }}</span>
-                                    <p class="text-xs text-[#A2A2A2]">{{ subItem.sub_title }}</p>
-                                </NuxtLink>
-                                <div v-else class="flex flex-col gap-1">
-                                    <span class="text-base font-Harmony font-bold">{{ subItem.title }}</span>
+                    <ul v-if="item.links && item.links.length" :class="activeIndices[itemIndex] ? 'max-h-[2000px]' : 'max-h-0'" class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col">
+                        <li v-for="(subItem, subItemIndex) in item.links" :key="subItemIndex" :class="[subItemIndex === 0 ? 'pt-4' : 'pt-4', subItemIndex === item.links.length - 1 ? 'pb-0' : 'pb-4']">
+                            <div @click.stop="toggleActive(`${itemIndex}-${subItemIndex}`)" class="flex justify-between items-center cursor-pointer">
+                                <div>
+                                    <NuxtLink v-if="subItem.clickable" :to="`/${subItem.path}`" class="font-Harmony font-bold text-lg link">{{ subItem.title }}</NuxtLink>
+                                    <span v-else class="font-Harmony font-bold text-lg">{{ subItem.title }}</span>
                                     <p class="text-xs text-[#A2A2A2]">{{ subItem.sub_title }}</p>
                                 </div>
-                                <!-- <NuxtImg v-if="subItem.subLinks && subItem.subLinks.length" class="transition-transform duration-300 ease-in-out" :class="{ 'rotate-180': activeIndices[`${itemIndex}-${subItemIndex}`] }" src="/images/icons/chevron-down-black.svg" alt="Chevron Down" width="10" height="6" /> -->
+                                <NuxtImg v-if="subItem.subLinks && subItem.subLinks.length" class="transition-transform duration-300" :class="{ 'rotate-180': activeIndices[`${itemIndex}-${subItemIndex}`] }" src="/images/icons/chevron-down-black.svg" alt="Chevron" width="10" height="6" />
                             </div>
 
-                            <NuxtLink v-else :to="`/${subItem.path}`" class="link">{{ subItem.title }}</NuxtLink>
+                            <ul v-if="subItem.subLinks && subItem.subLinks.length" :class="activeIndices[`${itemIndex}-${subItemIndex}`] ? 'max-h-[1500px]' : 'max-h-0'" class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col">
+                                <li v-for="(subLink, subLinkIndex) in subItem.subLinks" :key="subLinkIndex" :class="[subLinkIndex === 0 ? 'pt-3' : 'pt-2', subLinkIndex === subItem.subLinks.length - 1 ? 'pb-0' : 'pb-2']">
 
-                            <!-- Sub-links -->
-                            <ul v-if="subItem.subLinks && subItem.subLinks.length" :class="activeIndices[`${itemIndex}-${subItemIndex}`] ? 'max-h-[700px]' : 'max-h-[700px]'" class="flex flex-col gap-4 mt-6 transition-all duration-500 ease-in-out overflow-hidden">
-                                <li v-for="(subSubItem, subSubIndex) in subItem.subLinks" :key="subSubIndex">
-                                    <div class="flex items-center gap-4">
-                                        <NuxtImg v-if="subSubItem.icon" class="w-min" :src="`/images/icons/${subSubItem.icon}.svg`" :alt="subSubItem.title" width="100" height="100" />
-                                        <NuxtLink :to="`/${subItem.path}/${subSubItem.path}`" exactActiveClass="active" class="link text-lg font-bold">{{ subSubItem.title }}</NuxtLink>
+                                    <div @click.stop="toggleActive(`${itemIndex}-${subItemIndex}-${subLinkIndex}`)" class="flex items-center gap-4 cursor-pointer" :class="{'justify-between': !subLink.icon}">
+                                        <NuxtImg v-if="subLink.icon" class="w-min" :src="`/images/icons/${subLink.icon}.svg`" :alt="subLink.title" width="100" height="100" />
+                                        <NuxtLink v-if="!subLink.subSubLinks || !subLink.subSubLinks.length" :to="`/${subItem.path}/${subLink.path}`" class="transition-all duration-300 link">{{ subLink.title }}</NuxtLink>
+                                        <span v-else class="font-semibold">{{ subLink.title }}</span>
+                                        <NuxtImg v-if="subLink.subSubLinks && subLink.subSubLinks.length" class="transition-transform duration-300" :class="{ 'rotate-180': activeIndices[`${itemIndex}-${subItemIndex}-${subLinkIndex}`] }" src="/images/icons/chevron-down-black.svg" alt="Chevron" width="10" height="6" />
                                     </div>
-                                    <!-- :to="`/${subItem.path}/${subLink.path}`" -->
+
+                                    <ul v-if="subLink.subSubLinks && subLink.subSubLinks.length" :class="activeIndices[`${itemIndex}-${subItemIndex}-${subLinkIndex}`] ? 'max-h-[1000px]' : 'max-h-0'" class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col pl-4 mt-1">
+                                        <li v-for="(subSubLink, subSubIndex) in subLink.subSubLinks" :key="subSubIndex" :class="[subItemIndex === 0 ? 'pt-3' : 'pt-2', subItemIndex === item.links.length - 1 ? 'pb-0' : 'pb-2']">
+                                            <NuxtLink :to="`/${subItem.path}/${subLink.path}/${subSubLink.path}`" class="text-sm text-black transition-all duration-300 link">{{ subSubLink.title }}</NuxtLink>
+                                        </li>
+                                    </ul>
                                 </li>
+                                <NuxtLink v-if="subItem.showDiveLink" :to="`/${subItem.path}`" class="flex items-center gap-1 text-primary group text-primary mt-6 link">
+                                    <span>Take a deeper dive</span>
+                                    <Icon name="fa6-solid:arrow-right" class="cursor-pointer transition duration-300 ease-in-out group-hover:translate-x-1" />
+                                </NuxtLink>
                             </ul>
                         </li>
                     </ul>
                 </li>
             </ul>
-
-            <!-- Featured Items -->
-            <div class="w-full flex flex-col gap-4 text-black pt-6 mt-6">
-                <p class="text-[#A2A2A2] uppercase text-sm">Featured Items</p>
-                <div class="flex flex-col gap-4">
-                    <NuxtLink to="/solutions/core-network/mno-solution" class="link w-full flex items-center gap-4 border rounded-lg p-4">
-                        <NuxtImg class="link" src="/images/core-network-menu.webp" alt="Core Network" width="86" height="72" />
-                        <div class="link flex flex-col gap-2">
-                            <p class="link text-sm">MNO Solution</p>
-                            <p class="link text-[10px] text-[#A2A2A2]">End-to-end solution compliant with 3GPP standards, offering full functionality, third-party device integration, and scalable user capacity from 100 to 10 million.</p>
-                        </div>
-                    </NuxtLink>
-                    <NuxtLink to="/products/4g5g-ran/baseband-unit" class="link w-full flex items-center gap-4 border rounded-lg p-4">
-                        <NuxtImg class="link" src="/images/4g-lte-micro-bbu-menu.webp" alt="4G LTE MICRO BBU" width="86" height="72" />
-                        <div class="link flex flex-col gap-2">
-                            <p class="link text-sm">4G LTE BBU</p>
-                            <p class="link text-[10px] text-[#A2A2A2]">Distributed Site - Micro BBU</p>
-                        </div>
-                    </NuxtLink>
-                </div>
-            </div>
         </div>
 
         <!-- Get Quote Button positioned absolutely at the bottom of the nav -->

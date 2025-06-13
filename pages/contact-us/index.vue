@@ -120,7 +120,7 @@
 	</section>
 
     <section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d35695.49557126097!2d35.51830641787561!3d33.89156967306351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slb!4v1742460030154!5m2!1sen!2slb" width="100%" height="500p" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235802.9995985671!2d113.95911085986111!3d22.563319714875686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403f408d0e15291%3A0xfdee550db79280c9!2sShenzhen%2C%20Guangdong%20Province%2C%20China!5e0!3m2!1sen!2slb!4v1748863249118!5m2!1sen!2slb" width="100%" height="500p" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
 </template>

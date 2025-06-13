@@ -169,7 +169,7 @@
                                 <div class="flex flex-col justify-center items-center gap-4">
                                     <NuxtImg class="w-full" :src="`/images/${product.image_outer}.webp`" :alt="product.title" width="" height="" />
                                     <h3 class="text-sm">{{ product.sub_title }}</h3>
-                                    <NuxtLink :to="`/products/${slugify(category.title)}/${slugify(product.title)}`">
+                                    <NuxtLink :to="`/products/${slugify(category.title)}/${slugify(category.sub_categories[productIndex].title)}/${slugify(product.title)}`">
                                         <h2 class="text-3xl font-BankGothic font-bold">{{ product.title }}</h2>
                                     </NuxtLink>
                                 </div>
@@ -177,7 +177,7 @@
                                     <NuxtLink to="/get-a-quote">
                                         <button class="p-2 min-w-[120px] text-sm text-white bg-primary hover:text-white hover:bg-black rounded-full select-none transition-all duration-300 ease-in-out">Get a Quote</button>
                                     </NuxtLink>
-                                    <NuxtLink :to="`/products/${slugify(category.title)}/${slugify(product.title)}`" class="flex lg:justify-between items-center gap-2 text-base text-primary">
+                                    <NuxtLink :to="`/products/${slugify(category.title)}/${slugify(category.sub_categories[productIndex].title)}/${slugify(product.title)}`" class="flex lg:justify-between items-center gap-2 text-base text-primary">
                                         <button class="transition-all duration-300 ease-in-out">Learn More</button>
                                         <Icon name="fa6-solid:angle-right" class="transition duration-300 ease-in-out group-hover:translate-x-1" />
                                     </NuxtLink>
@@ -403,7 +403,6 @@
             icon: "dedicated-support",
         },
     ]
-
 </script>
 
 <style lang="sass" scoped>

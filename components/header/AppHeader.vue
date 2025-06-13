@@ -75,40 +75,75 @@
                     title: "Core Network",
                     path: "products/core-network",
                     clickable: false,
+                    showDiveLink: true,
                     subLinks: [
-                        { title: "EPC", path: "evolved-packet-core" },
-                        { title: "IMS", path: "ip-multimedia-subsystem" },
+                        { title: "Evolved Packet Core (EPC)", path: "evolved-packet-core/evolved-packet-core" },
+                        { title: "IP Multimedia Subsystem (IMS)", path: "ip-multimedia-subsystem/ip-multimedia-subsystem" },
                     ]
                 },
                 {
                     title: "4G/5G RAN",
                     path: "products/4g5g-ran",
                     clickable: false,
+                    showDiveLink: true,
                     subLinks: [
-                        { title: "BBU", path: "baseband-unit" },
-                        { title: "RRU", path: "remote-radio-unit" },
-                        { title: "Integrated eNB", path: "integrated-enb" },
-                        { title: "Femtocell", path: "femtocell" }
+                        { 
+                            title: "BBU", 
+                            path: "baseband-unit",
+                            subSubLinks: [
+                                { title: "4G LTE Micro BBU", path: "4g-lte-micro-bbu" },
+                                { title: "4G LTE Macro BBU", path: "4g-lte-macro-bbu" },
+                                { title: "4G LTE pHUB BBU", path: "4g-lte-phub-bbu" },
+                            ]
+                        },
+                        { 
+                            title: "RRU", 
+                            path: "remote-radio-unit", 
+                            subSubLinks: [
+                                { title: "4G LTE pRRU", path: "4g-lte-prru" },
+                                { title: "4G LTE 2T2R RRU", path: "4g-lte-2t2r-rru" },
+                                { title: "4G LTE 4T4R RRU", path: "4g-lte-4t4r-rru" },
+                            ]
+                        },
+                        { 
+                            title: "Integrated eNB", 
+                            path: "integrated-enb", 
+                            subSubLinks: [
+                                { title: "4G LTE Macro eNB 2x20W", path: "4g-lte-macro-enb-2x20w" },
+                                { title: "4G LTE Macro eNB 2x40W", path: "4g-lte-macro-enb-2x40w" },
+                                { title: "4G LTE Macro eNB 4x40W/2x60W", path: "4g-lte-macro-enb-4x40w2x60w" },
+                            ]
+                        },
+                        { 
+                            title: "Femtocell", 
+                            path: "femtocell", 
+                            subSubLinks: [
+                                { title: "Femtocell Indoor 2x50mw", path: "femtocell-indoor-2x50mw" },
+                                { title: "Femtocell Indoor 2x250mw", path: "femtocell-indoor-2x250mw" },
+                            ]
+                        }
                     ]
                 },
                 {
                     title: "Repeater",
                     path: "products/repeater",
                     clickable: false,
+                    showDiveLink: true,
                     subLinks: [
-                        { title: "Fiber", path: "fiber-repeater" },
-                        { title: "Wireless", path: "wireless-repeater" },
-                        { title: "ICS Wireless", path: "ics-wireless-repeater" }
+                        { title: "Fiber", path: "fiber-repeater/fiber-repeater" },
+                        { title: "Wireless", path: "wireless-repeater/wireless-repeater" },
+                        { title: "ICS Wireless", path: "ics-wireless-repeater/ics-wireless-repeater" }
                     ]
                 },
                 {
                     title: "Antenna",
                     path: "products/antenna",
                     clickable: false,
+                    showDiveLink: true,
                     subLinks: [
-                        { title: "Omni Fiberglass", path: "omni-fiberglass-antenna" },
-                        { title: "Omni Cluster", path: "omni-cluster-antenna" },
-                        { title: "Panel", path: "panel-antenna" }
+                        { title: "Omni Fiberglass", path: "omni-fiberglass-antenna/omni-fiberglass-antenna" },
+                        { title: "Omni Cluster", path: "omni-cluster-antenna/omni-cluster-antenna" },
+                        { title: "Panel", path: "panel-antenna/panel-antenna" }
                     ]
                 }
             ]

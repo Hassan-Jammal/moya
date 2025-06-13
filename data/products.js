@@ -1,9 +1,14 @@
 const categories = [
     {
         title: "Antenna",
+        sub_title: "Streamlined Deployment with Moya’s Advanced Antennas",
         description: "Moya's Antenna are designed to adapt to a wide range of applications, seamlessly supporting both dense urban and rural environments. <br /> They offer flexible customization options for different frequency bands and gain levels, ensuring optimal performance. With a streamlined installation process, deployment is quick and efficient, minimizing operational complexity.",
         image: "antenna",
         layout: "primary",
+        overview: {
+            title: "Precision in Every Wave, Power in Every Connection",
+            description: "Empowering Connections with Every Product",
+        },
         features: null,
         application_scenario: null,
         sub_categories: [
@@ -13,7 +18,7 @@ const categories = [
                 products: [
                     {
                         title: "Omni Fiberglass Antenna",
-                        acronym: "Omni Fiberglass Antenna",
+                        acronym: "Omni Fiberglass",
                         sub_title: "Easy Installation",
                         description: "This fiberglass omnidirectional antenna covers 660-960 MHz and 1710-2700 MHz with vertical polarization, offering 6±1 dBi and 8±1 dBi gain. It provides 360° horizontal coverage, a 25±10° vertical beamwidth, and a VSWR of ≤2.8. The antenna features 50Ω impedance and grounding protection, ideal for communication applications.",
                         image_outer: "omni-fiberglass-antenna-outer",
@@ -140,7 +145,7 @@ const categories = [
                 products: [
                     {
                         title: "Omni Cluster Antenna",
-                        acronym: "Omni Cluster Antenna",
+                        acronym: "Omni Cluster",
                         sub_title: "Easy Installation",
                         description: "Cluster antenna combines multiple antennas to enhance signal strength, improve coverage, and reduce interference. It's commonly used in communication systems for better performance and directional coverage.",
                         image_outer: "omni-cluster-antenna-outer",
@@ -324,7 +329,7 @@ const categories = [
                 products: [
                     {
                         title: "Panel Antenna",
-                        acronym: "Panel Antenna",
+                        acronym: "Panel",
                         sub_title: "Easy Installation",
                         description: "A panel antenna is a flat, directional antenna designed for focused signal transmission and reception. It offers high gain, reduced interference, and is commonly used in cellular, Wi-Fi, and point-to-point communication systems.",
                         image_outer: "panel-antenna-outer",
@@ -456,9 +461,14 @@ const categories = [
     },
     {
         title: "4G/5G RAN",
+        sub_title: "Seamless Connectivity Starts with Advanced RAN Solutions",
         description: "Radio Access Network (RAN) Products include advanced hardware and software solutions that enable seamless wireless communication between user devices and the core network.<br /><br />Designed to adapt to diverse coverage scenarios, they offer flexible power output options and customizable configurations to optimize network performance and efficiency.",
         image: "4g5g-ran",
         layout: "primary",
+        overview: {
+            title: "Expanding Coverage, Enhancing Performance",
+            description: "Empowering Connections with Every Product",
+        },
         features: null,
         application_scenario: null,
         sub_categories: [
@@ -1659,9 +1669,14 @@ const categories = [
     },
     {
         title: "Repeater",
+        sub_title: "Repeaters Designed for Versatility and Performance",
         description: "Moya's repeaters are designed to adapt to diverse deployment scenarios with seamless integration and remote management. <br /> They offer multiple power options (10W/20W/40W) and support single, dual, and triple-band configurations. <br /> With easy deployment and full customization capabilities, these solutions enhance coverage, improve signal quality, and optimize network performance across various environments..",
         image: "repeater",
         layout: "primary",
+        overview: {
+            title: "Boosting Connectivity, Bridging Distances",
+            description: "Empowering Connections with Every Product",
+        },
         features: null,
         application_scenario: null,
         sub_categories: [
@@ -2024,9 +2039,14 @@ const categories = [
     },
     {
         title: "Core Network",
+        sub_title: "The Heart of Telecom Operations",
         description: "Moya's Core Network is the central part of a telecommunications network that manages data routing, mobility, authentication, and service delivery.",
         image: "core-network",
         layout: "secondary",
+        overview: {
+            title: "The Backbone of Intelligent Connectivity",
+            description: "Empowering Connections with Every Product",
+        },
         features: [
             {
                 title: "Carrier-grade guarantee",
@@ -2085,6 +2105,32 @@ const categories = [
                         image_inner: "evolved-packet-core-inner",
                         advantages: [
                             {
+                                title: "Key Benefits of Network Management System (NMS)",
+                                items: [
+                                    {
+                                        title: "Core Functions",
+                                        description: "Moya NMS monitors, controls, and manages network devices and services to ensure efficient, stable, and secure network operations.",
+                                        icon: "core-functions",
+                                    },
+                                    {
+                                        title: "Advanced Features",
+                                        description: "Includes Topology Management and Automation capabilities such as automated tasks and API integration.",
+                                        icon: "advanced-features",
+                                    },
+                                    {
+                                        title: "Network Management Capabilities",
+                                        description: "Supports key management areas including Fault Management, Configuration Management, Performance Management, Security Management, and Accounting Management.",
+                                        icon: "network-management-capabilities",
+                                    },
+                                    {
+                                        title: "Scalability & Modern Support",
+                                        description: "Designed for scalability with support for virtualization and cloud environments to meet evolving network demands.",
+                                        icon: "scalability-and-modern-support",
+                                    },
+                                ],
+                                layout: "secondary",
+                            },
+                            {
                                 title: "Key Benefits of EPC",
                                 items: [
                                     {
@@ -2110,34 +2156,31 @@ const categories = [
                                 ],
                                 layout: "secondary",
                             },
-                            {
-                                title: "Key Benefits of Network Management System (NMS)",
-                                items: [
-                                    {
-                                        title: "Core Functions",
-                                        description: "Moya NMS monitors, controls, and manages network devices and services to ensure efficient, stable, and secure network operations.",
-                                        icon: "core-functions",
-                                    },
-                                    {
-                                        title: "Advanced Features",
-                                        description: "Includes Topology Management and Automation capabilities such as automated tasks and API integration.",
-                                        icon: "advanced-features",
-                                    },
-                                    {
-                                        title: "Network Management Capabilities",
-                                        description: "Supports key management areas including Fault Management, Configuration Management, Performance Management, Security Management, and Accounting Management.",
-                                        icon: "network-management-capabilities",
-                                    },
-                                    {
-                                        title: "Scalability & Modern Support",
-                                        description: "Designed for scalability with support for virtualization and cloud environments to meet evolving network demands.",
-                                        icon: "scalability-and-modern-support",
-                                    },
-                                ],
-                                layout: "secondary",
-                            }
                         ],
                         specs: [
+                            {
+                                title: "Network Element Function ",
+                                items: [
+                                    {
+                                        title: "MME (Mobility Management Entity)",
+                                        description: "<ul><li>Access Control</li><li>Mobility Management Function</li><li>Session Management</li><li>Network Element Selection Function</li></ul>"
+                                    },
+                                    {
+                                        title: "HSS (Home Subscriber Server)",
+                                        description: "<ul><li>EPS User Data Management</li><li>EPS Authentication Function</li><li>Mobility Management Function</li><li>Handling Noir Request Function</li><li>DIAMETER Routing Management</li><li>Backup and Recovery Function</li></ul>"
+                                    },
+                                    {
+                                        title: "SGW (Serving Gateway)",
+                                        description: "<ul><li>Session Management</li><li>User Location Information Management</li><li>Routing and Data Forwarding</li><li>QoS Control</li><li>Charging Requirements</li></ul>"
+                                    },
+                                    {
+                                        title: "PGW (PDN Gateway)",
+                                        description: "<ul><li>IP Address Allocation</li><li>Session Management</li><li>Routing and Data Forwarding</li><li>External Data Network Access</li><li>QoS Control</li><li>Charging Requirements</li><li>PCEF (Policy and Charging Enforcement Function)</li></ul>"
+                                    },
+                                ],
+                                image: null,
+                                layout: "secondary",
+                            },
                             {
                                 title: "Features and Capacity",
                                 items: [
@@ -2169,29 +2212,6 @@ const categories = [
                                 image: null,
                                 layout: "secondary",
                             },
-                            {
-                                title: "Network Element Function ",
-                                items: [
-                                    {
-                                        title: "MME (Mobility Management Entity)",
-                                        description: "<ul><li>Access Control</li><li>Mobility Management Function</li><li>Session Management</li><li>Network Element Selection Function</li></ul>"
-                                    },
-                                    {
-                                        title: "HSS (Home Subscriber Server)",
-                                        description: "<ul><li>EPS User Data Management</li><li>EPS Authentication Function</li><li>Mobility Management Function</li><li>Handling Noir Request Function</li><li>DIAMETER Routing Management</li><li>Backup and Recovery Function</li></ul>"
-                                    },
-                                    {
-                                        title: "SGW (Serving Gateway)",
-                                        description: "<ul><li>Session Management</li><li>User Location Information Management</li><li>Routing and Data Forwarding</li><li>QoS Control</li><li>Charging Requirements</li></ul>"
-                                    },
-                                    {
-                                        title: "PGW (PDN Gateway)",
-                                        description: "<ul><li>IP Address Allocation</li><li>Session Management</li><li>Routing and Data Forwarding</li><li>External Data Network Access</li><li>QoS Control</li><li>Charging Requirements</li><li>PCEF (Policy and Charging Enforcement Function)</li></ul>"
-                                    },
-                                ],
-                                image: null,
-                                layout: "secondary",
-                            }
                         ]
                     },
                 ]
