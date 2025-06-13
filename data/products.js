@@ -2,7 +2,7 @@ const categories = [
     {
         title: "Antenna",
         sub_title: "Streamlined Deployment with Moya’s Advanced Antennas",
-        description: "Moya's Antenna are designed to adapt to a wide range of applications, seamlessly supporting both dense urban and rural environments. <br /> They offer flexible customization options for different frequency bands and gain levels, ensuring optimal performance. With a streamlined installation process, deployment is quick and efficient, minimizing operational complexity.",
+        description: "Moya's Antenna are designed to adapt to a wide range of applications, seamlessly supporting both dense urban and rural environments. They offer flexible customization options for different frequency bands and gain levels, ensuring optimal performance. With a streamlined installation process, deployment is quick and efficient, minimizing operational complexity.",
         image: "antenna",
         layout: "primary",
         overview: {
@@ -1670,7 +1670,7 @@ const categories = [
     {
         title: "Repeater",
         sub_title: "Repeaters Designed for Versatility and Performance",
-        description: "Moya's repeaters are designed to adapt to diverse deployment scenarios with seamless integration and remote management. <br /> They offer multiple power options (10W/20W/40W) and support single, dual, and triple-band configurations. <br /> With easy deployment and full customization capabilities, these solutions enhance coverage, improve signal quality, and optimize network performance across various environments..",
+        description: "Moya's repeaters are designed to adapt to diverse deployment scenarios with seamless integration and remote management. They offer multiple power options (10W/20W/40W) and support single, dual, and triple-band configurations. With easy deployment and full customization capabilities, these solutions enhance coverage, improve signal quality, and optimize network performance across various environments..",
         image: "repeater",
         layout: "primary",
         overview: {
