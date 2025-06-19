@@ -171,12 +171,12 @@ const categories = [
                         sub_category: "Evolved Packet Core",
                     },
                     {
-                        title: "5G Enterprise Core",
-                        acronym: "5GEC",
-                        sub_title: "EC",
-                        image: "5g-enterprise-core-outer",
+                        title: "5G Core Network",
+                        acronym: "5G Core Network",
+                        sub_title: "5G CN",
+                        image: "5g-core-network-outer",
                         category: "Core Network",
-                        sub_category: "5G Enterprise Core",
+                        sub_category: "5G Core Network",
                     },
                     {
                         title: "IP MultiMedia Subsystem",
