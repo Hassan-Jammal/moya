@@ -1,10 +1,10 @@
 <template>
-    <div class="flex flex-col gap-12">
-        <div class="lg:w-2/3 mx-auto flex flex-col gap-12 lg:gap-24">
+    <div class="flex flex-col gap-12 lg:gap-24">
+        <div class="lg:w-2/3 mx-auto">
             <p class="text-center" v-html="categoryData.description"></p>
         </div>
         
-        <div class="flex max-lg:flex-col justify-between lg:items-center gap-16 lg:gap-32 mt-12">
+        <div class="flex max-lg:flex-col justify-between lg:items-center gap-16 lg:gap-32">
             <div class="lg:w-2/3 flex flex-col gap-4">
                 <NuxtImg class="w-full" :src="`/images/${categoryData.image}.webp`" :alt="categoryData.title" />
             </div>

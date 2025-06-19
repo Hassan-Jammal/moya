@@ -585,7 +585,7 @@ const categories = [
                         sub_title: "Distributed Site - Macro BBU",
                         description: "The advanced SOC platform supports 14,400 online users, with peak FDD rates of 400 Mbps downlink and 75 Mbps uplink at 20 MHz. It features plug-and-play SON capabilities, optional embedded core network, and reduced OPEX through lower power consumption.",
                         image_outer: "4g-lte-macro-bbu-outer",
-                        image_inner: "4g-lte-macro-bbu-inner",
+                        image_inner: "4g-lte-macro-bbu-inner1",
                         advantages: [
                             {
                                 title: "Highlights of 4G LTE Macro BBU",

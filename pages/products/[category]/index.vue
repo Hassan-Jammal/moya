@@ -1,6 +1,6 @@
 <template>
 	<!-- <pre v-if="categoryData && productData" >{{productData}}</pre> -->
-	<section v-if="categoryData" class="py-12">
+	<section v-if="categoryData" class="pt-12">
 		<div class="container">
 			<ul class="hidden lg:flex items-center gap-2 text-xs">
 				<li><NuxtLink to="/">Home</NuxtLink></li>

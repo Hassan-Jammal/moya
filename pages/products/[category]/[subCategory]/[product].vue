@@ -39,27 +39,27 @@
                             </button>
                         </NuxtLink>
                         
-                        <p class="text-xs text-[#ACA8A8] text-center mt-8">Typically replies within 24 hours</p>
+                        <p class="text-xs text-[#ACA8A8] mt-8">Typically replies within 24 hours</p>
                     </div>
                 </div>
                 <div class="flex-1">
-                    <NuxtImg class="mx-auto" :src="`images/${productData.image_inner}.webp`" :alt="productData.title" :width="productData.width" :height="productData.height" />
+                    <NuxtImg class="w-full mx-auto" :src="`images/${productData.image_inner}.webp`" :alt="productData.title" :width="productData.width" :height="productData.height" />
                 </div>
             </div>
         </div>
 	</section>
 
-    <section v-if="categoryData || subCategoryData || productData" class="py-12 lg:py-24 bg-[#F8F8F9]">
+    <section v-if="productData?.advantages?.[0] && productData?.specs?.[0]" class="py-12 lg:py-24 bg-[#F8F8F9]">
         <div class="container">
             <AdvantagesLayout :productData="productData.advantages[0]" />
-            <SpecsLayout :productData="productData.specs[0]" :class="{'mt-24': productData.advantages[0]}" />
+            <SpecsLayout :productData="productData.specs[0]" :class="{'mt-24 lg:mt-48': productData.advantages[0]}" />
         </div>
 	</section>
 
-    <section v-if="categoryData || subCategoryData || productData" class="py-12 lg:py-24 bg-[#F8F8F9]">
+    <section v-if="productData?.advantages?.[1] && productData?.specs?.[1]" class="py-12 lg:py-24 bg-[#F8F8F9]">
         <div class="container">
             <AdvantagesLayout :productData="productData.advantages[1]" />
-            <SpecsLayout :productData="productData.specs[1]" :class="{'mt-24': productData.advantages[1]}" />
+            <SpecsLayout :productData="productData.specs[1]" :class="{'mt-24 lg:mt-48': productData.advantages[1]}" />
         </div>
 	</section>
 
