@@ -58,7 +58,7 @@
                             <label for="mobile-number" class="text-base">Mobile Number</label>
                             <div class="relative flex flex-row items-start gap-4">
                                 <div class="flex flex-col gap-1 w-[160px]">
-                                    <div @click="toggleDropdown" class="custom-dropdown w-full h-full min-h-14 py-3 px-3 text-base bg-transparent border border-[#D4D4D4] rounded-lg outline-none cursor-pointer">
+                                    <div @click="toggleDropdown" class="custom-dropdown flex w-full h-full min-h-14 py-3 px-3 text-base bg-transparent border border-[#D4D4D4] rounded-lg outline-none cursor-pointer">
                                         <div id="selected-country" class="flex justify-start items-center gap-2 select-none">
                                             <NuxtImg loading="lazy" :src="`/images/flags/${selectedCountry.iso2 || 'LB' }.svg`" :alt="selectedCountry.name || 'Lebanon'" width="20" height="20" />
                                             <span>+{{ selectedCountry.code || '961' }}</span>
