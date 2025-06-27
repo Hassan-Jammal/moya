@@ -687,10 +687,10 @@ const categories = [
                         ]
                     },
                     {
-                        title: "4G LTE pHUB BBU",
+                        title: "4G LTE pHUB",
                         acronym: "pHUB",
                         sub_title: "Distributed Site - pHUB",
-                        description: "The advanced SOC platform supports 14,400 online users, with peak FDD rates of 400 Mbps downlink and 75 Mbps uplink at 20 MHz. It features plug-and-play SON capabilities, optional embedded core network, and reduced OPEX through lower power consumption.",
+                        description: "Supports up to 8 pRRUs with two-layer cascading, providing power to RRUs via a photoelectric composite cable. Enables remote monitoring, operation, software upgrades, and management through NMS.",
                         image_outer: "4g-lte-phub-outer",
                         image_inner: "4g-lte-phub-inner",
                         advantages: [
@@ -737,7 +737,7 @@ const categories = [
                                 items: [
                                     {
                                         title: "Model",
-                                        description: "4G LTE BBU"
+                                        description: "4G LTE pHUB"
                                     },
                                     {
                                         title: "Network",
@@ -2269,7 +2269,7 @@ const categories = [
                                     },
                                     {
                                         title: "Capacity",
-                                        description: "<ul><li>600K Online users</li><li>200K concurrent calls</li></ul>"
+                                        description: "<ul><li>10M online users</li><li>3M concurrent calls</li></ul>"
                                     },
                                     {
                                         title: "Features",

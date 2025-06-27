@@ -34,9 +34,11 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <NuxtLink v-if="subItem.showDiveLink" :to="`/${subItem.path}`" class="flex items-center gap-1 text-primary group text-primary mt-6 link">
-                                    <span>Take a deeper dive</span>
-                                    <Icon name="fa6-solid:arrow-right" class="cursor-pointer transition duration-300 ease-in-out group-hover:translate-x-1" />
+                                <!-- v-if="subItem.subLinks?.length && subItem.subLinks.every(sub => !sub.subSubLinks || !sub.subSubLinks.length)" -->
+                                <!-- <pre>{{ subItem }}</pre> -->
+                                <NuxtLink v-if="subItem.subLinks?.length && subItem.clickable" :to="`/${subItem.path}`" class="link flex items-center gap-1 text-primary group text-primary mt-6 link">
+                                    <span class="link">View full details</span>
+                                    <Icon name="fa6-solid:arrow-right" class="link cursor-pointer transition duration-300 ease-in-out group-hover:translate-x-1" />
                                 </NuxtLink>
                             </ul>
                         </li>

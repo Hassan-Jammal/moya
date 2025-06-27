@@ -37,6 +37,7 @@
             links: [
                 {
                     title: "Core Network",
+                    clickable: false,
                     sub_title: "Core Strength for a Connected World.",
                     path: "solutions/core-network",
                     subLinks: [
@@ -47,6 +48,7 @@
                 },
                 {
                     title: "4G/5G RAN",
+                    clickable: false,
                     sub_title: "Smarter Networks, Stronger Connections.",
                     path: "solutions/4g5g-ran",
                     subLinks: [
@@ -57,6 +59,7 @@
                 },
                 {
                     title: "Repeater",
+                    clickable: false,
                     sub_title: "Boosting Signals, Bridging Distances.",
                     path: "solutions/repeater",
                     subLinks: [
@@ -74,8 +77,7 @@
                 {
                     title: "Core Network",
                     path: "products/core-network",
-                    clickable: false,
-                    showDiveLink: true,
+                    clickable: true,
                     subLinks: [
                         { title: "Evolved Packet Core (EPC)", path: "evolved-packet-core/evolved-packet-core" },
                         { title: "IP Multimedia Subsystem (IMS)", path: "ip-multimedia-subsystem/ip-multimedia-subsystem" },
@@ -84,8 +86,7 @@
                 {
                     title: "4G/5G RAN",
                     path: "products/4g5g-ran",
-                    clickable: false,
-                    showDiveLink: true,
+                    clickable: true,
                     subLinks: [
                         { 
                             title: "BBU", 
@@ -93,7 +94,7 @@
                             subSubLinks: [
                                 { title: "4G LTE Micro BBU", path: "4g-lte-micro-bbu" },
                                 { title: "4G LTE Macro BBU", path: "4g-lte-macro-bbu" },
-                                { title: "4G LTE pHUB BBU", path: "4g-lte-phub-bbu" },
+                                { title: "4G LTE pHUB", path: "4g-lte-phub" },
                             ]
                         },
                         { 
@@ -127,8 +128,7 @@
                 {
                     title: "Repeater",
                     path: "products/repeater",
-                    clickable: false,
-                    showDiveLink: true,
+                    clickable: true,
                     subLinks: [
                         { title: "Fiber", path: "fiber-repeater/fiber-repeater" },
                         { title: "Wireless", path: "wireless-repeater/wireless-repeater" },
@@ -138,8 +138,7 @@
                 {
                     title: "Antenna",
                     path: "products/antenna",
-                    clickable: false,
-                    showDiveLink: true,
+                    clickable: true,
                     subLinks: [
                         { title: "Omni Fiberglass", path: "omni-fiberglass-antenna/omni-fiberglass-antenna" },
                         { title: "Omni Cluster", path: "omni-cluster-antenna/omni-cluster-antenna" },
@@ -148,27 +147,27 @@
                 }
             ]
         },
-        // {
-        //     title: "Technology",
-        //     clickable: false,
-        //     links: [
-        //         {
-        //             title: "Innovation",
-        //             sub_title: "",
-        //             path: "technology/innovation",
-        //         },
-        //         {
-        //             title: "Performance",
-        //             sub_title: "",
-        //             path: "technology/performance",
-        //         },
-        //         {
-        //             title: "Testing & Certifications",
-        //             sub_title: "",
-        //             path: "technology/testing-and-certifications",
-        //         }
-        //     ]
-        // },
+        {
+            title: "Technology",
+            clickable: false,
+            links: [
+                {
+                    title: "Innovation",
+                    path: "technology/innovation",
+                    clickable: true,
+                },
+                {
+                    title: "Performance",
+                    path: "technology/performance",
+                    clickable: true,
+                },
+                {
+                    title: "Testing & Certifications",
+                    path: "technology/testing-and-certifications",
+                    clickable: true,
+                }
+            ]
+        },
         {
             title: "About Us",
             clickable: true,
