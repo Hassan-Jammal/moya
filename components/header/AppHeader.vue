@@ -147,27 +147,27 @@
                 }
             ]
         },
-        {
-            title: "Technology",
-            clickable: false,
-            links: [
-                {
-                    title: "Innovation",
-                    path: "technology/innovation",
-                    clickable: true,
-                },
-                {
-                    title: "Performance",
-                    path: "technology/performance",
-                    clickable: true,
-                },
-                {
-                    title: "Testing & Certifications",
-                    path: "technology/testing-and-certifications",
-                    clickable: true,
-                }
-            ]
-        },
+        // {
+        //     title: "Technology",
+        //     clickable: false,
+        //     links: [
+        //         {
+        //             title: "Innovation",
+        //             path: "technology/innovation",
+        //             clickable: true,
+        //         },
+        //         {
+        //             title: "Performance",
+        //             path: "technology/performance",
+        //             clickable: true,
+        //         },
+        //         {
+        //             title: "Testing & Certifications",
+        //             path: "technology/testing-and-certifications",
+        //             clickable: true,
+        //         }
+        //     ]
+        // },
         {
             title: "About Us",
             clickable: true,
