@@ -2105,32 +2105,6 @@ const categories = [
                         image_inner: "evolved-packet-core-inner",
                         advantages: [
                             {
-                                title: "Key Benefits of Network Management System (NMS)",
-                                items: [
-                                    {
-                                        title: "Core Functions",
-                                        description: "Moya NMS monitors, controls, and manages network devices and services to ensure efficient, stable, and secure network operations.",
-                                        icon: "core-functions",
-                                    },
-                                    {
-                                        title: "Advanced Features",
-                                        description: "Includes Topology Management and Automation capabilities such as automated tasks and API integration.",
-                                        icon: "advanced-features",
-                                    },
-                                    {
-                                        title: "Network Management Capabilities",
-                                        description: "Supports key management areas including Fault Management, Configuration Management, Performance Management, Security Management, and Accounting Management.",
-                                        icon: "network-management-capabilities",
-                                    },
-                                    {
-                                        title: "Scalability & Modern Support",
-                                        description: "Designed for scalability with support for virtualization and cloud environments to meet evolving network demands.",
-                                        icon: "scalability-and-modern-support",
-                                    },
-                                ],
-                                layout: "secondary",
-                            },
-                            {
                                 title: "Key Benefits of EPC",
                                 items: [
                                     {
@@ -2156,31 +2130,34 @@ const categories = [
                                 ],
                                 layout: "secondary",
                             },
-                        ],
-                        specs: [
                             {
-                                title: "Network Element Function ",
+                                title: "Key Benefits of Network Management System (NMS)",
                                 items: [
                                     {
-                                        title: "MME (Mobility Management Entity)",
-                                        description: "<ul><li>Access Control</li><li>Mobility Management Function</li><li>Session Management</li><li>Network Element Selection Function</li></ul>"
+                                        title: "Core Functions",
+                                        description: "Moya NMS monitors, controls, and manages network devices and services to ensure efficient, stable, and secure network operations.",
+                                        icon: "core-functions",
                                     },
                                     {
-                                        title: "HSS (Home Subscriber Server)",
-                                        description: "<ul><li>EPS User Data Management</li><li>EPS Authentication Function</li><li>Mobility Management Function</li><li>Handling Noir Request Function</li><li>DIAMETER Routing Management</li><li>Backup and Recovery Function</li></ul>"
+                                        title: "Advanced Features",
+                                        description: "Includes Topology Management and Automation capabilities such as automated tasks and API integration.",
+                                        icon: "advanced-features",
                                     },
                                     {
-                                        title: "SGW (Serving Gateway)",
-                                        description: "<ul><li>Session Management</li><li>User Location Information Management</li><li>Routing and Data Forwarding</li><li>QoS Control</li><li>Charging Requirements</li></ul>"
+                                        title: "Network Management Capabilities",
+                                        description: "Supports key management areas including Fault Management, Configuration Management, Performance Management, Security Management, and Accounting Management.",
+                                        icon: "network-management-capabilities",
                                     },
                                     {
-                                        title: "PGW (PDN Gateway)",
-                                        description: "<ul><li>IP Address Allocation</li><li>Session Management</li><li>Routing and Data Forwarding</li><li>External Data Network Access</li><li>QoS Control</li><li>Charging Requirements</li><li>PCEF (Policy and Charging Enforcement Function)</li></ul>"
+                                        title: "Scalability & Modern Support",
+                                        description: "Designed for scalability with support for virtualization and cloud environments to meet evolving network demands.",
+                                        icon: "scalability-and-modern-support",
                                     },
                                 ],
-                                image: null,
                                 layout: "secondary",
                             },
+                        ],
+                        specs: [
                             {
                                 title: "Features and Capacity",
                                 items: [
@@ -2207,6 +2184,29 @@ const categories = [
                                     {
                                         title: "System Management",
                                         description: "<p>System management functions based on human-machine interface</p><ol><li>User data management</li><li>System Configuration</li><li>System monitoring</li><li>Alarm and log collection</li><li>System backup function</li></ol>"
+                                    },
+                                ],
+                                image: null,
+                                layout: "secondary",
+                            },
+                            {
+                                title: "Network Element Function ",
+                                items: [
+                                    {
+                                        title: "MME (Mobility Management Entity)",
+                                        description: "<ul><li>Access Control</li><li>Mobility Management Function</li><li>Session Management</li><li>Network Element Selection Function</li></ul>"
+                                    },
+                                    {
+                                        title: "HSS (Home Subscriber Server)",
+                                        description: "<ul><li>EPS User Data Management</li><li>EPS Authentication Function</li><li>Mobility Management Function</li><li>Handling Noir Request Function</li><li>DIAMETER Routing Management</li><li>Backup and Recovery Function</li></ul>"
+                                    },
+                                    {
+                                        title: "SGW (Serving Gateway)",
+                                        description: "<ul><li>Session Management</li><li>User Location Information Management</li><li>Routing and Data Forwarding</li><li>QoS Control</li><li>Charging Requirements</li></ul>"
+                                    },
+                                    {
+                                        title: "PGW (PDN Gateway)",
+                                        description: "<ul><li>IP Address Allocation</li><li>Session Management</li><li>Routing and Data Forwarding</li><li>External Data Network Access</li><li>QoS Control</li><li>Charging Requirements</li><li>PCEF (Policy and Charging Enforcement Function)</li></ul>"
                                     },
                                 ],
                                 image: null,
