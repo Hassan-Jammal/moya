@@ -1165,47 +1165,47 @@ const categories = [
                                 items: [
                                     {
                                         title: "Model",
-                                        description: "4G LTE Outdoor Integrated Macro eNB."
+                                        description: "4G LTE Outdoor Integrated Macro eNB"
                                     },
                                     {
                                         title: "Standard",
-                                        description: "3GPP R10/12, LTE-A TDD/FDD."
+                                        description: "3GPP R10/12, LTE-A TDD/FDD"
                                     },
                                     {
                                         title: "Frequency",
-                                        description: "B1/3/5/7/8/20/31/34/38/39/40/41/87/88,and customized bands."
+                                        description: "B1/3/5/7/8/20/31/34/38/39/40/41/87/88, and customized bands"
                                     },
                                     {
                                         title: "TX Power",
-                                        description: "2x20W."
+                                        description: "2*20W(2T2R)"
                                     },
                                     {
                                         title: "Cell Capacity",
-                                        description: "1 cell with 400 active users or 600 online users."
+                                        description: "1 cell with 400 active users or 600 online users"
                                     },
                                     {
                                         title: "Cell Bandwidth",
-                                        description: "1.4MHz/3MHz/5MHz/10MHz/15MHz/20MHz."
+                                        description: "1.4MHz/3MHz/5MHz/10MHz/15MHz/20MHz"
                                     },
                                     {
                                         title: "Throughput",
-                                        description: "2T2R/4T4R , 64QAM , 20MHz Bandwidth FDD. <br /> 2T2R: DL 150Mbps ; UL 75Mbps. <br /> 4T4R: DL 300Mbps ; UL 75Mbps."
+                                        description: "64QAM, 20MHz Bandwidth FDD DL 150Mbps; UL 75Mbps"
                                     },
                                     {
                                         title: "Antenna",
-                                        description: "External high gain antenna."
+                                        description: "External high gain antenna"
                                     },
                                     {
                                         title: "Backhaul",
-                                        description: "1 optical (1G SFP+) and 1 RJ-45 Ethernet interface (1 GE)."
+                                        description: "1 optical (1G SFP+) and 1 RJ-45 Ethernet interface (1 GE)"
                                     },
                                     {
                                         title: "Dimension",
-                                        description: "420x320x160mm(4T4R), 420x320x120mm(2T2R)"
+                                        description: "420x320x120mm"
                                     },
                                     {
                                         title: "Weight",
-                                        description: "< 20Kg(4T4R), <15Kg(2T2R)"
+                                        description: "<15Kg"
                                     },
                                     {
                                         title: "Power Supply",
@@ -1272,47 +1272,47 @@ const categories = [
                                 items: [
                                     {
                                         title: "Model",
-                                        description: "4G LTE Outdoor Integrated Macro eNB."
+                                        description: "4G LTE Outdoor Integrated Macro eNB"
                                     },
                                     {
                                         title: "Standard",
-                                        description: "3GPP R10/12, LTE-A TDD/FDD."
+                                        description: "3GPP R10/12, LTE-A TDD/FDD"
                                     },
                                     {
                                         title: "Frequency",
-                                        description: "B1/3/5/7/8/20/31/34/38/39/40/41/87/88,and customized bands."
+                                        description: "B1/3/5/7/8/20/31/34/38/39/40/41/87/88, and customized bands"
                                     },
                                     {
                                         title: "TX Power",
-                                        description: "2x40w."
+                                        description: "2*40W(2T2R)"
                                     },
                                     {
                                         title: "Cell Capacity",
-                                        description: "1 cell with 400 active users or 600 online users."
+                                        description: "1 cell with 400 active users or 600 online users"
                                     },
                                     {
                                         title: "Cell Bandwidth",
-                                        description: "1.4MHz/3MHz/5MHz/10MHz/15MHz/20MHz."
+                                        description: "1.4MHz/3MHz/5MHz/10MHz/15MHz/20MHz"
                                     },
                                     {
                                         title: "Throughput",
-                                        description: "2T2R/4T4R , 64QAM , 20MHz Bandwidth FDD. <br /> 2T2R: DL 150Mbps ; UL 75Mbps. <br /> 4T4R: DL 300Mbps ; UL 75Mbps."
+                                        description: "64QAM, 20MHz Bandwidth FDD DL 150Mbps; UL 75Mbps"
                                     },
                                     {
                                         title: "Antenna",
-                                        description: "External high gain antenna."
+                                        description: "External high gain antenna"
                                     },
                                     {
                                         title: "Backhaul",
-                                        description: "1 optical (1G SFP+) and 1 RJ-45 Ethernet interface (1 GE)."
+                                        description: "1 optical (1G SFP+) and 1 RJ-45 Ethernet interface (1 GE)"
                                     },
                                     {
                                         title: "Dimension",
-                                        description: "420x320x160mm(4T4R), 420x320x120mm(2T2R)"
+                                        description: "420x320x120mm"
                                     },
                                     {
                                         title: "Weight",
-                                        description: "< 20Kg(4T4R), <15Kg(2T2R)"
+                                        description: "<15Kg"
                                     },
                                     {
                                         title: "Power Supply",
@@ -1379,47 +1379,47 @@ const categories = [
                                 items: [
                                     {
                                         title: "Model",
-                                        description: "4G LTE Outdoor Integrated Macro eNB."
+                                        description: "4G LTE Outdoor Integrated Macro eNB"
                                     },
                                     {
                                         title: "Standard",
-                                        description: "3GPP R10/12, LTE-A TDD/FDD."
+                                        description: "3GPP R10/12, LTE-A TDD/FDD"
                                     },
                                     {
                                         title: "Frequency",
-                                        description: "B1/3/5/7/8/20/31/34/38/39/40/41/87/88,and customized bands."
+                                        description: "B1/3/5/7/8/20/31/34/38/39/40/41/87/88, and customized bands"
                                     },
                                     {
                                         title: "TX Power",
-                                        description: "4x40W/2x60W."
+                                        description: "4*40W(4T4R), 2*60W(2T2R)"
                                     },
                                     {
                                         title: "Cell Capacity",
-                                        description: "1 cell with 400 active users or 600 online users."
+                                        description: "1 cell with 400 active users or 600 online users"
                                     },
                                     {
                                         title: "Cell Bandwidth",
-                                        description: "1.4MHz/3MHz/5MHz/10MHz/15MHz/20MHz."
+                                        description: "1.4MHz/3MHz/5MHz/10MHz/15MHz/20MHz"
                                     },
                                     {
                                         title: "Throughput",
-                                        description: "2T2R/4T4R , 64QAM , 20MHz Bandwidth FDD. <br /> 2T2R: DL 150Mbps ; UL 75Mbps. <br /> 4T4R: DL 300Mbps ; UL 75Mbps."
+                                        description: "64QAM, 20MHz Bandwidth FDD 2T2R: DL 150Mbps ; UL 75Mbps 4T4R: DL 300Mbps ; UL 75Mbps"
                                     },
                                     {
                                         title: "Antenna",
-                                        description: "External high gain antenna."
+                                        description: "External high gain antenna"
                                     },
                                     {
                                         title: "Backhaul",
-                                        description: "1 optical (1G SFP+) and 1 RJ-45 Ethernet interface (1 GE)."
+                                        description: "1 optical (1G SFP+) and 1 RJ-45 Ethernet interface (1 GE)"
                                     },
                                     {
                                         title: "Dimension",
-                                        description: "420x320x160mm(4T4R), 420x320x120mm(2T2R)"
+                                        description: "420x320x160mm"
                                     },
                                     {
                                         title: "Weight",
-                                        description: "< 20Kg(4T4R), <15Kg(2T2R)"
+                                        description: "< 20Kg"
                                     },
                                     {
                                         title: "Power Supply",
