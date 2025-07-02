@@ -47,10 +47,10 @@
                     ]
                 },
                 {
-                    title: "4G/5G RAN",
+                    title: "RAN",
                     clickable: false,
                     sub_title: "Smarter Networks, Stronger Connections.",
-                    path: "solutions/4g5g-ran",
+                    path: "solutions/ran",
                     subLinks: [
                         { title: "Dense Area Solution", path: "dense-area-solution", icon: "dense-area-solution" },
                         { title: "Rural Area Solution", path: "rural-area-solution", icon: "rural-area-solution" },
@@ -84,8 +84,8 @@
                     ]
                 },
                 {
-                    title: "4G/5G RAN",
-                    path: "products/4g5g-ran",
+                    title: "RAN",
+                    path: "products/ran",
                     clickable: true,
                     subLinks: [
                         { 

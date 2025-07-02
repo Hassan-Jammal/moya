@@ -274,9 +274,9 @@
                 { title: "MNO Solution", path: "/solutions/core-network/mno-solution" },
                 { title: "FWA Solution", path: "/solutions/core-network/fwa-solution" },
                 { title: "Enterprise Solution", path: "/solutions/core-network/enterprise-private-network-solution" },
-                { title: "Dense Area Solution", path: "/solutions/4g5g-ran/dense-area-solution" },
-                { title: "Rural Area Solution", path: "/solutions/4g5g-ran/rural-area-solution" },
-                { title: "Indoor Solution", path: "/solutions/4g5g-ran/indoor-solution" },
+                { title: "Dense Area Solution", path: "/solutions/ran/dense-area-solution" },
+                { title: "Rural Area Solution", path: "/solutions/ran/rural-area-solution" },
+                { title: "Indoor Solution", path: "/solutions/ran/indoor-solution" },
                 { title: "Fiber Solution", path: "/solutions/repeater/fiber-solution" },
                 { title: "Wireless Solution", path: "/solutions/repeater/wireless-solution" },
                 { title: "ICS Wireless Solution", path: "/solutions/repeater/ics-wireless-solution" },
@@ -287,7 +287,7 @@
             clickable: false,
             links: [
                 { title: "Core Network", path: "/products/core-network" },
-                { title: "4G/5G RAN", path: "/products/4g5g-ran" },
+                { title: "RAN", path: "/products/ran" },
                 { title: "Repeater", path: "/products/repeater" },
                 { title: "Antenna", path: "/products/antenna" },
             ]

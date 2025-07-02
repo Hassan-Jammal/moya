@@ -460,10 +460,10 @@ const categories = [
         ]
     },
     {
-        title: "4G/5G RAN",
+        title: "RAN",
         sub_title: "Seamless Connectivity Starts with Advanced RAN Solutions",
         description: "Radio Access Network (RAN) Products include advanced hardware and software solutions that enable seamless wireless communication between user devices and the core network. Designed to adapt to diverse coverage scenarios, they offer flexible power output options and customizable configurations to optimize network performance and efficiency.",
-        image: "4g5g-ran",
+        image: "ran",
         layout: "primary",
         overview: {
             title: "Expanding Coverage, Enhancing Performance",
@@ -1177,7 +1177,7 @@ const categories = [
                                     },
                                     {
                                         title: "TX Power",
-                                        description: "4*40W(4T4R), 2*60W(2T2R)."
+                                        description: "2x20W."
                                     },
                                     {
                                         title: "Cell Capacity",
@@ -1284,7 +1284,7 @@ const categories = [
                                     },
                                     {
                                         title: "TX Power",
-                                        description: "4*40W(4T4R), 2*60W(2T2R)."
+                                        description: "2x40w."
                                     },
                                     {
                                         title: "Cell Capacity",
@@ -1391,7 +1391,7 @@ const categories = [
                                     },
                                     {
                                         title: "TX Power",
-                                        description: "4*40W(4T4R), 2*60W(2T2R)."
+                                        description: "4x40W/2x60W."
                                     },
                                     {
                                         title: "Cell Capacity",

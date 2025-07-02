@@ -297,7 +297,7 @@
         },
         {  
             title: "Dense Area Solution", 
-            category: "4G/5G RAN", 
+            category: "RAN", 
             link: "",
             image: "dense-area-solution", 
             color: "#43516D", 
@@ -318,7 +318,7 @@
         },
         {  
             title: "Rural Area Solution", 
-            category: "4G/5G RAN", 
+            category: "RAN", 
             link: "",
             image: "rural-area-solution", 
             color: "#43516D", 
@@ -339,7 +339,7 @@
         },
         {  
             title: "Indoor Solution", 
-            category: "4G/5G RAN", 
+            category: "RAN", 
             link: "",
             image: "indoor-solution", 
             color: "#43516D", 

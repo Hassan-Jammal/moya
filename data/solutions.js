@@ -191,7 +191,7 @@ const categories = [
         ],
     },
     {
-        title: "4G/5G RAN",
+        title: "RAN",
         sub_title: "Smarter Networks, Stronger Connections.",
         description: "Empowering LTE/5G with Flexibility and Efficiency.",
         color: "#43516D", 
@@ -264,7 +264,7 @@ const categories = [
                         acronym: "BBU",
                         sub_title: "Distributed Site - Macro BBU",
                         image: "4g-lte-macro-bbu-outer",
-                        category:  "4G/5G RAN",
+                        category:  "RAN",
                         sub_category:  "Baseband Unit",
                     },
                     {
@@ -272,7 +272,7 @@ const categories = [
                         acronym: "RRU",
                         sub_title: "Distributed Site - Outdoor RRU",
                         image: "4g-lte-4t4r-rru-outer",
-                        category:  "4G/5G RAN",
+                        category:  "RAN",
                         sub_category:  "Remote Radio Unit",
                     },
                     {
@@ -353,7 +353,7 @@ const categories = [
                         acronym: "BBU",
                         sub_title: "Distributed Site - Micro BBU",
                         image: "4g-lte-micro-bbu-outer",
-                        category:  "4G/5G RAN",
+                        category:  "RAN",
                         sub_category:  "Baseband Unit",
                     },
                     {
@@ -361,7 +361,7 @@ const categories = [
                         acronym: "RRU",
                         sub_title: "Distributed Site - Outdoor RRU",
                         image: "4g-lte-4t4r-rru-outer",
-                        category:  "4G/5G RAN",
+                        category:  "RAN",
                         sub_category:  "Remote Radio Unit",
                     },
                     {
@@ -369,7 +369,7 @@ const categories = [
                         acronym: "eNB",
                         sub_title: "Integrated eNB (outdoor)",
                         image: "4g-lte-macro-enb-2x40w-outer",
-                        category:  "4G/5G RAN",
+                        category:  "RAN",
                         sub_category:  "Integrated eNB",
                     },
                     {
@@ -474,7 +474,7 @@ const categories = [
                         acronym: "BBU",
                         sub_title: "Distributed Site - Micro BBU",
                         image: "4g-lte-micro-bbu-outer",
-                        category:  "4G/5G RAN",
+                        category:  "RAN",
                         sub_category:  "Baseband Unit",
                     },
                     {
@@ -482,7 +482,7 @@ const categories = [
                         acronym: "BBU",
                         sub_title: "Distributed Site - pHUB",
                         image: "4g-lte-phub-outer",
-                        category:  "4G/5G RAN",
+                        category:  "RAN",
                         sub_category:  "Baseband Unit",
                     },
                     {
@@ -490,7 +490,7 @@ const categories = [
                         acronym: "RRU",
                         sub_title: "Distributed Site - pRRU",
                         image: "4g-lte-prru-outer",
-                        category:  "4G/5G RAN",
+                        category:  "RAN",
                         sub_category:  "Remote Radio Unit",
                     },
                 ]
