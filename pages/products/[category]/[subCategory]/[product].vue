@@ -48,15 +48,15 @@
             </div>
         </div>
 	</section>
-
-    <section v-if="productData?.advantages?.[0] && productData?.specs?.[0]" class="py-12 lg:py-24 bg-[#F8F8F9]">
+<!-- <pre>{{ productData?.specs?.[0].categories }}</pre> -->
+    <section v-if="productData?.advantages?.[0] || productData?.specs?.[0]" class="py-12 lg:py-24 bg-[#F8F8F9]">
         <div class="container">
             <AdvantagesLayout :productData="productData.advantages[0]" />
             <SpecsLayout :productData="productData.specs[0]" :class="{'mt-24 lg:mt-48': productData.advantages[0]}" />
         </div>
 	</section>
 
-    <section v-if="productData?.advantages?.[1] && productData?.specs?.[1]" class="py-12 lg:py-24 bg-[#F8F8F9]">
+    <section v-if="productData?.advantages?.[1] || productData?.specs?.[1]" class="py-12 lg:py-24 bg-[#F8F8F9]">
         <div class="container">
             <AdvantagesLayout :productData="productData.advantages[1]" />
             <SpecsLayout :productData="productData.specs[1]" :class="{'mt-24 lg:mt-48': productData.advantages[1]}" />
