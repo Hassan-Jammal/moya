@@ -941,11 +941,11 @@ const categories = [
                                 items: [
                                     {
                                         title: "Model",
-                                        description: "4G LTE RRU"
+                                        description: "4G LTE Outdoor RRU"
                                     },
                                     {
                                         title: "Frequency",
-                                        description: "B1/3/5/7/8/20/31/34/38/39/40/41/87/88,and customized bands"
+                                        description: "B1/3/5/7/8/20/31/34/38/39/40/41/87/88, and customized bands"
                                     },
                                     {
                                         title: "Bandwidth",
@@ -953,7 +953,7 @@ const categories = [
                                     },
                                     {
                                         title: "TX Power",
-                                        description: "4*40W(4T4R), 2*60W(2T2R)"
+                                        description: "2*20W(2T2R), 2*40W(2T2R), 2*60W(2T2R"
                                     },
                                     {
                                         title: "Antenna",
@@ -969,15 +969,15 @@ const categories = [
                                     },
                                     {
                                         title: "Power Consumption",
-                                        description: "<600W(4T4R), <400W(2T2R)"
+                                        description: "<400W"
                                     },
                                     {
                                         title: "Dimension",
-                                        description: "420x320x160mm(4T4R), 420x320x120mm(2T2R)"
+                                        description: "420x320x120mm"
                                     },
                                     {
                                         title: "Weight",
-                                        description: "< 20Kg(4T4R), <15Kg(2T2R)"
+                                        description: "<20Kg(2T2R)"
                                     },
                                     {
                                         title: "Ingress Protection Rating",
@@ -1048,11 +1048,11 @@ const categories = [
                                 items: [
                                     {
                                         title: "Model",
-                                        description: "4G LTE RRU"
+                                        description: "4G LTE Outdoor RRU"
                                     },
                                     {
                                         title: "Frequency",
-                                        description: "B1/3/5/7/8/20/31/34/38/39/40/41/87/88,and customized bands"
+                                        description: "B1/3/5/7/8/20/31/34/38/39/40/41/87/88, and customized bands"
                                     },
                                     {
                                         title: "Bandwidth",
@@ -1060,7 +1060,7 @@ const categories = [
                                     },
                                     {
                                         title: "TX Power",
-                                        description: "4*40W(4T4R), 2*60W(2T2R)"
+                                        description: "4*20W(4T4R), 4*40W(4T4R)"
                                     },
                                     {
                                         title: "Antenna",
@@ -1076,15 +1076,15 @@ const categories = [
                                     },
                                     {
                                         title: "Power Consumption",
-                                        description: "<600W(4T4R), <400W(2T2R)"
+                                        description: "<600W"
                                     },
                                     {
                                         title: "Dimension",
-                                        description: "420x320x160mm(4T4R), 420x320x120mm(2T2R)"
+                                        description: "420x320x160mm"
                                     },
                                     {
                                         title: "Weight",
-                                        description: "< 20Kg(4T4R), <15Kg(2T2R)"
+                                        description: "< 20Kg"
                                     },
                                     {
                                         title: "Ingress Protection Rating",
@@ -1488,31 +1488,31 @@ const categories = [
                                 items: [
                                     {
                                         title: "Model",
-                                        description: "4G LTE Indoor Integrated Femto eNB."
+                                        description: "4G LTE Indoor Integrated Femto eNB"
                                     },
                                     {
                                         title: "Standard",
-                                        description: "3GPP R10/12, LTE TDD/FDD."
+                                        description: "3GPP R10/12, LTE TDD/FDD"
                                     },
                                     {
                                         title: "Frequency",
-                                        description: "B1/3/5/7/8/20/31/34/38/39/40/41/87/88, and customized bands."
+                                        description: "B1/3/5/7/8/20/31/34/38/39/40/41/87/88, and customized bands"
                                     },
                                     {
                                         title: "Bandwidth",
-                                        description: "5MHz/10MHz/15MHz/20MHz."
+                                        description: "5MHz/10MHz/15MHz/20MHz"
                                     },
                                     {
                                         title: "Cell Capacity",
-                                        description: "1 cell with 400 active users or 600 online users."
+                                        description: "48 active users, 96 online users"
                                     },
                                     {
                                         title: "Synchronization",
-                                        description: "GNSS, Network Listening."
+                                        description: "GNSS, Network Listening"
                                     },
                                     {
                                         title: "TX Power",
-                                        description: "2*250mW."
+                                        description: "2*50mW"
                                     },
                                     {
                                         title: "Antenna",
@@ -1520,23 +1520,23 @@ const categories = [
                                     },
                                     {
                                         title: "Throughput",
-                                        description: "DL 140Mbps, UL 41Mbps @ 20MHz for FDD."
+                                        description: "DL 140Mbps, UL 41Mbps @ 20MHz for FDD"
                                     },
                                     {
                                         title: "Backhaul",
-                                        description: "1 RJ-45 Ethernet interface (1 GE)."
+                                        description: "1 RJ-45 Ethernet interface (1 GE)"
                                     },
                                     {
                                         title: "Power Supply",
-                                        description: "PoE+ IEEE 802.3at standard, DC 12V."
+                                        description: "PoE+ IEEE 802.3at standard, DC 12V"
                                     },
                                     {
                                         title: "Power Consumption",
-                                        description: "Typical 20W, maximum 30W."
+                                        description: "Typical 20W, maximum 30W"
                                     },
                                     {
                                         title: "Dimension",
-                                        description: "220x 220 x 81.5mm."
+                                        description: "220x 220 x 81.5mm"
                                     },
                                     {
                                         title: "Weight",
@@ -1599,55 +1599,55 @@ const categories = [
                                 items: [
                                     {
                                         title: "Model",
-                                        description: "4G LTE Indoor Integrated Femto eNB."
+                                        description: "4G LTE Indoor Integrated Femto eNB"
                                     },
                                     {
                                         title: "Standard",
-                                        description: "3GPP R10/12, LTE TDD/FDD."
+                                        description: "3GPP R10/12, LTE TDD/FDD"
                                     },
                                     {
                                         title: "Frequency",
-                                        description: "B1/3/5/7/8/20/31/34/38/39/40/41/87/88, and customized bands."
+                                        description: "B1/3/5/7/8/20/31/34/38/39/40/41/87/88, and customized bands"
                                     },
                                     {
                                         title: "Bandwidth",
-                                        description: "5MHz/10MHz/15MHz/20MHz."
+                                        description: "5MHz/10MHz/15MHz/20MHz"
                                     },
                                     {
                                         title: "Cell Capacity",
-                                        description: "1 cell with 400 active users or 600 online users."
+                                        description: "48 active users, 96 online users"
                                     },
                                     {
                                         title: "Synchronization",
-                                        description: "GNSS, Network Listening."
+                                        description: "GNSS, Network Listening"
                                     },
                                     {
                                         title: "TX Power",
-                                        description: "2*250mW."
+                                        description: "2*250mW"
                                     },
                                     {
                                         title: "Antenna",
-                                        description: "Internal omni antenna."
+                                        description: "Internal omni antenna"
                                     },
                                     {
                                         title: "Throughput",
-                                        description: "DL 140Mbps, UL 41Mbps @ 20MHz for FDD."
+                                        description: "DL 140Mbps, UL 41Mbps @ 20MHz for FDD"
                                     },
                                     {
                                         title: "Backhaul",
-                                        description: "1 RJ-45 Ethernet interface (1 GE)."
+                                        description: "1 RJ-45 Ethernet interface (1 GE)"
                                     },
                                     {
                                         title: "Power Supply",
-                                        description: "PoE+ IEEE 802.3at standard, DC 12V."
+                                        description: "PoE+ IEEE 802.3at standard, DC 12V"
                                     },
                                     {
                                         title: "Power Consumption",
-                                        description: "Typical 20W, maximum 30W."
+                                        description: "Typical 20W, maximum 30W"
                                     },
                                     {
                                         title: "Dimension",
-                                        description: "220x 220 x 81.5mm."
+                                        description: "220x 220 x 81.5mm"
                                     },
                                     {
                                         title: "Weight",
