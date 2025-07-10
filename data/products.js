@@ -32,10 +32,6 @@ const categories = [
                                         title: "Electrical Specifications",
                                         items: [
                                             { 
-                                                title: "Type No.",
-                                                description: "97011820"
-                                            },
-                                            { 
                                                 title: "Frequency Range (MHZ)",
                                                 description: "660-960 | 1710-2700"
                                             },
@@ -2145,7 +2141,7 @@ const categories = [
                                     },
                                     {
                                         title: "Network Management Capabilities",
-                                        description: "Supports key management areas including Fault Management, Configuration Management, Performance Management, Security Management, and Accounting Management.",
+                                        description: "Supports key management areas including Alarm Management, Configuration Management, Performance Management, Security Management, and Accounting Management.",
                                         icon: "network-management-capabilities",
                                     },
                                     {
@@ -2224,7 +2220,7 @@ const categories = [
                         title: "IP MultiMedia Subsystem",
                         acronym: "IMS",
                         sub_title: "IMS",
-                        description: "Compliant with 3GPP standards, it offers full-featured capabilities and seamless integration with third-party devices. Designed for scalability, it supports up to a million users, with a capacity reaching 600K. Additionally, it ensures easy maintenance for efficient operation.",
+                        description: "Compliant with 3GPP standards, it offers full-featured capabilities and seamless integration with third-party devices. <br />Designed for scalability, it supports up to a million users, with a capacity reaching 10M. Additionally, it ensures easy maintenance for efficient operation.",
                         image_outer: "ip-multimedia-subsystem-outer",
                         image_inner: "ip-multimedia-subsystem-inner",
                         advantages: [
@@ -2242,9 +2238,9 @@ const categories = [
                                         icon: "standards-compliant",
                                     },
                                     {
-                                        title: "Seamless VoLTE & Data Integration",
-                                        description: "Support million user capacity, user capacity can be up to 600K",
-                                        icon: "seamless-volte-and-data-integration",
+                                        title: "High-Capacity User Support",
+                                        description: "Support million user capacity, user capacity can be up to 10M",
+                                        icon: "high-capacity-user-support",
                                     },
                                     {
                                         title: "Easy Maintenance",
