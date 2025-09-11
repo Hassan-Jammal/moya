@@ -1441,7 +1441,7 @@ const categories = [
                         title: "Femtocell Indoor 2x50MW",
                         acronym: "eNB",
                         sub_title: "Distributed Site - Indoor",
-                        description: "A high-integrated, all-in-one solution with an ultra-simplified design, ideal for offices, internet cafes, and small shops. It features plug-and-play SON capabilities for easy deployment and supports flexible backhaul options, including xPON, Internet, IPRAN, and PTN. With support for up to 64 active users, it delivers peak speeds of 140Mbps DL and 41Mbps UL, covering areas between 200m² and 500m².",
+                        description: "A high-integrated, all-in-one solution with an ultra-simplified design, ideal for offices, internet cafes, and small shops. It features plug-and-play SON capabilities for easy deployment and supports flexible backhaul options, including xPON, Internet, IPRAN, and PTN. With support for up to 48 active users, it delivers peak speeds of 140Mbps DL and 41Mbps UL, covering areas between 200m² and 500m².",
                         image_outer: "femtocell-2x50mw-outer",
                         image_inner: "femtocell-2x50mw-inner",
                         advantages: [
@@ -1552,7 +1552,7 @@ const categories = [
                         title: "Femtocell Indoor 2x250MW",
                         acronym: "eNB",
                         sub_title: "Distributed Site - Indoor",
-                        description: "A high-integrated, all-in-one solution with an ultra-simplified design, ideal for offices, internet cafes, and small shops. It features plug-and-play SON capabilities for easy deployment and supports flexible backhaul options, including xPON, Internet, IPRAN, and PTN. With support for up to 64 active users, it delivers peak speeds of 140Mbps DL and 41Mbps UL, covering areas between 200m² and 500m².",
+                        description: "A high-integrated, all-in-one solution with an ultra-simplified design, ideal for offices, internet cafes, and small shops. It features plug-and-play SON capabilities for easy deployment and supports flexible backhaul options, including xPON, Internet, IPRAN, and PTN. With support for up to 48 active users, it delivers peak speeds of 140Mbps DL and 41Mbps UL, covering areas between 200m² and 500m².",
                         image_outer: "femtocell-2x250mw-outer",
                         image_inner: "femtocell-2x250mw-inner",
                         advantages: [
