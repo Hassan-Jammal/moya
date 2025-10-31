@@ -2282,6 +2282,295 @@ const categories = [
                         ]
                     }
                 ], 
+            },
+            {
+                title: "Gateway GPRS Support Node",
+                acronym: "GGSN",
+                products: [
+                    {
+                        title: "Gateway GPRS Support Node",
+                        acronym: "GGSN",
+                        sub_title: "GGSN",
+                        description: "The Gateway GPRS Support Node (GGSN) is a critical component of the 3G/4G mobile core network, acting as the gateway between the mobile network and external packet data networks (PDN). Our high-performance GGSN solution provides robust connectivity, advanced service control, and seamless mobility for mobile data services.",
+                        image_outer: "gateway-gprs-support-node-outer",
+                        image_inner: "gateway-gprs-support-node-inner",
+                        advantages: [
+                            {
+                                title: "Key Benefits of GGSN",
+                                items: [
+                                    {
+                                        title: "High-Performance Data Gateway",
+                                        description: "Enables high-speed data processing and secure packet routing.",
+                                        icon: "high-performance-data-gateway",
+                                    },
+                                    {
+                                        title: "Flexible Interworking",
+                                        description: "Provides smooth connectivity with external IP networks and multiple APNs.",
+                                        icon: "flexible-interworking",
+                                    },
+                                    {
+                                        title: "Advanced Traffic Management",
+                                        description: "Improves data flow with smart routing and QoS control.",
+                                        icon: "advanced-traffic-management",
+                                    },
+                                    {
+                                        title: "Carrier-Grade Reliability",
+                                        description: "Delivers 99.999% uptime with full redundancy and load balancing.",
+                                        icon: "carrier-grade-reliability",
+                                    },
+                                ],
+                                layout: "secondary",
+                            },
+                        ],
+                        specs: [
+                            {
+                                title: "Features and Capacity",
+                                items: [
+                                    {
+                                        title: "Standards Compliance",
+                                        description: "<ul><li>3GPP compliant (GTPv0, GTPv1, GTPv2)</li></ul>"
+                                    },
+                                    {
+                                        title: "System Capacity",
+                                        description: "<ul><li>Active PDP Contexts: 10 Million</li><li>System Throughput: Up to 200 Gbps</li><li>GTP-C Messages: >50,000 per second</li></ul>"
+                                    },
+                                    {
+                                        title: "Core Functions",
+                                        description: "<ul><li>Interworking with External PDNs (Internet, Intranet)</li><li>IP Address Allocation (DHCP, Static, PPP)</li><li>Packet Routing & Forwarding</li><li>GTP-IP Protocol Conversion</li><li>Support IPV4&IPV6</li></ul>"
+                                    },
+                                    {
+                                        title: "Charging & Policy",
+                                        description: "<ul><li>Integrated PCEF</li><li>Per-Session & Per-Volume CDR Generation</li><li>QoS Enforcement (Traffic Policing & Shaping)</li><li>Support Online Charging % Offline Charging</li></ul>"
+                                    },
+                                    {
+                                        title: "Reliability",
+                                        description: "<ul><li>99.999% High Availability with N+K Redundancy</li></ul>"
+                                    },
+                                ],
+                                image: null,
+                                layout: "secondary",
+                            }
+                        ]
+                    }
+                ], 
+            },
+            {
+                title: "Online Charging System",
+                acronym: "OCS",
+                products: [
+                    {
+                        title: "Online Charging System",
+                        acronym: "OCS",
+                        sub_title: "OCS",
+                        description: "Moya Online Charging System (OCS) is a high-performance, carrier-grade solution that provides real-time charging and credit control for prepaid and convergent subscribers. It enables operators to monetize services effectively and reduce revenue loss through immediate financial transaction processing.",
+                        image_outer: "online-charging-system-outer",
+                        image_inner: "online-charging-system-inner",
+                        advantages: [
+                            {
+                                title: "Key Benefits of GGSN",
+                                items: [
+                                    {
+                                        title: "Real-Time Charging Control",
+                                        description: "Provides instant balance management and accurate session-based charging.",
+                                        icon: "real-time-charging-control",
+                                    },
+                                    {
+                                        title: "Flexible Charging Models",
+                                        description: "Supports prepaid, postpaid, and hybrid service plans.",
+                                        icon: "flexible-charging-models",
+                                    },
+                                    {
+                                        title: "Seamless Integration",
+                                        description: "Connects easily with PCRF, IMS, and core network systems via standard interfaces.",
+                                        icon: "seamless-integration",
+                                    },
+                                    {
+                                        title: "High Reliability and Scalability",
+                                        description: "Ensures carrier-grade uptime and performance as your network grows.",
+                                        icon: "high-reliability-and-scalability",
+                                    },
+                                ],
+                                layout: "secondary",
+                            },
+                        ],
+                        specs: [
+                            {
+                                title: "Features and Capacity",
+                                items: [
+                                    {
+                                        title: "Standards Compliance",
+                                        description: "<ul><li>3GPP compliant (Diameter Gy/Ro interfaces)</li></ul>"
+                                    },
+                                    {
+                                        title: "System Capacity",
+                                        description: "<ul><li>Transactions: 50,000 TPS</li><li>Subscriber Base: 50+ Million</li><li>Concurrent Sessions: Millions</li></ul>"
+                                    },
+                                    {
+                                        title: "Charging Models",
+                                        description: "<ul><li>Prepaid & Hybrid (Prepaid/Postpaid)</li><li>Event-Based & Session-Based</li><li>Time-Volume-Unit Quota Management</li></ul>"
+                                    },
+                                    {
+                                        title: "Core Functions",
+                                        description: "<ul><li>Real-time Credit Authorization & Control</li><li>Balance & Tariff Management</li><li>High-Performance Rating Engine</li></ul>"
+                                    },
+                                    {
+                                        title: "Reliability",
+                                        description: "<ul><li>99.999% Availability with Geo-Redundancy</li></ul>"
+                                    },
+                                ],
+                                image: null,
+                                layout: "secondary",
+                            }
+                        ]
+                    }
+                ], 
+            },
+            {
+                title: "Diameter Routing Agent",
+                acronym: "DRA",
+                products: [
+                    {
+                        title: "Diameter Routing Agent",
+                        acronym: "DRA",
+                        sub_title: "DRA",
+                        description: "Moya high-performance Diameter Routing Agent (DRA) is a critical core network node that provides intelligent, real-time routing of Diameter signaling messages. It serves as the central nervous system for IMS and EPC networks, ensuring robust and scalable communication between Diameter-based network elements.",
+                        image_outer: "diameter-routing-agent-outer",
+                        image_inner: "diameter-routing-agent-inner",
+                        advantages: [
+                            {
+                                title: "Key Benefits of DRA",
+                                items: [
+                                    {
+                                        title: "Operational Efficiency",
+                                        description: "Provides centralized management, monitoring, and troubleshooting of the entire Diameter signaling network.",
+                                        icon: "operational-efficiency",
+                                    },
+                                    {
+                                        title: "Interoperability",
+                                        description: "Facilitates seamless integration of multi-vendor network elements and connections to roaming partners.",
+                                        icon: "interoperability",
+                                    },
+                                    {
+                                        title: "Enhanced Reliability",
+                                        description: "Ensures message delivery even during network element failures through intelligent re-routing and redundancy.",
+                                        icon: "enhanced-reliability",
+                                    },
+                                    {
+                                        title: "Network Decoupling",
+                                        description: "Simplifies network architecture by acting as a central hub, reducing the need for full-mesh connectivity between elements.",
+                                        icon: "network-decoupling",
+                                    },
+                                    {
+                                        title: "Future-Proof Scalability",
+                                        description: "Effortlessly scales to accommodate network growth and the introduction of new services like VoLTE, 5G, and IoT.",
+                                        icon: "future-proof-scalability",
+                                    },
+                                ],
+                                layout: "secondary",
+                            },
+                        ],
+                        specs: [
+                            {
+                                title: "Features and Capacity",
+                                items: [
+                                    {
+                                        title: "Compliance",
+                                        description: "<ul><li>3GPP compliant (Diameter Gy/Ro interfaces)</li></ul>"
+                                    },
+                                    {
+                                        title: "System Capacity",
+                                        description: "<ul><li>Message Processing: The system adopts a distributed architecture with elastic scalability, supporting up to 650,000 TPS</li><li>Diameter Peers: Thousands</li><li>Concurrent Sessions: Millions (Stateful)</li></ul>"
+                                    },
+                                    {
+                                        title: "Charging Models",
+                                        description: "<ul><li>Realm & Host-Based Routing</li><li>Application-ID Based Routing</li><li>IMSI Based Routing</li><li>MSISDN Based Routing</li><li>RAT Based Routing</li><li>Command Code Based Routing</li><li>impi Domian Based Routing</li><li>impu Domian Based Routing</li><li>APN Based Routing</li><li>IP Based Routing</li><li>Charging Characteristics Based Routing</li><li>IP domain Id Based Routing</li><li>Any Avp Based Routing</li><li>Dynamic Peer Discovery</li><li>Load Balancing</li><li>BSF</li><li>IWF</li></ul>"
+                                    },
+                                    {
+                                        title: "Operation Modes",
+                                        description: "<ul><li>Redirect, Proxy, and Relay Agent</li></ul>"
+                                    },
+                                    {
+                                        title: "Reliability",
+                                        description: "<ul><li>99.999% Availability with N+K & Geo-Redundancy</li></ul>"
+                                    },
+                                ],
+                                image: null,
+                                layout: "secondary",
+                            }
+                        ]
+                    }
+                ], 
+            },
+            {
+                title: "Policy and Charging Rules Function",
+                acronym: "PCRF",
+                products: [
+                    {
+                        title: "Policy and Charging Rules Function",
+                        acronym: "PCRF",
+                        sub_title: "PCRF",
+                        description: "Moya Policy and Charging Rules Function (PCRF) is a high-performance, carrier-grade network element that serves as the central brain for policy control and charging rule management in mobile core networks. It enables operators to dynamically manage network resources, enforce quality of service (QoS), and implement sophisticated charging strategies in real-time.",
+                        image_outer: "policy-and-charging-rules-function-outer",
+                        image_inner: "policy-and-charging-rules-function-inner",
+                        advantages: [
+                            {
+                                title: "Key Benefits of PCRF",
+                                items: [
+                                    {
+                                        title: "Granular Service Control",
+                                        description: "Enables creation of tiered service plans and on-demand QoS boosts",
+                                        icon: "granular-service-control",
+                                    },
+                                    {
+                                        title: "Revenue Optimization",
+                                        description: "Facilitates new revenue streams through targeted service offerings and real-time policy triggers",
+                                        icon: "revenue-optimization",
+                                    },
+                                    {
+                                        title: "Network Efficiency",
+                                        description: "Dynamically allocates network resources based on subscriber, application, and network conditions.",
+                                        icon: "network-efficiency",
+                                    },
+                                    {
+                                        title: "Future-Ready Architecture",
+                                        description: "Seamlessly scales to support network evolution and new services like 5G network slicing.",
+                                        icon: "future-ready-architecture",
+                                    },
+                                ],
+                                layout: "secondary",
+                            },
+                        ],
+                        specs: [
+                            {
+                                title: "Features and Capacity",
+                                items: [
+                                    {
+                                        title: "Standards Compliance",
+                                        description: "<ul><li>3GPP compliant (Diameter Gx, Rx, Sy interfaces)</li></ul>"
+                                    },
+                                    {
+                                        title: "System Capacity",
+                                        description: "<ul><li>Transaction Processing: Up to 100,000 TPS</li><li>Subscriber Base: 50+ Million</li><li>Concurrent Sessions: Millions</li></ul>"
+                                    },
+                                    {
+                                        title: "Core Functions",
+                                        description: "<ul><li>Dynamic Policy Control Decision-Making</li><li>Real-time QoS Control & Enforcement</li><li>Charging Rules Provisioning & Management</li><li>Interaction with Application Function (AF)</li></ul>"
+                                    },
+                                    {
+                                        title: "Key Differentiators",
+                                        description: "<ul><li>Diverse Policy Strategies: Supports sophisticated, customizable policy rules for varied service scenarios</li><li>High Performance & Scalability: Horizontally scalable architecture designed for massive transaction handling</li><li>Low Operational Cost: Streamlined maintenance and efficient resource utilization reduce TCO</li></ul>"
+                                    },
+                                    {
+                                        title: "Reliability",
+                                        description: "<ul><li>99.999% High Availability with N+K Redundancy</li></ul>"
+                                    },
+                                ],
+                                image: null,
+                                layout: "secondary",
+                            }
+                        ]
+                    }
+                ], 
             }
         ]
     },

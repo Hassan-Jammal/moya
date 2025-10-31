@@ -21,7 +21,7 @@
                     <div class="absolute top-full left-0 h-[var(--header-height)] w-full group-hover:block hidden before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:bg-transparent before:w-5 before:h-5"></div>
 
                     <!-- White Nav Start -->
-                        <ul class="overflow-visible nav fixed top-[var(--header-height)] -translate-x-1/2 w-max min-w-[280px] flex flex-col gap-4 py-8 px-4 bg-white overflow-hidden invisible opacity-0 group-hover:visible group-hover:opacity-100 shadow-lg transition-opacity duration-300 ease-in-out">
+                        <ul class="overflow-visible nav fixed top-[var(--header-height)] -translate-x-1/2 w-max min-w-[280px] flex flex-col gap-4 pt-8 pb-32 px-4 bg-white overflow-hidden invisible opacity-0 group-hover:visible group-hover:opacity-100 shadow-lg transition-opacity duration-300 ease-in-out">
                             <li v-for="(levelOneSubItem, levelOneSubItemIndex) in item.links" :key="levelOneSubItemIndex" class="group/levelOneItem relatve w-full flex flex-col gap-6">
                                 
                                 <template v-if="levelOneSubItem.subLinks && levelOneSubItem.subLinks.length">

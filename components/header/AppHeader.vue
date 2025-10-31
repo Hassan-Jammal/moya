@@ -81,6 +81,10 @@
                     subLinks: [
                         { title: "Evolved Packet Core (EPC)", path: "evolved-packet-core/evolved-packet-core" },
                         { title: "IP Multimedia Subsystem (IMS)", path: "ip-multimedia-subsystem/ip-multimedia-subsystem" },
+                        { title: "Gateway GPRS Support Node (GGSN)", path: "gateway-gprs-support-node/gateway-gprs-support-node" },
+                        { title: "Online Charging System (OCS)", path: "online-charging-system/online-charging-system" },
+                        { title: "Diameter Routing Agent (DRA)", path: "diameter-routing-agent/diameter-routing-agent" },
+                        { title: "Policy And Charging Rules Function (PCRF)", path: "policy-and-charging-rules-function/policy-and-charging-rules-function" },
                     ]
                 },
                 {
