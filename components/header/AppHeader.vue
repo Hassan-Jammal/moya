@@ -42,8 +42,9 @@
                     path: "solutions/core-network",
                     subLinks: [
                         { title: "MNO Solution", path: "mno-solution", icon: "mno-solution" },
+                        { title: "MVNO Solution", path: "mvno-solution", icon: "mvno-solution" },
                         { title: "FWA Solution", path: "fwa-solution", icon: "fwa-solution" },
-                        { title: "Enterprise Solution", path: "enterprise-private-network-solution", icon: "enterprise-private-network-solution" }
+                        { title: "Enterprise Solution", path: "enterprise-private-network-solution", icon: "enterprise-private-network-solution" },
                     ]
                 },
                 {

@@ -272,6 +272,7 @@
             clickable: false,
             links: [
                 { title: "MNO Solution", path: "/solutions/core-network/mno-solution" },
+                { title: "MVNO Solution", path: "/solutions/repeater/mvno-solution" },
                 { title: "FWA Solution", path: "/solutions/core-network/fwa-solution" },
                 { title: "Enterprise Solution", path: "/solutions/core-network/enterprise-private-network-solution" },
                 { title: "Dense Area Solution", path: "/solutions/ran/dense-area-solution" },

@@ -293,6 +293,13 @@
             category: "Core Network", 
             link: "",
             image: "mno-solution", 
+            color: "#323D86", 
+        },
+        {  
+            title: "MVNO Solution", 
+            category: "Core Network", 
+            link: "",
+            image: "mvno-solution", 
             color: "#2B6FF6", 
         },
         {  
@@ -349,7 +356,7 @@
             category: "Repeater", 
             link: "",
             image: "ics-wireless-solution", 
-            color: "#2B6FF6", 
+            color: "#323D86", 
         },
     ]
 

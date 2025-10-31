@@ -67,6 +67,67 @@ const categories = [
                 ]
             },
             {
+                title: "MVNO Solution",
+                sub_title: "Empowering MVNOs to Build, Scale, and Innovate",
+                description: "Moya comprehensive Mobile Virtual Network Operator (MVNO) solution provides a complete, flexible, and cost-effective technical foundation for aspiring and established virtual operators. We empower you to launch and scale mobile services rapidly, from a lightweight brand-focused model to a full-fledged, independent operator with advanced control.<br /><br />This solution encompasses subsystems including the Evolved Packet Core (EPC)—with components such as DRA and STP—as well as the Online Charging System (OCS), Network Management System (NMS), and Operations Support System (OSS). It seamlessly integrates with various Mobile Network Operator (MNO) networks, providing your business with a unified and cost-effective platform.",
+                features: [
+                    {
+                        title: "Flexible Deployment",
+                        icon: "flexible-deployment",
+                    },
+                    {
+                        title: "Seamless Integration",
+                        icon: "seamless-integration",
+                    },
+                    {
+                        title: "Scalable Growth",
+                        icon: "scalable-growth",
+                    }
+                ],
+                image: "mvno-solution",
+                image1: "mvno-solution-infrastructure",
+                benefits: {
+                    title: "Seamless Connectivity, Scalable Power, and Future-Ready Integration",
+                    items: [
+                        "Flexibility",
+                        "Scalable Licensing Model",
+                        "End-to-End Portfolio",
+                    ]
+                },
+                application_scenario: [
+                    {
+                        title: "Urban",
+                        image: "urban-scenario"
+                    },
+                    {
+                        title: "Country",
+                        image: "country-scenario"
+                    },
+                    {
+                        title: "Community",
+                        image: "community-scenario"
+                    },
+                ],
+                products: [
+                    {
+                        title: "Evolved Packet Core",
+                        acronym: "EPC",
+                        sub_title: "EPC",
+                        image: "evolved-packet-core-outer",
+                        category: "Core Network",
+                        sub_category: "Evolved Packet Core",
+                    },
+                    {
+                        title: "IP MultiMedia Subsystem",
+                        acronym: "IMS",
+                        sub_title: "IMS",
+                        image: "ip-multimedia-subsystem-outer",
+                        category:  "Core Network",
+                        sub_category:  "IP MultiMedia Subsystem",
+                    }
+                ]
+            },
+            {
                 title: "FWA Solution",
                 sub_title: "Fast, Reliable, and Seamless Wireless Connectivity",
                 description: "Fixed wireless access over LTE for data service instead of FTTX, LAN or ADSL.<br />Fixed Wireless Access (FWA) solutions leverage LTE/5G cellular networks to deliver broadband internet to homes and offices, eliminating the need for traditional cable infrastructure.<br /><br />Service Providers deploy radio equipment in key locations within a community and integrate Moya’s 4G Core Network to establish internet connectivity. Each subscriber is equipped with a Customer Premises Equipment device, enabling them to access high-speed broadband services. <br />Our solution is highly scalable and designed with a clear migration path to 5G/LTE, making it ideal for service providers of all sizes.",
@@ -188,6 +249,7 @@ const categories = [
                     }
                 ]
             },
+            
         ],
     },
     {
