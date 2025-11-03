@@ -141,8 +141,8 @@ const categories = [
                         icon: "end-to-end-solution-and-stable-connection",
                     },
                     {
-                        title: "Multi-Vendor’s eNodesBS Supported",
-                        icon: "multi-vendors-enodesbs-supported",
+                        title: "Multi-Vendor’s eNB supported",
+                        icon: "multi-vendors-enb-supported",
                     }
                 ],
                 image: "fwa-solution",
@@ -466,8 +466,8 @@ const categories = [
                         icon: "small-cells-femto-pico-microcells",
                     },
                     {
-                        title: "Wi-Fi Offloading & LTE/5G",
-                        icon: "wi-fi-offloading-lte-5g",
+                        title: "Low power consumption or energy saving",
+                        icon: "low-power-consumption-or-energy-saving",
                     }
                 ],
                 image: "indoor-solution",
@@ -571,12 +571,12 @@ const categories = [
                 description: "Fiber repeater support multi-system multi-band combination fusion coverage. <br /> UP to 10 kilometers distance <br /> Low isolation required.",
                 features: [
                     {
-                        title: "Fiber-to-the-Antenna (FTTA)",
-                        icon: "fiber-to-the-antenna", 
+                        title: "Superior Anti-Interference",
+                        icon: "superior-anti-interference", 
                     },
                     {
-                        title: "Cloud-RAN (C-RAN) with Fiber Backhaul",
-                        icon: "cloud-ran-with-fiber-backhaul",
+                        title: "Multi-Network Convergence",
+                        icon: "multi-network-convergence",
                     }
                 ],
                 image: "fiber-solution",
@@ -640,8 +640,8 @@ const categories = [
                         icon: "seamless-connectivity",
                     },
                     {
-                        title: "Optimized for low power consumption",
-                        icon: "operated-in-low-power-consumption",
+                        title: "Cost-Effective with No Fiber Required",
+                        icon: "cost-effective-with-no-fiber-required",
                     }
                 ],
                 image: "wireless-solution",
@@ -701,8 +701,8 @@ const categories = [
                         icon: "intelligent-repeaters", 
                     },
                     {
-                        title: "MIMO Signal Enhancement",
-                        icon: "mimo-signal-enhancement",
+                        title: "Excellent Interference Cancellation Capability",
+                        icon: "excellent-interference-cancellation-capabilities",
                     }
                 ],
                 image: "ics-wireless-solution",
