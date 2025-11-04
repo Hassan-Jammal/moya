@@ -96,16 +96,16 @@ const categories = [
                 },
                 application_scenario: [
                     {
-                        title: "Urban",
-                        image: "urban-scenario"
+                        title: "International Roaming",
+                        image: "international-roaming"
                     },
                     {
-                        title: "Country",
-                        image: "country-scenario"
+                        title: "Digital Content Serice",
+                        image: "digital-content-service"
                     },
                     {
-                        title: "Community",
-                        image: "community-scenario"
+                        title: "IOT & M2M",
+                        image: "iot-and-m2m"
                     },
                 ],
                 products: [
@@ -466,8 +466,8 @@ const categories = [
                         icon: "small-cells-femto-pico-microcells",
                     },
                     {
-                        title: "Low power consumption or energy saving",
-                        icon: "low-power-consumption-or-energy-saving",
+                        title: "Low power consumption",
+                        icon: "low-power-consumption",
                     }
                 ],
                 image: "indoor-solution",
