@@ -100,7 +100,7 @@ const categories = [
                         image: "international-roaming"
                     },
                     {
-                        title: "Digital Content Serice",
+                        title: "Digital Content Service",
                         image: "digital-content-service"
                     },
                     {
