@@ -72,6 +72,7 @@
 
     const closeNav = () => {
         emit("update:isNavOpen", false);
+        document.body.classList.remove("overflow-y-hidden");
     };
 
     // Function to toggle active indices

@@ -163,7 +163,7 @@
             </div>
             <div class="mt-12">
                 <div v-for="(category, index) in categories" :key="index" class="element flex flex-col gap-4" :class="activeCategory === index ? 'block' : 'hidden'">
-                    <div class="grid lg:grid-cols-3 gap-4 rounded-3xl">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 rounded-3xl">
                         <template v-if="category.sub_categories.length">
                             <div v-for="(product, productIndex) in getThreeProducts(category.sub_categories)" :key="productIndex" class="flex flex-col justify-between items-center gap-12 py-12 px-4 lg:px-8 text-center bg-[#F8F8F9] rounded-3xl">
                                 <div class="flex flex-col justify-center items-center gap-4">

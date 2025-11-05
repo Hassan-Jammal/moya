@@ -42,7 +42,7 @@
 						<template v-else>{{ sub.products.map(p => p.acronym).filter(Boolean).join(' - ') }}</template>
 					</h3>
 
-					<div :class="[ 'grid gap-4 lg:gap-8', sub.products.length === 1 ? 'grid-cols-1' : 'grid-cols-2 lg:grid-cols-3' ]">
+					<div :class="[ 'grid gap-4 lg:gap-8', sub.products.length === 1 ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3' ]">
 						<div v-for="(product, i) in sub.products" :key="i" class="flex flex-col justify-between items-center gap-12 py-12 px-4 lg:px-8 text-center bg-[#F8F8F9] rounded-3xl">
 							<div class="flex flex-col justify-center items-center gap-4 w-full">
 								<NuxtImg class="w-full" :src="`/images/${product.image_outer}.webp`" :alt="product.title" />
@@ -70,7 +70,7 @@
 	<section class="lg:mt-12 pt-12 lg:pt-24 pb-56 bg-[#F8F8F9]">
 		<div class="container">
 			<h2 class="text-2xl lg:text-4xl font-semibold">Moya's Capabilities</h2>
-			<div class="grid lg:grid-cols-3 gap-4 lg:gap-8 mt-12">
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 mt-12">
 				<div v-for="(value, index) in values" :key="index" class="flex flex-col gap-8 h-auto p-4 lg:p-8 rounded-3xl bg-white">
 					<NuxtImg :src="`images/icons/${value.icon}.svg`" :alt="value.title" width="42" height="42" />
 					<h3 class="text-2xl font-semibold">{{ value.title }}</h3>

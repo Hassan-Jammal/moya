@@ -91,7 +91,7 @@
             <div class="container">
                 <div class="flex flex-col gap-8">
                     <h3 class="text-xl lg:text-3xl font-semibold">Included Products</h3>
-                    <div class="grid lg:grid-cols-3 gap-4 lg:gap-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
                         <div v-for="(product, productIndex) in solutionData.products" :key="productIndex" class="flex flex-col justify-between items-center gap-12 py-12 px-4 lg:px-8 text-center bg-[#F8F8F9] rounded-3xl">
                             <div class="flex flex-col justify-center items-center gap-4 w-full">
                                 <NuxtImg class="w-full" :src="`/images/${product.image}.webp`" :alt="product.title" width="" height="" />
