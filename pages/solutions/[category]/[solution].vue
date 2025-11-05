@@ -68,7 +68,7 @@
                         <h2 class="text-xl lg:text-3xl font-semibold">{{ solutionData.benefits.title }}</h2>
                     </div>
                     <div class="flex max-lg:flex-col justify-between gap-4 lg:gap-8 w-full xl:w-4/5 mx-auto mt-12 text-center">
-                        <h4 v-for="(item, index) in solutionData.benefits.items" :key="index" class="flex-1 p-4 lg:p-8 border rounded-3xl text-xl font-semibold flex items-center justify-center">{{ item }}</h4>
+                        <h4 v-for="(item, index) in solutionData.benefits.items" :key="index" class="flex-1 p-4 lg:p-8 border rounded-3xl text-lg font-semibold flex items-center justify-center">{{ item }}</h4>
                     </div>
                 </div>
 
