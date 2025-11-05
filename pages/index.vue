@@ -152,8 +152,8 @@
                 <h3 class="text-xl lg:text-2xl font-semibold">Empowering Connections with Every Product</h3>
             </div>
             <div class="flex max-lg:flex-col flex-row justify-between lg:items-center gap-4 mt-12 overflow-scroll">
-                <div class="flex gap-2">
-                    <div @click="handleCategory(index)" v-for="(category, index) in categories" :key="index" class="py-2 px-6 border rounded-full cursor-pointer text-nowrap" :class="activeCategory === index ? 'bg-primary text-white' : ''">{{ category.title }}</div>
+                <div class="flex gap-2 hide-scrollbar">
+                    <div @click="handleCategory(index)" v-for="(category, index) in categories" :key="index" class="py-2 px-6 border rounded-full cursor-pointer text-nowrap hide-scrollbar" :class="activeCategory === index ? 'bg-primary text-white' : ''">{{ category.title }}</div>
                 </div>
 
                 <!-- <NuxtLink v-if="showExplore" :to="exploreLink" class="hidden lg:flex lg:justify-between items-center gap-2 text-base text-primary">
