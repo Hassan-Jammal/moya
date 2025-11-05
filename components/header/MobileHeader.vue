@@ -41,7 +41,7 @@
                                 <!-- v-if="subItem.subLinks?.length && subItem.subLinks.every(sub => !sub.subSubLinks || !sub.subSubLinks.length)" -->
                                 <!-- <pre>{{ subItem }}</pre> -->
                                 <NuxtLink @click="closeNav" v-if="subItem.subLinks?.length && subItem.clickable" :to="`/${subItem.path}`" class="flex items-center gap-1 text-primary group text-primary mt-6">
-                                    <span class="">View full details</span>
+                                    <span>View full details</span>
                                     <Icon name="fa6-solid:arrow-right" class="cursor-pointer transition duration-300 ease-in-out group-hover:translate-x-1" />
                                 </NuxtLink>
                             </ul>
@@ -53,7 +53,7 @@
 
         <!-- Get Quote Button positioned absolutely at the bottom of the nav -->
         <div class="absolute bottom-[var(--header-height)] left-1/2 -translate-x-1/2 flex lg:hidden justify-center items-center gap-6 w-full bg-white border-t py-2 z-[3]">
-            <NuxtLink to="/get-a-quote" class="">
+            <NuxtLink @click="closeNav" to="/get-a-quote">
                 <button class=" py-2 px-6 text-white bg-primary rounded-full select-none transition-all duration-300 ease-in-out">Get a Quote</button>
             </NuxtLink>
         </div>
