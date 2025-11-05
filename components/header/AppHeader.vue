@@ -186,7 +186,7 @@
     ]);
 
     const closeNav = () => {
-        isNavOpen.value = !isNavOpen.value;
+        isNavOpen.value = false
         document.body.classList.remove("overflow-y-hidden");
     };
 
