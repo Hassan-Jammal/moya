@@ -174,6 +174,11 @@
         //     ]
         // },
         {
+            title: "Use Cases",
+            clickable: true,
+            path: "use-cases"
+        },
+        {
             title: "About Us",
             clickable: true,
             path: "about-us"

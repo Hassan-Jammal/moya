@@ -306,6 +306,7 @@
             title: "Company",
             clickable: false,
             links: [
+                { title: "Use Cases", path: "/use-cases " },
                 { title: "About Us", path: "/about-us" },
                 { title: "Contact Us", path: "/contact-us" },
             ]
