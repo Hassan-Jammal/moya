@@ -76,8 +76,7 @@
 				</div>
 
 				<div class="flex-1">
-					<!-- <object data="images/[svg_file_here].svg" width="100%"></object> -->
-					<NuxtImg class="w-full mx-auto" src="images/121.svg" alt="MNO Solution Case" width="1038" height="912" />
+					<NuxtImg class="w-full mx-auto" src="images/mvno-solution-case.webp" alt="MNO Solution Case" width="1038" height="912" />
 				</div>
 			</div>
 
