@@ -23,9 +23,9 @@
 	</section>
 
 	<section class="pt-12 lg:pt-24 pb-56">
-		<div class="container space-y-32">
+		<div class="container space-y-16 md:space-y-32">
 			<div class="flex max-lg:flex-col justify-between items-start max-lg:gap-4 gap-32">
-				<div class="flex-1 flex flex-col justify-center gap-8 lg:w-2/3">
+				<div class="flex-1 flex flex-col justify-center gap-4 md:gap-8 lg:w-2/3">
 					<h2 class="text-xl lg:text-3xl font-semibold text-primary">MNO Solution Case: Comium</h2>
 					<h3 class="text-2xl lg:text-4xl font-semibold">Nationwide Mobile Network Modernization in Gambia</h3>
 					<a href="https://comium.gm" target="_blank">
@@ -52,7 +52,7 @@
 			</div>
 
 			<div class="flex max-lg:flex-col justify-between items-start max-lg:gap-4 gap-32">
-				<div class="flex-1 flex flex-col justify-center gap-8 lg:w-2/3">
+				<div class="flex-1 flex flex-col justify-center gap-4 md:gap-8 lg:w-2/3">
 					<h2 class="text-xl lg:text-3xl font-semibold text-primary">MVNO Solution Case: Monty eSIM</h2>
 					<h3 class="text-2xl lg:text-4xl font-semibold">Digital-First Mobile Launch with Full Network Agility</h3>
 					<a href="https://montyesim.com" target="_blank">
@@ -81,7 +81,7 @@
 			</div>
 
 			<div class="flex max-lg:flex-col justify-between items-start max-lg:gap-4 gap-32">
-				<div class="flex-1 flex flex-col justify-center gap-8 lg:w-2/3">
+				<div class="flex-1 flex flex-col justify-center gap-4 md:gap-8 lg:w-2/3">
 					<h2 class="text-xl lg:text-3xl font-semibold text-primary">RAN (Rural Area) Solution Case: Comium</h2>
 					<h3 class="text-2xl lg:text-4xl font-semibold">Network Expansion for Comium: Rural Connectivity Expansion with High-Capacity RAN</h3>
 					<a href="https://comium.gm" target="_blank">
