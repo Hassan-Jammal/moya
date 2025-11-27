@@ -33,7 +33,7 @@
 					</a>
 					<div class="flex flex-col gap-12">
 						<div class="flex flex-col">
-							<p class="text-lg text-[#5D5D5D]">Delivered 4G data and high-definition VoLTE services to underserved rural area in Gambia.</p>
+							<p class="text-lg text-[#5D5D5D]">Delivered 4G data services to underserved rural areas in Gambia.</p>
 							<hr class="my-3" />
 							<p class="text-lg text-[#5D5D5D]">Achieved seamless cross-vendor interoperability, supports CSFB.</p>
 							<hr class="my-3" />
@@ -89,13 +89,13 @@
 					</a>
 					<div class="flex flex-col gap-12">
 						<div class="flex flex-col">
-							<p class="text-lg text-[#5D5D5D]">Expanded 4G data, VoLTE, and CSFB coverage across Gambia's rural regions.</p>
+							<p class="text-lg text-[#5D5D5D]">Expanded 4G data and CSFB coverage across Gambia's rural regions.</p>
 							<hr class="my-3" />
-							<p class="text-lg text-[#5D5D5D]">Strengthened network capacity to serve over 10,000 new users.</p>
+							<p class="text-lg text-[#5D5D5D]">Strengthened network capacity to serve over 100,000 new users.</p>
 							<hr class="my-3" />
 							<p class="text-lg text-[#5D5D5D]">Rolled out 100 carrier-grade base stations, optimized for challenging environments.</p>
 							<hr class="my-3" />
-							<p class="text-lg text-[#5D5D5D]">Significantly enhanced service quality and coverage, bridging the digital divide in remote areas</p>
+							<p class="text-lg text-[#5D5D5D]">Significantly enhanced service quality and coverage, bridging the digital divide in remote areas.</p>
 						</div>
 					</div>
 				</div>
