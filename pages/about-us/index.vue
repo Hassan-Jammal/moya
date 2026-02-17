@@ -175,7 +175,7 @@
         },
         {
             name: 'Hassan Raya',
-            position: 'CEO - China',
+            position: 'Country Manager',
             image: 'hassan-raya'
         },
     ]
